@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>L. a. b.</title>
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+    {% block script_style %}
+
+    {% endblock %}
+
+</head>
+<body>
+
+<div id="wrap">
+    <div class="container">
+        {% block container %}
+        {% endblock %}
+    </div>
+</div>
+
+<div id="footer">
+    {% block footer %}
+    {% endblock %}
+</div>
+
+</body>
+</html>

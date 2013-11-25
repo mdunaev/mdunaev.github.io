@@ -1,0 +1,290 @@
+{% extends "lab/lab.html" %}
+
+{% block script_style %}
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js'></script>
+    <link rel='stylesheet' type='text/css'
+          href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css'/>
+
+    <script type="text/javascript">
+
+        var texts = [];
+        var currentPageNum = 0;
+        var big = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+        var sma = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+        var colors = {
+            "а":"#ec0000",
+            "б":"#2eb286",
+            "в":"#74c600",
+            "г":"#38185f",
+            "д":"#920a35",
+            "е":"#fd6b00",
+            "ё":"#96114f",
+            "ж":"#d6adff",
+            "з":"#91d6a7",
+            "и":"#ff926b",
+            "й":"#9f492c",
+            "к":"#70529f",
+            "л":"#4fe7ff",
+            "м":"#31a6de",
+            "н":"#1b658e",
+            "о":"#ff5a5a",
+            "п":"#006138",
+            "р":"#0276df",
+            "с":"#018e00",
+            "т":"#4f4f4f",
+            "у":"#dce35e",
+            "ф":"#84125c",
+            "х":"#4e7d30",
+            "ц":"#1c738e",
+            "ч":"#868f24",
+            "ш":"#a152a0",
+            "щ":"#61135e",
+            "ъ":"#000000",
+            "ы":"#976018",
+            "ь":"#a3a3a3",
+            "э":"#f4a94e",
+            "ю":"#a08b20",
+            "я":"#fcde53"
+        };
+
+        var pages = {
+            "а":1,
+            "б":9,
+            "в":10,
+            "г":5,
+            "д":11,
+            "е":12,
+            "ё":13,
+            "ж":14,
+            "з":15,
+            "и":16,
+            "й":17,
+            "к":18,
+            "л":3,
+            "м":19,
+            "н":20,
+            "о":2,
+            "п":7,
+            "р":4,
+            "с":8,
+            "т":6,
+            "у":21,
+            "ф":22,
+            "х":23,
+            "ц":24,
+            "ч":25,
+            "ш":26,
+            "щ":27,
+            "ъ":28,
+            "ы":29,
+            "ь":30,
+            "э":32,
+            "ю":33,
+            "я":31
+        };
+
+        $(document).ready(function () {
+            $(".upload").click(clickOnUploadHandler);
+            clickOnUploadHandler();
+        });
+
+        function clickOnUploadHandler() {
+
+            if ($.browser.msie) {
+                $(".pages").html("<span class='label label-important'> Sorry, but Interner Explorer is not supported. </span>" +
+                        "Use <a href='https://www.google.com/intl/en/chrome/'> Google Chrome </a>");
+                return;
+            }
+
+            $(".pages").html("");
+            $.ajax({
+                url:$(".url").val(),
+                dataType:"text",
+                success:textLoadedHandler
+            })
+        }
+
+        function textLoadedHandler(data) {
+            $( ".slider" ).slider();
+
+            texts = data.split("\n").join("±").match(/.{1,2500}/g);
+            for (var i = 0; i < texts.length; i++) {
+                if (currentPageNum == i) {
+                    $(".pages").append("<li class='disabled'><a href='#'>" + i + "</a></ul>");
+                    continue;
+                }
+                $(".pages").append("<li><a href='#'>" + i + "</a></ul>");
+
+            }
+            $(".pages").click(clickOnPageSelector);
+            showPage();
+
+        }
+
+        function clickOnPageSelector(event) {
+            currentPageNum = parseInt($(event.target).text());
+            if (currentPageNum == 0) {
+                $('h1').show();
+                $('.lead').show();
+                $('.input-append').show();
+            } else {
+                $('h1').hide();
+                $('.lead').hide();
+                $('.input-append').hide();
+            }
+
+            $(".pages").html("");
+            for (var i = 0; i < texts.length; i++) {
+                if (currentPageNum == i) {
+                    $(".pages").append("<li class='disabled'><a href='#'>" + i + "</a></ul>");
+                    continue;
+                }
+                $(".pages").append("<li><a href='#'>" + i + "</a></ul>");
+
+            }
+
+            showPage();
+        }
+
+        function showPage() {
+
+            var text = texts[currentPageNum];
+
+            result = "";
+
+            for (var i = 0; i < text.length; i++) {
+                var letter = text.charAt(i);
+
+                var small_letter = charAtArray(letter, sma);
+                var big_letter = charAtArray(letter, big);
+
+                if (small_letter != -1) {
+                    if (pages[letter] <= currentPageNum) {
+                        result += "<span class='glyph-transperent' style='font-size:14px; background-color: " + colors[letter] + "; '>" + letter + "</span>";
+                    } else {
+                        result += "<span class='glyph' style='font-size:14px; background-color: " + colors[letter] + "; '>" + letter + "</span>";
+                    }
+                } else if (big_letter != -1) {
+                    result += "<span class='glyph' style='font-size:18px; background-color: " + colors[letter.toLowerCase()] + ";'><span style='opacity:0.5'>" + letter + "</span></span>";
+                } else if (letter == "±") {
+                    result += "<br/>";
+                } else {
+                    result += "<span class='punctuation' >" + letter + "</span>";
+                }
+            }
+            $(".content").html('');
+            $(".content").append(result);
+        }
+
+        function getNextSpaceNum(num) {
+            if (text.charAt(num) == " ") {
+                return num;
+            } else {
+                getNextSpaceNum(num + 1);
+            }
+        }
+        function charAtArray(char, array) {
+            for (var i = 0; i < array.length; i++) {
+                if (char == array[i]) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+    </script>
+
+
+
+
+    <style type="text/css">
+        .let {
+            opacity: 0;
+        }
+
+        .let:hover {
+            opacity: 1;
+        }
+
+        .glyph {
+            color: rgba(0, 0, 0, 0.3);
+            letter-spacing: 7px;
+            font-family: monospace;
+            opacity: 0.95;
+        }
+
+        .glyph-transperent {
+            color: rgba(0, 0, 0, 0);
+            letter-spacing: 7px;
+            font-family: monospace;
+            opacity: 0.95;
+        }
+
+        .punctuation {
+            font-family: monospace;
+        }
+
+        .glyph-transperent:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .content {
+            letter-spacing: 7px;
+            line-height: 24px;
+        }
+
+
+
+    </style>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+{% endblock %}
+
+
+
+
+
+
+
+
+{% block container %}
+
+    <h1>Цветовая азбука</h1>
+    <p class="lead"> Эксперимент по конвертации текста в цветовую азбуку. <br>
+
+        Укажите ссылку на файл и текст из него будет преобразован в последовательность цветов.</p>
+    <div class="input-append">
+        <input class="url" type="text" value="/static/infinity.txt">
+        <button class="btn upload" type="button">Do it!</button>
+    </div>
+
+    <br>
+    <div class="content"></div>
+    <p></p>
+
+
+
+    <div class="pagination pagination-small">
+        <ul class="pages"></ul>
+
+        <br>
+
+        <div class="slider"></div>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+{% block footer %}
+    <div class="container">
+
+    </div>
+
+{% endblock %}
