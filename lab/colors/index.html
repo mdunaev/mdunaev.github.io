@@ -1,6 +1,6 @@
-{% extends "lab/lab.html" %}
-
-{% block script_style %}
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js'></script>
     <link rel='stylesheet' type='text/css'
           href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css'/>
@@ -90,11 +90,7 @@
 
         function clickOnUploadHandler() {
 
-            if ($.browser.msie) {
-                $(".pages").html("<span class='label label-important'> Sorry, but Interner Explorer is not supported. </span>" +
-                        "Use <a href='https://www.google.com/intl/en/chrome/'> Google Chrome </a>");
-                return;
-            }
+
 
             $(".pages").html("");
             $.ajax({
@@ -238,7 +234,7 @@
     </style>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
-{% endblock %}
+<head>
 
 
 
@@ -247,14 +243,14 @@
 
 
 
-{% block container %}
+<body>
 
     <h1>Цветовая азбука</h1>
     <p class="lead"> Эксперимент по конвертации текста в цветовую азбуку. <br>
 
         Укажите ссылку на файл и текст из него будет преобразован в последовательность цветов.</p>
     <div class="input-append">
-        <input class="url" type="text" value="/static/infinity.txt">
+        <input class="url" type="text" value="infinity.txt">
         <button class="btn upload" type="button">Do it!</button>
     </div>
 
@@ -272,19 +268,9 @@
         <div class="slider"></div>
     </div>
 
-{% endblock %}
 
-
-
-
-
-
-
-
-
-{% block footer %}
     <div class="container">
 
     </div>
 
-{% endblock %}
+<body>
