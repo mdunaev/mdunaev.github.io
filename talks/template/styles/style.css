@@ -1,3 +1,23 @@
-section {
+.page {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    vertical-align: middle;
+    background-color: red;
+}
 
+li .page {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: red;
+}
+
+.slider {
+    height: 100%;
 }

@@ -10,7 +10,6 @@ body {
 .page {
     width: 800px;
     height: 600px;
-
     position: absolute;
     top:0;
     bottom: 0;
@@ -18,7 +17,6 @@ body {
     right: 0;
     margin: auto;
     vertical-align: middle;
-
     background-color: #ffffff;
 }
 
