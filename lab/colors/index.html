@@ -211,6 +211,12 @@
 
             opacity: 0.95;
         }
+        .glyph:hover {
+            color: white;
+            letter-spacing: 7px;
+
+            opacity: 0.95;
+        }
 
         .glyph-transperent {
             color: rgba(0, 0, 0, 0);
@@ -230,6 +236,7 @@
         .content {
             letter-spacing: 7px;
             line-height: 24px;
+            width: 1012px;
         }
 
         .input-append{
@@ -266,17 +273,29 @@
             font-family: Helvetica, Arial;
             font-weight: normal;
             font-size: 26px;
+            margin-top: 20px;
+            color: #ddd;
         }
 
         .lead{
            font-family: Helvetica, Arial;
             font-weight: normal;
-            font-size: 20px; 
+            font-size: 60px; 
         }
 
          *{
             font-family: Helvetica, Arial;
             font-weight: normal;
+        }
+        .main{
+                width: 1012px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+        }
+
+        .pagination{
+            margin-top: 60px;
         }
 
     </style>
@@ -292,9 +311,9 @@
 
 
 <body>
-
+<div class="main">
     <h1>Цветовая азбука</h1>
-    <p class="lead"> Джордж Оруэлл. 1984 <br>
+    <p class="lead"> Джордж Оруэлл. <br> 1984 
     <!--
         Укажите ссылку на файл и текст из него будет преобразован в последовательность цветов.</p>
     -->    
@@ -315,8 +334,5 @@
     </div>
 
 
-    <div class="container">
-
-    </div>
-
+</div>
 <body>
