@@ -144,6 +144,8 @@
         }
 
         function showPage() {
+            $('li').css('background-color', 'white');
+            $('li').eq(currentPageNum).css('background-color', 'DeepSkyBlue');
 
             var text = texts[currentPageNum];
 
@@ -206,19 +208,19 @@
         .glyph {
             color: rgba(0, 0, 0, 0.3);
             letter-spacing: 7px;
-            font-family: monospace;
+
             opacity: 0.95;
         }
 
         .glyph-transperent {
             color: rgba(0, 0, 0, 0);
             letter-spacing: 7px;
-            font-family: monospace;
+
             opacity: 0.95;
         }
 
         .punctuation {
-            font-family: monospace;
+
         }
 
         .glyph-transperent:hover {
@@ -230,7 +232,51 @@
             line-height: 24px;
         }
 
+        .input-append{
+            display: none;
+        }
+        li{
+            text-decoration: none;
+            float: left;
+            padding: 6px;
+        }
+        ul{
+            padding: 0px;
+        }
+        a {
+            text-decoration: none;
+            font-family: Helvetica, Arial;
+            font-size: 14px;
+            color: black;
+        }
 
+        li:hover {
+            text-decoration: none;
+            font-family: Helvetica, Arial;
+            font-size: 14px;
+            color: white;
+            background-color: black;
+        }
+        .input-append{
+            display: none
+        }
+
+        h1{
+            font-family: Helvetica, Arial;
+            font-weight: normal;
+            font-size: 26px;
+        }
+
+        .lead{
+           font-family: Helvetica, Arial;
+            font-weight: normal;
+            font-size: 20px; 
+        }
+
+         *{
+            font-family: Helvetica, Arial;
+            font-weight: normal;
+        }
 
     </style>
 
@@ -247,13 +293,15 @@
 <body>
 
     <h1>Цветовая азбука</h1>
-    <p class="lead"> Эксперимент по конвертации текста в цветовую азбуку. <br>
-
+    <p class="lead"> Джордж Оруэлл. 1984 <br>
+    <!--
         Укажите ссылку на файл и текст из него будет преобразован в последовательность цветов.</p>
+    -->    
     <div class="input-append">
         <input class="url" type="text" value="infinity.txt">
         <button class="btn upload" type="button">Do it!</button>
     </div>
+    
 
     <br>
     <div class="content"></div>
@@ -263,10 +311,6 @@
 
     <div class="pagination pagination-small">
         <ul class="pages"></ul>
-
-        <br>
-
-        <div class="slider"></div>
     </div>
 
 
