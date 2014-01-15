@@ -1,3 +1,1 @@
-skrollr.init({
-    smoothScrolling:false
-});
+skrollr.init();
