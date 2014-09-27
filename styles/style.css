@@ -1,3 +1,39 @@
-.logo{
-    text-align: center;
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+
+.content{
+
+    width: 70%;
+    min-width: 530px;
+    margin: 20px auto;
+}
+
+.first_slide{
+    height: 323px;
+}
+
+.self_photo{
+    float: left;
+    padding-right: 20px;
+}
+
+.photo{
+    background-image: url("../images/im-small.png");
+    width: 240px;
+    height: 323px;
+}
+
+.header{
+    padding-top: 80px;
+    padding-left: 10px;
+}
+
+.hallo{
+    font-size: 60px;
 }
