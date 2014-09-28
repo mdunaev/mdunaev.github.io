@@ -6,12 +6,28 @@ body{
     background-color: #eeeeee;
 }
 
+.bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+}
 
 .content{
-
+    position: relative;
     width: 70%;
     min-width: 530px;
     margin: 20px auto;
+    z-index: 10;
+}
+
+.popup{
+    font-style: italic;
 }
 
 .first_slide{
@@ -36,4 +52,8 @@ body{
 
 .hallo{
     font-size: 60px;
+}
+
+.short{
+    font-size: 20px;
 }

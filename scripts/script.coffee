@@ -1,1 +1,3 @@
-a = 0
+$(document).ready( ()->
+    Tipped.create('.popup');
+)

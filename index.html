@@ -6,9 +6,14 @@
           type='text/css'>
     <link href="bower_components/normalize-css/normalize.css" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/tipped.css"/>
 </head>
 <body>
 
+<div class="bg">
+    <canvas id="bg" data-processing-sources="scripts/processing-bg/bg/web-export/bg.pde"
+            width="2000px" height="2000px"></canvas>
+</div>
 
 <div class="content">
     <div class="first_slide">
@@ -19,7 +24,9 @@
         <div class="header">
             <div class="hallo">Привет!</div>
             Меня зовут Михаил Дунаев, я программист-фрилансер.<br>
-            Моя основная специализация - это front-end, rich internet application, data visualization.
+            Моя основная специализация - это <span class="popup" title="Разработка интерфейса,<br> html/css верстка">front-end</span>,
+            <span class="popup" title="Web-приложения со сложной логикой">rich internet application</span>,
+            <span class="popup" title="Визуализация данных, инфографика">data visualization</span>.
         </div>
     </div>
     <div class="about">
@@ -38,7 +45,7 @@
         </div>
         <div class="long">
             <h2>О себе:</h2>
-            Родился в 1983 году в небольшом городе на Волге, где закончил школу и учился в медицинском училище и
+            Родился в 1983 году в небольшом <span class="popup" title="г.Балаково, Саратовской обл.">городе</span> на Волге, где закончил школу и учился в медицинском училище и
             политехническом институте.<br>
             C 2006 года живу и работаю в Москве.<br>
             Женат. С 2013 года воспитываю сына.<br>
@@ -56,7 +63,7 @@
             <br>
             Также много интересуюсь разработкой под iOS с использованием Swift.<br>
             <br>
-            Увереный пользователь базового пакета Adobe CC<br>
+            Увереный пользователь базового пакета Adobe CC.<br>
 
             <h2>Опыт работы:</h2>
 
@@ -67,9 +74,9 @@
             2006-2008гг. РА "Стронг". Графический дизайнер.<br>
             2008-2010гг. Компания "Крафт". Графический/веб-дизайнер.<br>
             <br>
-            После этого, увлекшись программированием на платформе Adobe Flash, оставляю работу дизайнером и около года
-            занимаюсь созданием интерактивных презентаций как программист/дизайнер фрилансер.<br>
-            Паралельно с этим веду курсы по базовому и углубленному программированию на ActionScript3/Flex в школе
+            После этого, увлекшись программированием на платформе Adobe Flash, оставил работу дизайнером и около года
+            занимался созданием интерактивных презентаций как программист/дизайнер фрилансер.<br>
+            Паралельно с этим вел курсы по базовому и углубленному программированию на ActionScript3/Flex в школе
             компьютерной графики Realtime.<br>
             <br>
             С января 2011 начал работать в Студии Инфографики РИА Новости, на должности программист/руководитель
@@ -84,7 +91,8 @@
             Переодически преподаю в Британской Высшей Школе Дизайна программирование на Processing на курсе "Дизайн в
             интерактивной среде".<br>
             <br>
-            С октября 2014 года занимаюсь удаленной работой.
+            С октября 2014 года занимаюсь удаленной работой.<br>
+            <br>
         </div>
     </div>
     <div class="portfolio"></div>
@@ -96,6 +104,11 @@
 </div>
 
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="scripts/tipped/tipped.js"></script>
+<script type="text/javascript" src="scripts/processing-bg/bg/web-export/processing.js"></script>
+<script type="text/javascript">
+    function getProcessingSketchId () { return 'bg'; }
+</script>
 <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
