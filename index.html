@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Михаил Дунаев. JavaScript-программист.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic&subset=latin,cyrillic' rel='stylesheet'
           type='text/css'>
     <link href="bower_components/normalize-css/normalize.css" rel="stylesheet" type="text/css">
@@ -19,22 +20,24 @@
     <div class="first_slide">
         <div class="self_photo">
             <div class="photo"></div>
-            <div class="sequence"></div>
+            <div class="sequence" style="display: none"></div>
         </div>
         <div class="header">
-            <div class="hallo">Привет!</div>
+            <div class="hallo white">Привет!</div>
+            <div class="white">
             Меня зовут Михаил Дунаев, я программист-фрилансер.<br>
             Моя основная специализация - это <span class="popup" title="Разработка интерфейса,<br> html/css верстка">front-end</span>,
             <span class="popup" title="Web-приложения со сложной логикой">rich internet application</span>,
             <span class="popup" title="Визуализация данных, инфографика">data visualization</span>.
+            </div>
         </div>
     </div>
     <div class="about">
-        <div class="menu">
+        <div class="menu white">
             Резюме
-            <div>краткое</div>
+            <div class="short-btn btn-selected">краткое</div>
             /
-            <div>полное</div>
+            <div class="long-btn">полное</div>
         </div>
         <div class="short">
             1983г.р. Опыт работы: дизайнер - 4 года, веб-программист - 5 лет.<br>
@@ -43,7 +46,7 @@
             В меньшей степени:<br>
             Python, GoogleAppEngine, Swift.<br>
         </div>
-        <div class="long">
+        <div class="long hidden">
             <h2>О себе:</h2>
             Родился в 1983 году в небольшом <span class="popup" title="г.Балаково, Саратовской обл.">городе</span> на Волге, где закончил школу и учился в медицинском училище и
             политехническом институте.<br>
@@ -96,7 +99,7 @@
         </div>
     </div>
     <div class="portfolio"></div>
-    <div class="contacts">
+    <div class="contacts hidden">
         <div class="phone">+7 906 073 35 68</div>
         <div class="email">dunaev.m@gmail.com</div>
         <div class="facebook"><a href="https://www.facebook.com/mdunaev">facebook.com/mdunaev</a></div>

@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: #eeeeee;
+    background-color: #ffffff;
 }
 
 .bg{
@@ -41,8 +41,20 @@ body{
 
 .photo{
     background-image: url("../images/im-small.png");
-    width: 240px;
+    width: 232px;
     height: 323px;
+}
+
+.sequence{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 232px;
+    height: 323px;
+
+    background-image: url("../images/sequence/bg.png");
+    background-position: 0px 0;
 }
 
 .header{
@@ -52,8 +64,51 @@ body{
 
 .hallo{
     font-size: 60px;
+    margin-bottom: 10px;
 }
 
 .short{
     font-size: 20px;
+}
+
+.white{
+    background-color: white;
+}
+
+.about{
+    margin-top: 50px;
+}
+
+.menu{
+    font-size: 20px;
+}
+
+.menu div{
+    display: inline;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.short{
+    margin-top: 30px;
+}
+
+.long{
+    margin-top: 10px;
+}
+
+.short-btn{
+    cursor: pointer;
+}
+
+.long-btn{
+    cursor:pointer;
+}
+
+.btn-selected{
+    text-decoration: none !important;
+}
+
+.hidden{
+    display: none;
 }

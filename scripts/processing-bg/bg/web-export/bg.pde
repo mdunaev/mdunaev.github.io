@@ -15,7 +15,7 @@ void setup() {
 
 void draw() {
   background(255);
-  strokeWeight(0.1);
+  strokeWeight(0.5);
 
   array[0][0] = mouseX;
   array[0][1] = mouseY;
@@ -44,7 +44,7 @@ void draw() {
       var distance = dist(coord1[0], coord1[1], coord2[0], coord2[1]); 
         
        if(distance<100){
-          stroke(0, 150-distance);
+          stroke(150, 100-distance);
           line( coord1[0], coord1[1], coord2[0], coord2[1] );
        }
      }
