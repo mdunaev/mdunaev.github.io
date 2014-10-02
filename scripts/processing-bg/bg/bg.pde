@@ -5,9 +5,10 @@ void setup() {
   size(2000, 2200);
   background(255);
   smooth();
+  frameRate(20);
   
-  var speedX = 2;
-  var speedY = 2;
+  var speedX = 3;
+  var speedY = 3;
   for(var i=0; i<num_dots; i++){
     array.push( new Array(Math.random()*window.innerWidth, Math.random()*window.innerHeight, Math.random()*speedX-speedX/2, Math.random()*speedY-speedY/2) );
   }
