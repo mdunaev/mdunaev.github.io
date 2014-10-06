@@ -8,6 +8,7 @@
 
 body{
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 .bg{
@@ -32,6 +33,16 @@ body{
     font-size: 18px;
     font-family: 'PT Serif', serif;
     min-width: 530px;
+}
+
+.top-right{
+    float: right;
+    margin-top: -9px;
+}
+
+.box{
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .content{
@@ -124,5 +135,54 @@ body{
 }
 
 h2{
+    margin-top: 40px;
     font-size: 22px;
+    letter-spacing: -1px;
+}
+
+.portfolio{
+    position: relative;
+
+}
+
+.portfolio img{
+    position: absolute;
+}
+
+.p-header{
+    margin-bottom: 10px;
+}
+.p-desc{
+    padding-top: 370px;
+    max-width: 530px;
+    left: 0px;
+}
+
+.contacts{
+    background-color: #ffffff;
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    margin-bottom: 100px;
+    height: 100px;
+}
+
+.contacts a{
+    font-size: 12px;
+    font-family: sans-serif;
+    text-decoration: dotted;
+}
+
+.left{
+    width: 50%;
+    height: 65px;
+    border-right: solid 1px #cccccc;
+    float: left;
+    padding-top: 35px;
+    padding-left: 10px;
+}
+
+.right{
+    height: 71px;
+    padding-top: 29px;
+    float: right;
 }

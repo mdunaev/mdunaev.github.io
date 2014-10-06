@@ -5,7 +5,7 @@ void setup() {
   size(2000, 2200);
   background(255);
   smooth();
-  frameRate(20);
+  frameRate(30);
   
   var speedX = 3;
   var speedY = 3;
@@ -45,7 +45,7 @@ void draw() {
       var distance = dist(coord1[0], coord1[1], coord2[0], coord2[1]); 
         
        if(distance<100){
-          stroke(150, 100-distance);
+          stroke(100-distance);
           line( coord1[0], coord1[1], coord2[0], coord2[1] );
        }
      }

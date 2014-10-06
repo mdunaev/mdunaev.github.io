@@ -5,12 +5,23 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic&subset=latin,cyrillic' rel='stylesheet'
           type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
     <link href="bower_components/normalize-css/normalize.css" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="styles/tipped.css"/>
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=123243167734681&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 <div class="bg">
     <canvas id="bg" data-processing-sources="scripts/processing-bg/bg/web-export/bg.pde"
@@ -18,8 +29,14 @@
 </div>
 
 
-<div class="top_header">Михаил Дунаев. Frontend-программист.</div>
+<div class="top_header">Михаил Дунаев. Frontend-программист.
 
+    <div class="top-right">
+        <div class="fb-like" data-href="http://mdunaev.github.io/" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
+    </div>
+
+</div>
+<div class="box">
 <div class="content">
     <div class="first_slide">
         <div class="self_photo">
@@ -30,10 +47,10 @@
 
     <div class="header">
         <div class="white">
-        Привет! Меня зовут Михаил Дунаев, я программист-фрилансер.<br>
-        Моя основная специализация - это <span class="popup" title="Разработка интерфейса,<br> html/css верстка">front-end</span>,
-        <span class="popup" title="Web-приложения со сложной логикой">rich internet application</span>,
-        <span class="popup" title="Визуализация данных, инфографика">data visualization</span>.
+            Привет! Меня зовут Михаил Дунаев, я программист-фрилансер.<br>
+            Моя основная специализация - это <span class="popup" title="Разработка интерфейса,<br> html/css верстка">front-end</span>,
+            <span class="popup" title="Web-приложения со сложной логикой">rich internet application</span>,
+            <span class="popup" title="Визуализация данных, инфографика">data visualization</span>.
         </div>
     </div>
 
@@ -52,71 +69,123 @@
             Python, GoogleAppEngine, Swift.<br>
         </div>
         <div class="long hidden">
-            Родился в 1983 году в небольшом <span class="popup" title="г.Балаково, Саратовской обл.">городе</span> на Волге, где закончил школу и учился в медицинском училище и
-            политехническом институте.<br>
+            Родился в 1983 году в небольшом <span class="popup" title="г.Балаково, Саратовской обл.">городе</span> на
+            Волге, где закончил школу и учился в медицинском училище и политехническом институте.<br>
             C 2006 года живу и работаю в Москве.<br>
             Женат. С 2013 года воспитываю сына.<br>
 
             <h2>Используемые технологии:</h2>
 
-            Основной используемый язык программирования - CoffeeScript, либо чистый JavaScript при необходимости.<br>
+            Основной используемый язык программирования -
+            <span class="popup" title="Язык программирования, транслируемый в JavaScript. CoffeeScript добавляет синтаксический сахар в духе Ruby, Python, Haskell и Erlang для того, чтобы улучшить читаемость кода и уменьшить его размер.">CoffeeScript</span>
+            ,либо чистый JavaScript при необходимости.<br>
             Из css-препроцессоров предпочитаю Stylus. Пакетный менеджер - Bower и Grunt в качестве инструмента для
-            сборки. IDE - Intellij IDEA.<br>
-            <br>
-            В качестве основы для веб-проектов чаще всего использую фреймворки Angular, JQuery, либо d3.js для
-            визуализации данных.<br>
-            <br>
-            Есть опыт в написании back-end на Python+GoogleAppEngine.<br>
-            <br>
-            Также много интересуюсь разработкой под iOS с использованием Swift.<br>
-            <br>
-            Увереный пользователь базового пакета Adobe CC.<br>
+            сборки. IDE - Intellij IDEA.
+            <p>
+                В качестве основы для веб-проектов чаще всего использую фреймворки Angular, JQuery, либо d3.js для
+                визуализации данных.
+            </p>
+
+            <p>
+                Есть опыт в написании back-end на Python+GoogleAppEngine.
+            </p>
+
+            <p>
+                Также много интересуюсь разработкой под iOS с использованием Swift.
+            </p>
+
+            <p>
+                Увереный пользователь базового пакета Adobe CC.</p>
 
             <h2>Опыт работы:</h2>
 
             Первые годы после института, с разной степенью успеха, я работал дизайнером в различных рекламных
             агентствах. Сейчас этот опыт позволяет мне лучше понимать задумку дизайнера интерфейса при программировании
-            приложений.<br>
-            <br>
-            2006-2008гг. РА "Стронг". Графический дизайнер.<br>
-            2008-2010гг. Компания "Крафт". Графический/веб-дизайнер.<br>
-            <br>
-            После этого, увлекшись программированием на платформе Adobe Flash, оставил работу дизайнером и около года
-            занимался созданием интерактивных презентаций как программист/дизайнер фрилансер.<br>
-            Паралельно с этим вел курсы по базовому и углубленному программированию на ActionScript3/Flex в школе
-            компьютерной графики Realtime.<br>
-            <br>
-            С января 2011 начал работать в Студии Инфографики РИА Новости, на должности программист/руководитель
-            подразделения.<br>
-            Основной работой в Студии было создание интерактивной инфографики под web, визуализация данных и
-            интерактивные инсталяции для офлайновых мероприятий. Помимо этого занимался администрированием работы шести
-            программистов студии.<br>
-            <br>
-            В начале 2014 года РИА Новости было расформировано приказом президента РФ. Вся Студия в полном составе
-            перешла работать в холдинг Rambler&Co.<br>
-            <br>
-            Переодически преподаю в Британской Высшей Школе Дизайна программирование на Processing на курсе "Дизайн в
-            интерактивной среде".<br>
-            <br>
-            В октябре 2014 оставил работу в Студии.<br>
-            На данный момент занимаюсь личными проектами и фрилансом.
-            <br>
+            приложений.
+            <p>
+                2006-2008гг. РА "Стронг". Графический дизайнер.<br>
+                2008-2010гг. Компания "Крафт". Графический/веб-дизайнер.
+            </p>
+            <p>
+                После этого, увлекшись программированием на платформе Adobe Flash, оставил работу дизайнером и около
+                года
+                занимался созданием интерактивных презентаций как программист/дизайнер фрилансер.<br>
+                Паралельно с этим вел курсы по базовому и углубленному программированию на ActionScript3/Flex в школе
+                компьютерной графики Realtime.
+            </p>
+            <p>
+                С января 2011 начал работать в Студии Инфографики РИА Новости, на должности программист/руководитель
+                подразделения.<br>
+                Основной работой в Студии было создание интерактивной инфографики под web, визуализация данных и
+                интерактивные инсталяции для офлайновых мероприятий. Помимо этого занимался администрированием работы
+                шести
+                программистов студии.
+            </p>
+            <p>
+                В начале 2014 года РИА Новости было расформировано приказом президента РФ. Вся Студия в полном составе
+                перешла работать в холдинг Rambler&Co.
+            </p>
+            <p>
+                В октябре 2014 оставил работу в Студии.<br>
+                На данный момент занимаюсь личными проектами и фрилансом.
+            </p>
+            <p>
+                Переодически преподаю в Британской Высшей Школе Дизайна программирование на Processing на курсе "Дизайн
+                в интерактивной среде".</p>
+            </p>
         </div>
     </div>
-    <div class="portfolio"></div>
-    <div class="contacts hidden">
-        <div class="phone">+7 906 073 35 68</div>
-        <div class="email">dunaev.m@gmail.com</div>
-        <div class="facebook"><a href="https://www.facebook.com/mdunaev">facebook.com/mdunaev</a></div>
+
+
+    <div class="portfolio">
+        <h2>Портфолио:</h2>
+        <div class="p-header"><a  target="_blank">Интерактивные инсталляции для Future Media Forum</a></div>
+        <div class="images"></div>
+        <div class="p-desc"></div>
+        <div class="p-link"><a href="" target="_blank"><img src="images/projects/link.png" style="position: relative"></a></div>
     </div>
+
+    <p></p><br><br>
+
+    <div class="contacts">
+        <div class="left">
+
+            <span class="popup" title="+7 906 073 35 68">
+                <a href="tel:+79060733568"><img src="images/phone.png"></a>
+            </span>
+
+            <span class="popup" title="dunaev.m@gmail.com">
+                <a href="mailto:dunaev.m@gmail.com"><img src="images/email.png"></a>
+            </span>
+
+            <span class="popup" title="war_hol">
+                <a href="skype:war_hol?chat"><img src="images/skype.png"></a>
+            </span>
+
+            <span class="popup" title="mdunaev">
+                <a href="https://www.facebook.com/mdunaev"><img src="images/face.png"></a>
+            </span>
+
+            <span class="popup" title="dunaev">
+                <a href="http://instagram.com/dunaev"><img src="images/inst.png"></a>
+            </span>
+
+        </div>
+        <div class="right"><div class="fb-like" data-href="http://mdunaev.github.io/" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="true"></div></div>
+    </div>
+</div>
 </div>
 
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="scripts/tipped/tipped.js"></script>
 <script type="text/javascript" src="scripts/processing-bg/bg/web-export/processing.js"></script>
 <script type="text/javascript">
-    function getProcessingSketchId () { return 'bg'; }
+    function getProcessingSketchId() {
+        return 'bg';
+    }
 </script>
+<script type="text/javascript" src="scripts/jquery.transit.min.js"></script>
+<script type="text/javascript" src="scripts/data.js"></script>
 <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
