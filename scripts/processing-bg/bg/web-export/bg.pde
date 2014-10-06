@@ -1,5 +1,5 @@
 var array = new Array();
-var num_dots = 150;
+var num_dots = 100;
 
 void setup() {
   size(2000, 2200);
@@ -44,8 +44,8 @@ void draw() {
       
       var distance = dist(coord1[0], coord1[1], coord2[0], coord2[1]); 
         
-       if(distance<100){
-          stroke(100, 100-distance);
+       if(distance<150){
+          stroke( 200+distance/2 );
           line( coord1[0], coord1[1], coord2[0], coord2[1] );
        }
      }
