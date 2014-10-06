@@ -158,6 +158,16 @@ h2{
     left: 0px;
 }
 
+.p-link{
+    display: inline;
+    float: left;
+    margin-right: 5px;
+}
+
+.cont-a{
+    text-decoration: none;
+}
+
 .contacts{
     background-color: #ffffff;
     border-top: solid 1px #cccccc;

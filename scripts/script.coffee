@@ -67,8 +67,7 @@ display_image = (num)->
     current_object = data[num]
 
     $('.p-header a').text(current_object.header).attr('href', current_object.link)
-    $('.p-desc').html(current_object.desc+'<br>'+current_object.tech).css('opacity', 0).transition({opacity:1})
-    $('.p-link a').attr('href', current_object.link)
+    $('.cont-a').html(current_object.desc+'<br>'+current_object.tech).attr('href', current_object.link).css('opacity', 0).transition({opacity:1})
 
 
 
