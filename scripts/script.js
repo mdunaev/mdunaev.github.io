@@ -39,6 +39,7 @@
       image = $('<img />');
       image.attr('src', 'images/projects/' + element.image);
       image.attr('i', i);
+      image.css('z-index', i);
       images_div.append(image);
     }
     display_image(0);
