@@ -77,20 +77,20 @@ display_image = (num)->
         i = parseInt( element.attr('i') )
 
         if i == num
-            element.transition({perspective: '1000px', rotateY: '0deg', scale:1, left: 0, opacity:1})
+            element.transition({perspective: '1000px', rotateY: '0deg', scale:1, left: 0})
             element.css('cursor', 'auto')
 
         if (i-num) == -1
-            element.transition({perspective: '1000px', rotateY: '-70deg', scale:0.8, left: -355, opacity:0.8})
+            element.transition({perspective: '1000px', rotateY: '-70deg', scale:0.8, left: -355})
 
         if (i-num) == 1
-            element.transition({perspective: '1000px', rotateY: '70deg', scale:0.8, left: 355, opacity:0.8})
+            element.transition({perspective: '1000px', rotateY: '70deg', scale:0.8, left: 355})
 
         if (i-num) > 1
-            element.transition({perspective: '1000px', rotateY: '0deg', scale:0.67, left: (i-num)*297, opacity:0.7})
+            element.transition({perspective: '1000px', rotateY: '0deg', scale:0.67, left: (i-num)*297})
 
         if (i-num) < -1
-            element.transition({perspective: '1000px', rotateY: '0deg', scale:0.67, left: (i-num)*297, opacity:0.7})
+            element.transition({perspective: '1000px', rotateY: '0deg', scale:0.67, left: (i-num)*297})
 
 
 

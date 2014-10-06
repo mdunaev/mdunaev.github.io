@@ -79,8 +79,7 @@
           perspective: '1000px',
           rotateY: '0deg',
           scale: 1,
-          left: 0,
-          opacity: 1
+          left: 0
         });
         element.css('cursor', 'auto');
       }
@@ -89,8 +88,7 @@
           perspective: '1000px',
           rotateY: '-70deg',
           scale: 0.8,
-          left: -355,
-          opacity: 0.8
+          left: -355
         });
       }
       if ((i - num) === 1) {
@@ -98,8 +96,7 @@
           perspective: '1000px',
           rotateY: '70deg',
           scale: 0.8,
-          left: 355,
-          opacity: 0.8
+          left: 355
         });
       }
       if ((i - num) > 1) {
@@ -107,8 +104,7 @@
           perspective: '1000px',
           rotateY: '0deg',
           scale: 0.67,
-          left: (i - num) * 297,
-          opacity: 0.7
+          left: (i - num) * 297
         });
       }
       if ((i - num) < -1) {
@@ -116,8 +112,7 @@
           perspective: '1000px',
           rotateY: '0deg',
           scale: 0.67,
-          left: (i - num) * 297,
-          opacity: 0.7
+          left: (i - num) * 297
         });
       }
     });
