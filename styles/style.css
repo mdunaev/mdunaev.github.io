@@ -186,3 +186,13 @@ h2{
     padding-top: 29px;
     float: right;
 }
+
+.right_btn{
+    position: absolute;
+    left: 530px;
+    top: 90px;
+    width: 150px;
+    height: 350px;
+    z-index: 100;
+    cursor: pointer;
+}

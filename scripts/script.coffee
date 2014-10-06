@@ -44,6 +44,13 @@ $(document).ready( ()->
         images_div.append(image)
 
     display_image(0)
+
+    $('.right_btn').on('mousedown', ()->
+        next = current_num+1
+        if next<data.length
+            display_image(next)
+    )
+
     $('.portfolio img').on('mousedown', ()->
         element = $(this)
         i = parseInt( element.attr('i') )

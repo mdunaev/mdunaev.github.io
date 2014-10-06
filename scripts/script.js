@@ -43,6 +43,13 @@
       images_div.append(image);
     }
     display_image(0);
+    $('.right_btn').on('mousedown', function() {
+      var next;
+      next = current_num + 1;
+      if (next < data.length) {
+        return display_image(next);
+      }
+    });
     return $('.portfolio img').on('mousedown', function() {
       element = $(this);
       i = parseInt(element.attr('i'));
