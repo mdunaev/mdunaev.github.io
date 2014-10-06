@@ -45,7 +45,7 @@ void draw() {
       var distance = dist(coord1[0], coord1[1], coord2[0], coord2[1]); 
         
        if(distance<100){
-          stroke(160+distance);
+          stroke(100, 100-distance);
           line( coord1[0], coord1[1], coord2[0], coord2[1] );
        }
      }
