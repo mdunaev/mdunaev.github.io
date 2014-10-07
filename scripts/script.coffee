@@ -17,11 +17,11 @@ $(document).ready( ()->
     )
 
     $('.photo').on('mouseover', ()->
-        $('.sequence').fadeIn();
+        $('.sequence').fadeIn()
     )
 
     $('.sequence').on('mouseleave', ()->
-        $('.sequence').fadeOut();
+        $('.sequence').fadeOut()
     )
     $('.sequence').on('mousemove', (e)->
         parentOffset = $(this).parent().offset()
