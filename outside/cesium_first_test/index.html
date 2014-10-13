@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Use correct character set. -->
+    <meta charset="utf-8">
+    <!-- Tell IE to use the latest, best version (or Chrome Frame if pre-IE11). -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Cesium test!</title>
+    <script src="Cesium/Build/Cesium/Cesium.js"></script>
+    <style>
+        @import url(Cesium/Build/Cesium/Widgets/widgets.css);
+
+        #cesiumContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<script>
+    var viewer = new Cesium.Viewer('cesiumContainer',
+            {
+                timeline: false,
+                baseLayerPicker: false,
+                infoBox: false,
+                navigationHelpButton: false,
+                geocoder: false,
+                animation: false
+            }
+    );
+    var scene = viewer.scene;
+    var primitives = scene.primitives;
+
+    viewer.homeButton.viewModel.command.beforeExecute.addEventListener(function(commandInfo){
+        scene.camera.flyTo({
+            destination: Cesium.Cartesian3.fromDegrees(85, 60, 10000000.0),
+            duration: 3
+        });
+        commandInfo.cancel = true;
+    });
+
+//    var dataSource1 = new Cesium.GeoJsonDataSource();
+//    dataSource1.loadUrl('data/1.json').then(function () {
+//        viewer.dataSources.add(dataSource1);
+//    });
+
+    var dataSource2 = new Cesium.GeoJsonDataSource();
+    dataSource2.loadUrl('data/1.json').then(function () {
+        viewer.dataSources.add(dataSource2);
+    });
+
+
+    scene.camera.flyTo({
+        destination: Cesium.Cartesian3.fromDegrees(85, 60, 10000000.0),
+        duration: 0
+    });
+
+
+    var handler = new Cesium.ScreenSpaceEventHandler(scene.canvas);
+    var ellipsoid = scene.globe.ellipsoid;
+
+    handler.setInputAction(function (movement) {
+        var polygon = scene.drillPick(movement.position)[0];
+        var cartographics = Cesium.Ellipsoid.WGS84.cartesianArrayToCartographicArray( polygon.id.polygon.positions.getValue() ) ;
+        cartographics = cartographics.filter( function(val){
+           return val.height == 0
+        });
+
+        var rect = Cesium.Rectangle.fromCartographicArray(cartographics);
+        console.log(rect);
+
+//        scene.camera.flyTo({
+//            destination: polygon.id.polygon.positions.getValue()[0],
+//            duration: 10
+//        });
+        scene.camera.flyToRectangle({
+            destination: rect
+        })
+
+
+    }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+
+</script>
+</body>
+</html>
