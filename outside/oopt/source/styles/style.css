@@ -59,7 +59,59 @@ body{
     bottom: 10px;
     right: 10px;
     cursor: pointer;
+    width: 177px;
+    height: 50px;
+    overflow: hidden;
+}
 
+.popup_menu{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    width: 420px;
+    height: 50px;
+    margin-left: -65px;
+}
+
+.popup_menu div{
+    width: 100px;
+    height: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: left;
+    background-color: #303336;
+    color: #eee;
+    font-size: 14px;
+    line-height: 50px;
+    padding-left: 65px;
+    cursor: pointer;
+}
+
+.info{
+    background-image: url("../images/infobg.png");
+    background-repeat: no-repeat;
+}
+.video{
+    background-image: url("../images/videobg.png");
+    background-repeat: no-repeat;
+}
+.photo{
+    background-image: url("../images/photobg.png");
+    background-repeat: no-repeat;
+}
+.web{
+    background-image: url("../images/webbg.png");
+    background-repeat: no-repeat;
+}
+
+.map_selector_fader{
+    position: absolute;
+    width: 94px;
+    height: 50px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    top: 0px;
+    left: 93px;
 }
 
 
