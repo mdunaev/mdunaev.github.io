@@ -136,7 +136,13 @@ load_zp = ()->
 build_pups = ()->
     billboards = scene.primitives.add(new Cesium.BillboardCollection())
 
-    for entity_key of oopt
+    keys = []
+    for key of oopt
+        keys.push(key)
+    keys = keys.sort()
+
+
+    for entity_key in keys
 
         $(".left_menu").append('<div>')
         $(".left_menu div:last-child").text(entity_key).on('click', (e)->
@@ -300,6 +306,27 @@ $('.map_selector').on('click', (e)->
 
 
 
+#   MENU CLICK HANDLERS
+
+$('.popup_menu .info').on('click', (e)->
+    e.stopPropagation()
+    open_info_popup()
+)
+
+$('.popup_menu .video').on('click', (e)->
+    e.stopPropagation()
+    open_video_popup()
+)
+
+$('.popup_menu .photo').on('click', (e)->
+    e.stopPropagation()
+    open_photo_popup()
+)
+
+$('.popup_menu .web').on('click', (e)->
+    e.stopPropagation()
+    open_web_popup()
+)
 
 open_menu = ()->
     $('.popup_menu').fadeIn(3000)
@@ -307,11 +334,49 @@ open_menu = ()->
 
 close_menu = ()->
     $('.popup_menu').fadeOut()
+    $('.popup').fadeOut()
 
 $(document).on('click', close_menu)
 
+$('.popup_menu').hide()
+$('.popup').hide()
+
+open_info_popup = ()->
+    $('.popup').fadeIn()
+    $('.popup>div').hide()
+    $('.popup .info').show()
+
+open_video_popup = ()->
+    $('.popup').fadeIn()
+    $('.popup>div').hide()
+    $('.popup .video').show()
+
+open_photo_popup = ()->
+    $('.popup').fadeIn()
+    $('.popup>div').hide()
+    $('.popup .photo').show()
+
+open_web_popup = ()->
+    $('.popup').fadeIn()
+    $('.popup>div').hide()
+    $('.popup .web').show()
 
 
+showed_image = 0
+
+$('.photos_left').on('click', (e)->
+    e.stopPropagation()
+    if showed_image!=0
+        showed_image--
+        $('.photo_container').transition({ x: -500*showed_image }, 300, 'ease');
+)
+
+$('.photos_right').on('click', (e)->
+    e.stopPropagation()
+    if showed_image!=4
+        showed_image++
+        $('.photo_container').transition({ x: -500*showed_image }, 300, 'ease');
+)
 
 
 

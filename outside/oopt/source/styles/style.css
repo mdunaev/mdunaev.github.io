@@ -1,6 +1,14 @@
 body{
     background-color: #000000;
     background-image: url("../images/stars_bg.png");
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
 .left_menu{
@@ -87,19 +95,19 @@ body{
     cursor: pointer;
 }
 
-.info{
+.popup_menu .info{
     background-image: url("../images/infobg.png");
     background-repeat: no-repeat;
 }
-.video{
+.popup_menu .video{
     background-image: url("../images/videobg.png");
     background-repeat: no-repeat;
 }
-.photo{
+.popup_menu .photo{
     background-image: url("../images/photobg.png");
     background-repeat: no-repeat;
 }
-.web{
+.popup_menu .web{
     background-image: url("../images/webbg.png");
     background-repeat: no-repeat;
 }
@@ -115,7 +123,77 @@ body{
 }
 
 
+.popup{
+    position: absolute;
+    top: 2%;
+    left: 27%;
+    width: 700px;
+    height: 425px;
+    background-color: #ffffff;
+    border: solid 3px #333;
+    padding: 50px;
+    overflow: hidden;
+}
 
+.popup .info{
+    position: relative;
+}
+
+.popup .info iframe{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 690px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.popup .web iframe{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 800px;
+    height: 525px;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.popup .video iframe{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 800px;
+    height: 525px;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.popup .photo img{
+    float: left;
+}
+
+.popup .photo{
+    /*margin-top: 80px;*/
+}
+
+.photo_container{
+    width: 2500px;
+    height: 300px;
+}
+
+.photos_left{
+    position: absolute;
+    top: 118px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.photos_right{
+    position: absolute;
+    top: 118px;
+    left: 750px;
+    cursor: pointer;
+}
 
 
 
