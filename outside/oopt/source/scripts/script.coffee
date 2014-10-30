@@ -149,6 +149,7 @@ build_pups = ()->
             text = $(this).text()
             rect = get_oopt_rect(text)
             scene.camera.flyToRectangle({destination: rect})
+            selected_polygon_name = text
             setTimeout(open_menu, 100)
             e.stopPropagation()
 
@@ -176,7 +177,7 @@ build_pups = ()->
             position : Cesium.Cartesian3.fromRadians(center[1], center[0], 20000),
             id: entity_key,
             color : color,
-            translucencyByDistance : new Cesium.NearFarScalar(1200000, 0, 1300000, 1)
+            translucencyByDistance : new Cesium.NearFarScalar(1500000, 0, 1600000, 1)
         })
 
     load_borders()
@@ -238,6 +239,7 @@ handler.setInputAction( ( (movement)->
 
     rect = get_oopt_rect(polygon_name)
     scene.camera.flyToRectangle({destination: rect})
+    selected_polygon_name = polygon_name
     setTimeout(open_menu, 100)
 
 ), Cesium.ScreenSpaceEventType.LEFT_CLICK )
@@ -302,6 +304,8 @@ $('.map_selector').on('click', (e)->
         bing_map.alpha = 0
         pole_primitive.show = true
         $('.map_selector_fader').transition({ x: -93 }, 100, 'ease');
+
+    e.stopPropagation()
 )
 
 
@@ -329,17 +333,24 @@ $('.popup_menu .web').on('click', (e)->
 )
 
 open_menu = ()->
-    $('.popup_menu').fadeIn(3000)
+    $('.popup_menu').stop()
+    $('.popup_menu').animate({bottom:"15%"}, 2000)
+    $('.menu_op_name').text(selected_polygon_name)
 
+    for element in oopt[selected_polygon_name]
+        console.log element.polygon.outline  = new Cesium.ConstantProperty(true)
+        console.log element.polygon.outlineColor  = Cesium.ColorMaterialProperty.fromColor( new Cesium.Color(1, 1, 1, 1) )
 
 close_menu = ()->
-    $('.popup_menu').fadeOut()
-    $('.popup').fadeOut()
+    $('.popup_menu').stop()
+    $('.popup_menu').animate({bottom:"-30%"}, 500)
+    $('.popup').hide()
+
+    for element in oopt[selected_polygon_name]
+        console.log element.polygon.outline  = new Cesium.ConstantProperty(false)
+
 
 $(document).on('click', close_menu)
-
-$('.popup_menu').hide()
-$('.popup').hide()
 
 open_info_popup = ()->
     $('.popup').fadeIn()
@@ -378,7 +389,14 @@ $('.photos_right').on('click', (e)->
         $('.photo_container').transition({ x: -500*showed_image }, 300, 'ease');
 )
 
+$('.close_popup').on('click', (e)->
+    $('.popup').hide()
+    e.stopPropagation()
+)
 
+$('.menu_op_name').on('click', (e)->
+    e.stopPropagation()
+)
 
 
 

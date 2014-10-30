@@ -152,6 +152,7 @@
         scene.camera.flyToRectangle({
           destination: rect
         });
+        selected_polygon_name = text;
         setTimeout(open_menu, 100);
         return e.stopPropagation();
       });
@@ -174,7 +175,7 @@
         position: Cesium.Cartesian3.fromRadians(center[1], center[0], 20000),
         id: entity_key,
         color: color,
-        translucencyByDistance: new Cesium.NearFarScalar(1200000, 0, 1300000, 1)
+        translucencyByDistance: new Cesium.NearFarScalar(1500000, 0, 1600000, 1)
       });
     }
     return load_borders();
@@ -241,6 +242,7 @@
     scene.camera.flyToRectangle({
       destination: rect
     });
+    selected_polygon_name = polygon_name;
     return setTimeout(open_menu, 100);
   }), Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
@@ -290,17 +292,18 @@
       bing_map.alpha = 1;
       osm_map.alpha = 0;
       pole_primitive.show = false;
-      return $('.map_selector_fader').transition({
+      $('.map_selector_fader').transition({
         x: 0
       }, 100, 'ease');
     } else {
       osm_map.alpha = 1;
       bing_map.alpha = 0;
       pole_primitive.show = true;
-      return $('.map_selector_fader').transition({
+      $('.map_selector_fader').transition({
         x: -93
       }, 100, 'ease');
     }
+    return e.stopPropagation();
   });
 
   $('.popup_menu .info').on('click', function(e) {
@@ -324,19 +327,39 @@
   });
 
   open_menu = function() {
-    return $('.popup_menu').fadeIn(3000);
+    var element, _i, _len, _ref, _results;
+    $('.popup_menu').stop();
+    $('.popup_menu').animate({
+      bottom: "15%"
+    }, 2000);
+    $('.menu_op_name').text(selected_polygon_name);
+    _ref = oopt[selected_polygon_name];
+    _results = [];
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      element = _ref[_i];
+      console.log(element.polygon.outline = new Cesium.ConstantProperty(true));
+      _results.push(console.log(element.polygon.outlineColor = Cesium.ColorMaterialProperty.fromColor(new Cesium.Color(1, 1, 1, 1))));
+    }
+    return _results;
   };
 
   close_menu = function() {
-    $('.popup_menu').fadeOut();
-    return $('.popup').fadeOut();
+    var element, _i, _len, _ref, _results;
+    $('.popup_menu').stop();
+    $('.popup_menu').animate({
+      bottom: "-30%"
+    }, 500);
+    $('.popup').hide();
+    _ref = oopt[selected_polygon_name];
+    _results = [];
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      element = _ref[_i];
+      _results.push(console.log(element.polygon.outline = new Cesium.ConstantProperty(false)));
+    }
+    return _results;
   };
 
   $(document).on('click', close_menu);
-
-  $('.popup_menu').hide();
-
-  $('.popup').hide();
 
   open_info_popup = function() {
     $('.popup').fadeIn();
@@ -382,6 +405,15 @@
         x: -500 * showed_image
       }, 300, 'ease');
     }
+  });
+
+  $('.close_popup').on('click', function(e) {
+    $('.popup').hide();
+    return e.stopPropagation();
+  });
+
+  $('.menu_op_name').on('click', function(e) {
+    return e.stopPropagation();
   });
 
 }).call(this);

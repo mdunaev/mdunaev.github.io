@@ -9,6 +9,8 @@ body{
     -ms-user-select: none;
     user-select: none;
 
+    overflow: hidden;
+
 }
 
 .left_menu{
@@ -193,6 +195,21 @@ body{
     top: 118px;
     left: 750px;
     cursor: pointer;
+}
+
+.close_popup{
+    position: absolute;
+    top: 0px;
+    left: 755px;
+    cursor: pointer;
+}
+
+.menu_op_name{
+    position: absolute;
+    width: 320px !important;
+    top: -55px;
+    padding-left: 15px !important;
+    font-size: 20px !important;
 }
 
 
