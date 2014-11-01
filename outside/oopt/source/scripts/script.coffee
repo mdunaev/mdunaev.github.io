@@ -505,6 +505,16 @@ build_video = (_id)->
     $('video').attr('src', 'data/'+_id+'/video/1.mp4')
 
 
+date = new Date()
+$(document).on('mouseup', ()->
+    date = new Date()
+)
+check_time = ()->
+    console.log(new Date() - date)
+    if ( (new Date()) - date ) > (5 * 60 * 1000)
+        location.reload()
+
+setInterval(check_time, 1000)
 
 
 
