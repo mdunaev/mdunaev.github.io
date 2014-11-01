@@ -79,6 +79,7 @@ h2{
     width: 177px;
     height: 50px;
     overflow: hidden;
+    display: none;
 }
 
 .popup_menu{
@@ -239,6 +240,11 @@ video{
     top: -55px;
     padding-left: 15px !important;
     font-size: 20px !important;
+}
+
+.selected_item{
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
 
 

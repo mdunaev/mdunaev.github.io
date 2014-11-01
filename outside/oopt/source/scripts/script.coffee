@@ -9,22 +9,29 @@ viewer = new Cesium.Viewer('cesiumContainer',
         geocoder: false,
         animation: false,
         scene3DOnly: true,
-        fullscreenButton: false
+        fullscreenButton: false,
+        imageryProvider: new Cesium.BingMapsImageryProvider({
+            url : 'http://dev.virtualearth.net',
+            key : 'Ail9PAst_7-T0BfqYAZjK4fVngfHJ3Fjg_ckK6eX8ro_xXwH2HcYUr_cJVDanhTV',
+            maximumLevel : 500,
+            mapStyle : Cesium.BingMapsStyle.AERIAL_WITH_LABELS
+        })
     }
 )
 
 #   MAPS TILE
-osm = new Cesium.OpenStreetMapImageryProvider({
-    maximumLevel : 500,
-});
-osm_map = viewer.scene.imageryLayers.addImageryProvider( osm )
-
-bing = new Cesium.BingMapsImageryProvider({
-    url : 'http://dev.virtualearth.net',
-    mapStyle : Cesium.BingMapsStyle.AERIAL,
-    tilingScheme: new Cesium.GeographicTilingScheme()
-});
-bing_map = viewer.scene.imageryLayers.addImageryProvider( bing )
+#osm = new Cesium.OpenStreetMapImageryProvider({
+#    maximumLevel : 500,
+#});
+##osm_map = viewer.scene.imageryLayers.addImageryProvider( osm )
+#
+#bing = new Cesium.BingMapsImageryProvider({
+#    url : 'http://dev.virtualearth.net',
+#    key : 'Ail9PAst_7-T0BfqYAZjK4fVngfHJ3Fjg_ckK6eX8ro_xXwH2HcYUr_cJVDanhTV',
+#    maximumLevel : 500,
+#    mapStyle : Cesium.BingMapsStyle.AERIAL_WITH_LABELS
+#});
+#bing_map = viewer.scene.imageryLayers.addImageryProvider( bing )
 
 
 
@@ -205,7 +212,7 @@ load_borders = ()->
                         vertexFormat : Cesium.PolylineColorAppearance.VERTEX_FORMAT
                     }),
                     attributes: {
-                        color: Cesium.ColorGeometryInstanceAttribute.fromColor(new Cesium.Color(0.8, 0.8, 0.8, 1))
+                        color: Cesium.ColorGeometryInstanceAttribute.fromColor(new Cesium.Color(0, 0.3, 0.9, 0.6))
                     }
                 }),
                 appearance : new Cesium.PolylineColorAppearance()
@@ -368,7 +375,21 @@ open_menu = ()->
         element.polygon.outline  = new Cesium.ConstantProperty(true)
         element.polygon.outlineColor  = Cesium.ColorMaterialProperty.fromColor( new Cesium.Color(1, 1, 1, 1) )
 
+#   Подсветить в левом меню
+
+    $('.left_menu div').each(()->
+        $(this).removeClass('selected_item')
+        if( $(this).text() == selected_polygon_name )
+            $(this).addClass('selected_item')
+
+            $('.left_menu').scrollTop($('.left_menu').scrollTop() + $(this).position().top - 300);
+    )
+    $('.left_menu').animate({
+          scrollTop: selected_ellement_top_gap-200
+      });
+
 close_menu = ()->
+    $('.left_menu div').removeClass('selected_item')
     $('.popup_menu').stop()
     $('.popup_menu').animate({bottom:"-30%"}, 500)
     $('.popup').hide()
