@@ -13,6 +13,13 @@ body{
 
 }
 
+h2{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    margin-top: -20px;
+}
+
 .left_menu{
     position: absolute;
     top: 0;
@@ -135,6 +142,10 @@ body{
     border: solid 3px #333;
     padding: 50px;
     overflow: hidden;
+
+    -webkit-box-shadow: 2px 2px 25px 5px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    2px 2px 25px 5px rgba(50, 50, 50, 1);
+    box-shadow:         2px 2px 25px 5px rgba(50, 50, 50, 1);
 }
 
 .popup .info{
@@ -194,6 +205,11 @@ body{
     right: 0;
     top: 0;
     bottom: 0;
+}
+
+video{
+    width: 700px;
+    height: 380px;
 }
 
 .photos_left{

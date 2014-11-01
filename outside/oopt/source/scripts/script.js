@@ -390,7 +390,9 @@
     $('.popup').fadeIn();
     $('.popup>div').hide();
     $('.popup h2').text(selected_polygon_name);
-    return $('.popup .video').show();
+    $('.popup .video').show();
+    $('video')[0].currentTime = 0;
+    return $('video')[0].play();
   };
 
   open_photo_popup = function() {
@@ -456,6 +458,7 @@
     current_popup_data = popups_data[0];
     build_gallery(current_popup_data.images, current_popup_data.id);
     build_info(current_popup_data.id);
+    build_video(current_popup_data.id);
     return build_web(current_popup_data.url);
   };
 
@@ -489,7 +492,9 @@
     return $('.web iframe').attr('src', url);
   };
 
-  build_video = function() {};
+  build_video = function(_id) {
+    return $('video').attr('src', 'data/' + _id + '/video/1.mp4');
+  };
 
 }).call(this);
 
