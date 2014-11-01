@@ -32,6 +32,10 @@
       step = Math.round((x - 116) / (116 / 8)) * 232;
       return $('.sequence').css('background-position', step + 'px 0px');
     });
+    $(document).on('scroll', function() {
+      $('.top_header').fadeOut(0);
+      return $('.top_header').fadeIn(0);
+    });
     portfolio_div = $('.portfolio');
     images_div = $('.images');
     for (i = _i = 0, _len = data.length; _i < _len; i = ++_i) {

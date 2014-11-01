@@ -31,6 +31,11 @@ $(document).ready( ()->
         $('.sequence').css('background-position', step+'px 0px')
     )
 
+    $(document).on('scroll', ()->
+        $('.top_header').fadeOut(0)
+        $('.top_header').fadeIn(0)
+    )
+
 
 #   Раздел портфолио
     portfolio_div = $('.portfolio')
