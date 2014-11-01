@@ -61,6 +61,8 @@ scene = viewer.scene;
 primitives = scene.primitives;
 oopt = {}
 
+popups_data = []
+
 selected_polygon_name = ''
 
 #   SCENE RESIZE
@@ -106,9 +108,10 @@ load_np = ()->
                 entity.polygon.material = mat_property;
                 entity.polygon.outline = new Cesium.ConstantProperty(false);
                 entity.isNP = true
-                if !oopt[entity.properties.NAME_EN]
-                    oopt[entity.properties.NAME_EN] = []
-                oopt[entity.properties.NAME_EN].push(entity)
+                if !oopt[entity.properties.Name_en]
+                    oopt[entity.properties.Name_en] = []
+                oopt[entity.properties.Name_en].push(entity)
+                oopt[entity.properties.Name_en]._id = entity.properties.ids_ID
 
         load_zp()
     )
@@ -126,9 +129,10 @@ load_zp = ()->
                 entity.polygon.material = mat_property
                 entity.polygon.outline = new Cesium.ConstantProperty(false)
                 entity.isNP = false
-                if !oopt[entity.properties.NAME_EN]
-                    oopt[entity.properties.NAME_EN] = []
-                oopt[entity.properties.NAME_EN].push(entity)
+                if !oopt[entity.properties.Name_en]
+                    oopt[entity.properties.Name_en] = []
+                oopt[entity.properties.Name_en].push(entity)
+                oopt[entity.properties.Name_en]._id = entity.properties.ids_ID
 
         build_pups()
     )
@@ -146,6 +150,7 @@ build_pups = ()->
 
         $(".left_menu").append('<div>')
         $(".left_menu div:last-child").text(entity_key).on('click', (e)->
+            $('.popup').hide()
             text = $(this).text()
             rect = get_oopt_rect(text)
             scene.camera.flyToRectangle({destination: rect})
@@ -222,6 +227,14 @@ load_cities = ()->
             font      : '12px Helvetica'
         });
     scene.primitives.add(labels);
+    load_popups_data()
+
+
+load_popups_data = ()->
+    $.getJSON('data/data.json', (data)->
+        popups_data =  data.data
+    )
+
 
 
 
@@ -235,7 +248,7 @@ handler.setInputAction( ( (movement)->
     if (typeof polygon.id) == "string"
         polygon_name = polygon.id
     else
-        polygon_name = polygon.id.properties.NAME_EN
+        polygon_name = polygon.id.properties.Name_en
     selected_polygon_name = polygon_name
 
     rect = get_oopt_rect(polygon_name)
@@ -333,7 +346,20 @@ $('.popup_menu .web').on('click', (e)->
     open_web_popup()
 )
 
+
+
+
+
+#
+#       O P E N   M E N U
+#
+
+
 open_menu = ()->
+
+    selected_id = oopt[selected_polygon_name]._id
+    prepare_popup(selected_id)
+
     $('.popup_menu').stop()
     $('.popup_menu').animate({bottom:"15%"}, 2000)
     $('.menu_op_name').text(selected_polygon_name)
@@ -347,8 +373,6 @@ close_menu = ()->
     $('.popup_menu').animate({bottom:"-30%"}, 500)
     $('.popup').hide()
 
-    console.log selected_polygon_name
-
     for element in oopt[selected_polygon_name]
         element.polygon.outline  = new Cesium.ConstantProperty(false)
         element.polygon.outlineColor  = Cesium.ColorMaterialProperty.fromColor( new Cesium.Color(1, 1, 1, 0) )
@@ -359,22 +383,25 @@ $(document).on('click', close_menu)
 open_info_popup = ()->
     $('.popup').fadeIn()
     $('.popup>div').hide()
+    $('.popup h2').text(selected_polygon_name)
     $('.popup .info').show()
 
 open_video_popup = ()->
     $('.popup').fadeIn()
     $('.popup>div').hide()
+    $('.popup h2').text(selected_polygon_name)
     $('.popup .video').show()
 
 open_photo_popup = ()->
     $('.popup').fadeIn()
     $('.popup>div').hide()
     $('.popup .photo').show()
-    build_gallery(5, 'temp')
+    $('.popup h2').text(selected_polygon_name)
 
 open_web_popup = ()->
     $('.popup').fadeIn()
     $('.popup>div').hide()
+    $('.popup h2').text(selected_polygon_name)
     $('.popup .web').show()
 
 $('.close_popup').on('click', (e)->
@@ -388,20 +415,8 @@ $('.menu_op_name').on('click', (e)->
 
 
 #    PHOTO GALLERY
-showed_image = 0
+showed_image = 1
 num_images = 0
-
-
-build_gallery = (_num_images, folder_name)->
-    $('.photo_container img').remove()
-
-    $('.photo_container').append( $('<img>').attr('src', 'images/'+folder_name+'/'+_num_images+'.jpg') )
-    for i in [1.._num_images]
-        $('.photo_container').append( $('<img>').attr('src', 'images/'+folder_name+'/'+i+'.jpg') )
-    $('.photo_container').append( $('<img>').attr('src', 'images/'+folder_name+'/1.jpg') )
-    $('.photo_container img').hide()
-    $('.photo_container img').eq(1).show()
-    num_images = _num_images
 
 $('.photos_left').on('click', (e)->
     e.stopPropagation()
@@ -413,14 +428,55 @@ $('.photos_left').on('click', (e)->
 
 $('.photos_right').on('click', (e)->
     e.stopPropagation()
-    if showed_image!=4
-        showed_image++
-        $('.photo_container img').hide()
-        $('.photo_container img').eq(showed_image).show()
+    showed_image++
+    if showed_image > num_images then showed_image = 1
+    $('.photo_container img').hide()
+    $('.photo_container img').eq(showed_image).fadeIn()
 )
 
+$('.popup').on('click', (e)->
+    e.stopPropagation()
+)
+
+# PREPARE POPUP
+prepare_popup = (_id)->
+    current_popup_data = {}
+    for dta in popups_data
+        if dta.id == _id then current_popup_data = dta
+
+#    ВОТ ТУТ ЗАКОМЕНИТЬ
+    current_popup_data = popups_data[0]
+
+    build_gallery(current_popup_data.images, current_popup_data.id)
+    build_info(current_popup_data.id)
+    build_web(current_popup_data.url)
 
 
+
+build_gallery = (_num_images, folder_name)->
+    $('.photo_container img').remove()
+
+    $('.photo_container').append( $('<img>').attr('src', 'data/'+folder_name+'/photo/'+_num_images+'.jpg') )
+    for i in [1.._num_images]
+        $('.photo_container').append( $('<img>').attr('src', 'data/'+folder_name+'/photo/'+i+'.jpg') )
+    $('.photo_container').append( $('<img>').attr('src', 'data/'+folder_name+'/photo/1.jpg') )
+    $('.photo_container img').fadeOut(50)
+    $('.photo_container img').eq(showed_image).fadeIn(50)
+    num_images = _num_images
+
+build_info = (_id)->
+    $('.info iframe').attr('src', 'data/'+_id+'/index.html')
+    $('.info iframe').load( ()->
+        head = $(".info iframe").contents().find("head")
+        head.append($("<link/>", { rel: "stylesheet", href: "../info_style.css", type: "text/css" }));
+    )
+
+
+build_web = (url)->
+    $('.web iframe').attr('src', url)
+
+
+build_video = ()->
 
 
 

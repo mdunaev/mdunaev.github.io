@@ -179,20 +179,33 @@ body{
 }
 
 .photo_container{
-    width: 2500px;
-    height: 300px;
+    width: 700px;
+    height: 380px;
+    /*background-color: #333333;*/
+    position: relative;
+}
+
+.photo_container img{
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .photos_left{
     position: absolute;
-    top: 118px;
+    top: 150px;
     left: 0px;
     cursor: pointer;
 }
 
 .photos_right{
     position: absolute;
-    top: 118px;
+    top: 150px;
     left: 750px;
     cursor: pointer;
 }
