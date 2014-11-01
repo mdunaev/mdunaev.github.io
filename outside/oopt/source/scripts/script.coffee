@@ -230,6 +230,7 @@ handler = new Cesium.ScreenSpaceEventHandler(scene.canvas)
 ellipsoid = scene.globe.ellipsoid
 
 handler.setInputAction( ( (movement)->
+    if selected_polygon_name != "" then close_menu()
     polygon = scene.drillPick(movement.position)[0]
     if (typeof polygon.id) == "string"
         polygon_name = polygon.id
@@ -338,16 +339,19 @@ open_menu = ()->
     $('.menu_op_name').text(selected_polygon_name)
 
     for element in oopt[selected_polygon_name]
-        console.log element.polygon.outline  = new Cesium.ConstantProperty(true)
-        console.log element.polygon.outlineColor  = Cesium.ColorMaterialProperty.fromColor( new Cesium.Color(1, 1, 1, 1) )
+        element.polygon.outline  = new Cesium.ConstantProperty(true)
+        element.polygon.outlineColor  = Cesium.ColorMaterialProperty.fromColor( new Cesium.Color(1, 1, 1, 1) )
 
 close_menu = ()->
     $('.popup_menu').stop()
     $('.popup_menu').animate({bottom:"-30%"}, 500)
     $('.popup').hide()
 
+    console.log selected_polygon_name
+
     for element in oopt[selected_polygon_name]
-        console.log element.polygon.outline  = new Cesium.ConstantProperty(false)
+        element.polygon.outline  = new Cesium.ConstantProperty(false)
+        element.polygon.outlineColor  = Cesium.ColorMaterialProperty.fromColor( new Cesium.Color(1, 1, 1, 0) )
 
 
 $(document).on('click', close_menu)
@@ -366,28 +370,12 @@ open_photo_popup = ()->
     $('.popup').fadeIn()
     $('.popup>div').hide()
     $('.popup .photo').show()
+    build_gallery(5, 'temp')
 
 open_web_popup = ()->
     $('.popup').fadeIn()
     $('.popup>div').hide()
     $('.popup .web').show()
-
-
-showed_image = 0
-
-$('.photos_left').on('click', (e)->
-    e.stopPropagation()
-    if showed_image!=0
-        showed_image--
-        $('.photo_container').transition({ x: -500*showed_image }, 300, 'ease');
-)
-
-$('.photos_right').on('click', (e)->
-    e.stopPropagation()
-    if showed_image!=4
-        showed_image++
-        $('.photo_container').transition({ x: -500*showed_image }, 300, 'ease');
-)
 
 $('.close_popup').on('click', (e)->
     $('.popup').hide()
@@ -399,10 +387,37 @@ $('.menu_op_name').on('click', (e)->
 )
 
 
+#    PHOTO GALLERY
+showed_image = 0
+num_images = 0
 
 
+build_gallery = (_num_images, folder_name)->
+    $('.photo_container img').remove()
 
+    $('.photo_container').append( $('<img>').attr('src', 'images/'+folder_name+'/'+_num_images+'.jpg') )
+    for i in [1.._num_images]
+        $('.photo_container').append( $('<img>').attr('src', 'images/'+folder_name+'/'+i+'.jpg') )
+    $('.photo_container').append( $('<img>').attr('src', 'images/'+folder_name+'/1.jpg') )
+    $('.photo_container img').hide()
+    $('.photo_container img').eq(1).show()
+    num_images = _num_images
 
+$('.photos_left').on('click', (e)->
+    e.stopPropagation()
+    showed_image--
+    if showed_image <= 0 then showed_image = num_images
+    $('.photo_container img').hide()
+    $('.photo_container img').eq(showed_image).fadeIn()
+)
+
+$('.photos_right').on('click', (e)->
+    e.stopPropagation()
+    if showed_image!=4
+        showed_image++
+        $('.photo_container img').hide()
+        $('.photo_container img').eq(showed_image).show()
+)
 
 
 
