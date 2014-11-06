@@ -114,7 +114,7 @@ h2{
     margin-left: -65px;
 }
 
-.popup_menu div{
+.popup_menu>div{
     width: 100px;
     height: 50px;
     margin-top: 5px;
@@ -260,8 +260,9 @@ video{
 .menu_op_name{
     position: absolute;
     width: 320px !important;
-    top: -55px;
+    top: -80px;
     padding-left: 15px !important;
+    padding-bottom: 25px !important;
     font-size: 20px !important;
 }
 
@@ -277,6 +278,12 @@ video{
     right: 10px;
 }
 
+.small-header{
+    font-size: 17px;
+    line-height: 0px;
+    width: 320px;
+    background-color: #000000;
+}
 
 
 

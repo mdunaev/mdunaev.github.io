@@ -371,7 +371,7 @@ open_menu = ()->
 
     $('.popup_menu').stop()
     $('.popup_menu').animate({bottom:"15%"}, 2000)
-    $('.menu_op_name').text(selected_polygon_name)
+#    $('.menu_op_name').text(selected_polygon_name)
 
     for element in oopt[selected_polygon_name]
         element.polygon.outline  = new Cesium.ConstantProperty(true)
@@ -469,8 +469,9 @@ prepare_popup = (_id)->
 #    current_popup_data = popups_data[0]
 
 
-    long_name =  if (oopt[selected_polygon_name][0].isNP) then selected_polygon_name+" National Park" else selected_polygon_name+" Nature Reserve"
-    $('.popup h2').text(long_name)
+    second_name =  if (oopt[selected_polygon_name][0].isNP) then "National Park" else "Nature Reserve"
+    $('.popup h2').text(selected_polygon_name+" "+second_name)
+    $('.menu_op_name').text(selected_polygon_name).append( $('<div class="small-header"></div>').text(second_name) )
 
     build_gallery(current_popup_data.images, current_popup_data.id)
     build_info(current_popup_data.id)

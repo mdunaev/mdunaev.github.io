@@ -336,7 +336,6 @@
     $('.popup_menu').animate({
       bottom: "15%"
     }, 2000);
-    $('.menu_op_name').text(selected_polygon_name);
     _ref = oopt[selected_polygon_name];
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       element = _ref[_i];
@@ -439,7 +438,7 @@
   });
 
   prepare_popup = function(_id) {
-    var current_popup_data, dta, long_name, _i, _len;
+    var current_popup_data, dta, second_name, _i, _len;
     current_popup_data = {};
     for (_i = 0, _len = popups_data.length; _i < _len; _i++) {
       dta = popups_data[_i];
@@ -447,8 +446,9 @@
         current_popup_data = dta;
       }
     }
-    long_name = oopt[selected_polygon_name][0].isNP ? selected_polygon_name + " National Park" : selected_polygon_name + " Nature Reserve";
-    $('.popup h2').text(long_name);
+    second_name = oopt[selected_polygon_name][0].isNP ? "National Park" : "Nature Reserve";
+    $('.popup h2').text(selected_polygon_name + " " + second_name);
+    $('.menu_op_name').text(selected_polygon_name).append($('<div class="small-header"></div>').text(second_name));
     build_gallery(current_popup_data.images, current_popup_data.id);
     build_info(current_popup_data.id);
     build_video(current_popup_data.id);
