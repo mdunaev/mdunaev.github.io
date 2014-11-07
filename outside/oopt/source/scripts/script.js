@@ -498,7 +498,7 @@
     is_video_enable = true;
     $('.popup_menu .video').css('opacity', 1);
     $('.popup_menu .video').text('Video');
-    return $('video').attr('src', 'data/' + _id + '/video/1.mp4');
+    return $('video').attr('src', 'data/' + _id + '/video/1.mov');
   };
 
   date = new Date();

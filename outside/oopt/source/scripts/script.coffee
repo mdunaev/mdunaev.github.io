@@ -518,7 +518,7 @@ build_video = (_id)->
 
     $('.popup_menu .video').css('opacity', 1)
     $('.popup_menu .video').text('Video')
-    $('video').attr('src', 'data/'+_id+'/video/1.mp4')
+    $('video').attr('src', 'data/'+_id+'/video/1.mov')
 
 
 date = new Date()
