@@ -124,6 +124,7 @@
           }
           oopt[entity.properties.Name_en].push(entity);
           oopt[entity.properties.Name_en]._id = entity.properties.ids_ID;
+          console.log(entity.properties.ids_ID);
         }
       }
       return build_pups();

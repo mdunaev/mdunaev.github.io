@@ -53,7 +53,15 @@ if (AdobeEdge.bootstrapLoading) { signaledLoading = true; AdobeEdge.loadResource
 
 loadResources(aLoader, doDelayLoad);
 
-preContent={dom: [ ]};//simpleContent
+preContent={
+   dom: [
+   {
+      id:'preloader2',
+      type:'image',
+      tag:'img',
+      rect:['1469','auto','62px','18px','auto','491px'],
+      fill:["rgba(0,0,0,0)",'images/preloader2.gif','0px','0px']
+   }]};//simpleContent
 
 dlContent={dom: [ ]};//simpleContent
 
