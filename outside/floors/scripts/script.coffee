@@ -69,6 +69,8 @@ init = ()->
   $('body').on('DOMMouseScroll mousewheel wheel', (e)->
     wheel = e.originalEvent.wheelDelta
 
+    console.log 'wheel '+wheel
+
     timeNow = new Date().getTime()
 
     if timeNow - timeStamp < 100

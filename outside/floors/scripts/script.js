@@ -85,6 +85,7 @@
     return $('body').on('DOMMouseScroll mousewheel wheel', function(e) {
       var timeNow, wheel;
       wheel = e.originalEvent.wheelDelta;
+      console.log('wheel ' + wheel);
       timeNow = new Date().getTime();
       if (timeNow - timeStamp < 100) {
         timeStamp = timeNow;
