@@ -66,7 +66,7 @@ init = ()->
 
   set_floor_height()
 
-  $('body').on('mousewheel', (e)->
+  $('body').on('DOMMouseScroll mousewheel wheel', (e)->
     wheel = e.originalEvent.wheelDelta
 
     timeNow = new Date().getTime()
