@@ -1,0 +1,41 @@
+{
+
+	"HTMLFileName":"floor2.html",
+	"XProperty":"left",
+	"symbol_stage":{
+		"defaultStageParentHeight":"2000px",
+		"dummyStageParentHeight":"2000px",
+		"defaultStageParentWidth":"3000px",
+		"element_${_bg}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"},
+		"element_${_Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"dummyStageParentWidth":"3000px"},
+	"CompZoomFactor":"100",
+	"StageZoomFactor":"25",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"UseMotionPaths":"false",
+	"usedBOM":"false",
+	"nextElementColorIndex":"3",
+	"stage-Default Timeline_playhead_ms":"0",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"YProperty":"bottom",
+	"viewStartY":"0"}

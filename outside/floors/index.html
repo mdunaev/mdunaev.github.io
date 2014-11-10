@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <title></title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>Untitled</title>
 
-    <!--Adobe Edge Runtime-->
-    <script type="text/javascript" charset="utf-8" src="floor1_edgePreload.js"></script>
     <style>
-        .edgeLoad-EDGE-14388321 { visibility:hidden; }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .floor {
+            width: 3000px;
+            height: 1000px;
+            overflow: hidden;
+            margin-left: -1500px;
+        }
+
+        iframe {
+            width: 3000px;
+            height: 1000px;
+        }
+
+        .content{
+            width: 100%;
+            margin-left: 50%;
+            position: fixed;
+        }
     </style>
-    <!--Adobe Edge Runtime End-->
-
-
-    <script type="text/javascript" src="edge_includes/jquery-1.7.1.min.js"></script>
 
 </head>
 <body>
 
 
 <div class="content">
-
-    <div class="floor eighth_floor">
-        <div id="Stage" class="EDGE-14388321 floor1"> </div>
-
-        <div class="popup popup1">
-
-            <div class="popup_content">
-                Если вы неправильно распоряжаетесь своим временем и не умеете плинировать, <br> то в какой-то момент вас "накроет" срочными задачами, а сорванные сроки серьезно подмочат репутацию.
-            </div>
-
-            <div class="images_container">
-                <img src="images/read_btn.png" class="read_btn">
-                <img src="images/close_btn.png" class="close_btn">
-
-            </div>
-        </div>
+    <div class="floor floor9">
+        <iframe src="header.html" frameBorder="0" scrolling="no"></iframe>
     </div>
 
-    <div class="floor seventh_floor">
-        <div class="animation"></div>
+    <div class="floor floor8" style="background-color: #6666cc">
+        <iframe src="floor1.html" frameBorder="0" scrolling="no"></iframe>
     </div>
-    <div class="floor sixth_floor"></div>
-    <div class="floor fifth_floor"></div>
-    <div class="floor fourth_floor"></div>
-    <div class="floor third_floor"></div>
-    <div class="floor second_floor"></div>
-    <div class="floor first_floor"></div>
+
+    <div class="floor floor7" style="background-color: #ffe600">
+        <iframe src="floor7.html" frameBorder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="floor floor6" style="background-color: #6666cc">
+        <iframe src="floor6.html" frameBorder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="floor floor5" style="background-color: #6666cc">
+        <iframe src="floor5.html" frameBorder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="floor floor4" style="background-color: #6666cc">
+        <iframe src="floor4.html" frameBorder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="floor floor3" style="background-color: #6666cc">
+        <iframe src="floor3.html" frameBorder="0" scrolling="no"></iframe>
+    </div>
 </div>
 
-<script type="text/javascript" src="new_scripts/script.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/script.js" type="text/javascript" charset="utf-8"></script>
+</div>
 </body>
 </html>

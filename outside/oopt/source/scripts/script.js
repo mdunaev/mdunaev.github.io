@@ -498,7 +498,8 @@
     is_video_enable = true;
     $('.popup_menu .video').css('opacity', 1);
     $('.popup_menu .video').text('Video');
-    return $('video').attr('src', 'data/' + _id + '/video/1.mov');
+    $('video').attr('src', 'data/' + _id + '/video/1.mov');
+    return $('video').attr('src-mp4', 'data/' + _id + '/video/1.mp4');
   };
 
   date = new Date();
@@ -522,9 +523,13 @@
   setInterval(check_time, 1000);
 
   $("video").on("error", function() {
-    is_video_enable = false;
-    $('.popup_menu .video').css('opacity', 0.5);
-    return $('.popup_menu .video').text('No Video');
+    if ($('video').attr('src') === $('video').attr('src-mp4')) {
+      is_video_enable = false;
+      $('.popup_menu .video').css('opacity', 0.5);
+      return $('.popup_menu .video').text('No Video');
+    } else {
+      return $('video').attr('src', $('video').attr('src-mp4'));
+    }
   });
 
 }).call(this);

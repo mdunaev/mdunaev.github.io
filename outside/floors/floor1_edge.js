@@ -1,2 +1,726 @@
+/**
+ * Adobe Edge: symbol definitions
+ */
+(function($, Edge, compId){
+//images folder
+var im='images/';
 
-(function($,Edge,compId){var _=null,y=true,n=false,e49='${_sand_mask}',x93='75px',e51='${_man-fly2}',x1='2.0.1',x60='rect(0px 5567.1166992188pxpx 968pxpx 0px)',e56='${_man-stand}',e47='${_LightRay}',e25='${_rain2Copy2}',e27='${_city}',x3='2.0.1.268',e28='${_cityCopy2}',x24='rect(@@0@@px @@1@@px @@2@@px @@3@@px)',e97='${_pigeon-open}',x16='rgba(204,153,0,1.00)',e29='${_clocks_top_mask}',e98='${_pigeon-left}',x90='pigeon-left',e35='${_static_bg}',om='-ms-transform-origin',e36='${_RectangleCopy3}',x31='rgba(255,255,255,1)',e52='${_man-legs-stand}',xc='rgba(0,0,0,1)',x64='rain',x18='stage',c='color',e19='${_clocks}',e85='${_man-legs-stand2}',e22='${_Symbol_1Copy2}',e50='${_man-stand2}',e54='${_sand-top}',e44='${_man-fly}',e37='${_bg-highlightCopy}',x61='0',qoq='easeOutQuad',oz='-moz-transform-origin',e26='${_brics2}',x2='2.0.0',x14='rgba(204,153,51,1)',x62='5567',p='px',o='opacity',x69='rainCopy',oo='-o-transform-origin',e30='${_RectangleCopy}',e73='${symbolSelector}',e34='${_Rectangle}',e41='${_bg-highlight}',ql='linear',e45='${_brics2Copy}',e74='${_Group3}',e48='${_man-fly3}',x84='Legs',x77='100%',e21='${_rain2Copy3}',e72='${_rain}',b='block',a='Base State',x59='Group3',x43='hidden',s='style',x75='man-legs',e71='${_rainCopy}',lf='left',e38='${_Symbol_1Copy}',x88='50px',x76='60px',bg='background-color',x33='@@0@@% @@1@@%',x20='auto',e39='${_rain2}',x67='968px',x83='man-legs-stand2',ov='overflow',zy='scaleY',t='transform',x4='rgba(0,0,0,0)',g='image',e86='${_man-legs}',e57='${_sand-bottom}',x82='8px',e99='${_pigeon-right}',or='-webkit-transform-origin',x96='Symbol_1',e23='${_cityCopy}',m='rect',x65='0px',x94='pigeon-open',h='height',cl='clip',qiq='easeInQuad',x92='-26px',x87='pigeon-right',on='msTransformOrigin',dt='Default Timeline',e55='${_Legs}',i='none',x70='2774px',e32='${_RectangleCopy2}',x9='rgba(255,255,255,1.00)',x80='24px',x79='18px',bt='bottom',tp='top',e42='${_Stage}',x66='50.2%',x63='968',x8='rgba(102,102,204,1.00)',x81='77.1%',x58='group',d='display',e53='${_sand_center}',e46='${_Symbol_1}',w='width',e40='${_clocks3}',zx='scaleX';var im='images/';var g15='sand-top.svg',g11='man-stand.svg',g6='city.svg',g10='man-fly.svg',g78='man-legs.svg',g68='rain.svg',g5='bg-highlight.svg',g91='pigeon-left.svg',g89='pigeon-right.svg',g7='clocks.svg',g13='sand-bottom.svg',g12='man-legs-stand.svg',g95='pigeon-open.svg',g17='brics.svg';var fonts={};var P=Edge.P,T=Edge.T,A=Edge.A;var resources=[];var symbols={"stage":{v:x1,mv:x2,b:x3,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{id:'static_bg',t:'group',r:['0','auto','4212','787','auto','80px'],c:[{id:'man-fly',t:g,r:['905','auto','1.9%','89px','auto','391px'],f:[x4,'svgs/l1-svg/man-fly.svg','0px','0px']},{id:'bg-highlight',t:g,r:['0px','auto','44.8%','299px','auto','202px'],f:[x4,im+g5,'0px','0px']},{id:'bg-highlightCopy',t:g,r:['1885px','auto','44.8%','299px','auto','202px'],f:[x4,im+g5,'0px','0px']},{id:'rain2',t:m,r:['-1274','auto','auto','auto','auto','203px']},{id:'rain2Copy2',t:m,r:['-1268px','auto','auto','auto','auto','1153px']},{id:'rain2Copy3',t:m,r:['-1276px','auto','auto','auto','auto','2102px']},{id:'city',t:g,r:['415px','auto','50.1%','206px','auto','203px'],f:[x4,im+g6,'0px','0px']},{id:'cityCopy2',t:g,r:['-1675px','auto','50.1%','206px','auto','203px'],f:[x4,im+g6,'0px','0px']},{id:'cityCopy',t:g,r:['2518px','auto','50.1%','206px','auto','203px'],f:[x4,im+g6,'0px','0px']},{id:'clocks',t:g,r:['750px','auto','35.6%','582px','auto','205px'],f:[x4,im+g7,'0px','0px']}]},{id:'Rectangle',t:m,r:['1356px','auto','279px','2213px','auto','867px'],f:[x8],s:[0,xc,i],tf:[]},{id:'LightRay',t:'group',r:['1396px','auto','200','2213','auto','3002px'],tf:[],c:[{id:'RectangleCopy',t:m,r:['0px','auto','200px','2213px','auto','0px'],o:0.14260864257812,f:[x9],s:[0,xc,i]},{id:'RectangleCopy2',t:m,r:['25px','auto','150px','2213px','auto','0px'],o:0.14260864257812,f:[x9],s:[0,xc,i]},{id:'RectangleCopy3',t:m,r:['50px','auto','100px','2213px','auto','0px'],o:0.14260864257812,f:[x9],s:[0,xc,i]}]},{id:'man-fly2',v:i,t:g,r:['1448px','auto','82px','89px','auto','2889px'],f:[x4,im+g10,'0px','0px']},{id:'man-stand',v:i,t:g,r:['1468px','auto','53px','90px','auto','566px'],cl:['rect(0px 53px 70px 0px)'],f:[x4,im+g11,'0px','0px']},{id:'man-legs-stand',v:i,t:g,r:['1487px','auto','24px','2.7%','auto','489px'],f:[x4,im+g12,'0px','0px']},{id:'clocks_top_mask',t:g,r:['750px','auto','1500px','582px','auto','285px'],cl:['rect(0px 904px 38px 580px)'],f:[x4,im+g7,'0px','0px']},{id:'sand-bottom',t:g,r:['1448px','auto','100px','50px','auto','241px'],cl:['rect(0px 242.99998474121094px 120.99999237060547px 0px)'],f:[x4,im+g13,'0px','0px']},{id:'sand_center',t:m,r:['1493px','auto','9px','226px','auto','288px'],f:[x14],s:[0,"rgb(0, 0, 0)",i]},{id:'Legs',v:i,t:m,r:['1469','auto','auto','auto','auto','538px']},{id:'man-fly3',v:i,t:g,r:['1448px','auto','82px','8.9%','auto','457px'],f:[x4,im+g10,'0px','0px']},{id:'man-stand2',v:i,t:g,r:['1468px','auto','53px','90px','auto','322px'],f:[x4,im+g11,'0px','0px']},{id:'sand-top',t:g,r:['1386px','auto','222px','110px','auto','482px'],f:[x4,im+g15,'0px','0px'],tf:[]},{id:'sand_mask',v:i,t:m,r:['1468px','auto','54px','26px','auto','322px'],f:[x16],s:[0,"rgb(0, 0, 0)",i]},{id:'clocks3',t:g,r:['750px','auto','1500px','582px','auto','285px'],cl:['rect(546px 1500px 582px 0px)'],f:[x4,im+g7,'0px','0px']},{id:'Symbol_1',t:m,r:['1176px','auto','auto','auto','auto','425px']},{id:'Symbol_1Copy',t:m,r:['830px','auto','auto','auto','auto','285px']},{id:'Symbol_1Copy2',t:m,r:['1813px','auto','auto','auto','auto','425px']},{id:'brics2',t:g,r:['-1px','auto','1841px','287px','auto','-4px'],f:[x4,im+g17,'0px','0px']},{id:'brics2Copy',t:g,r:['1446px','auto','1841px','287px','auto','-4px'],f:[x4,im+g17,'0px','0px']}],sI:[{id:'Symbol_1Copy2',sN:'Symbol_1'},{id:'rain2Copy2',sN:'rain'},{id:'Symbol_1',sN:'Symbol_1'},{id:'Legs',sN:'Legs'},{id:'rain2',sN:'rain'},{id:'Symbol_1Copy',sN:'Symbol_1'},{id:'rain2Copy3',sN:'rain'}]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:3724,a:y,l:{"part0":0,"part1":1769,"part2":2652,"part3":2960,"part4":3214,"part5":3723},tt:[]}}},"rain":{v:x1,mv:x2,b:x3,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{t:x58,id:x59,cl:[x60],r:[x61,x61,x62,x63,x20,x20],c:[{id:x64,t:g,r:[x65,x20,x66,x67,x20,x65],f:[x4,im+g68,x65,x65]},{id:x69,t:g,r:[x70,x20,x66,x67,x20,x65],f:[x4,im+g68,x65,x65]}]}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:1500,a:y,tt:[]}}},"Legs":{v:x1,mv:x2,b:x3,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{id:x75,t:g,r:[x65,x20,x76,x77,x20,x65],f:[x4,im+g78,x65,x65]},{t:g,v:i,r:[x79,x20,x80,x81,x20,x82],id:x83,f:[x4,im+g12,x65,x65]}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:1000,a:y,tt:[]}}},"Symbol_1":{v:x1,mv:x2,b:x3,bS:a,iS:a,gpu:n,rI:n,cn:{dom:[{id:x87,t:g,r:[x65,x20,x80,x88,x20,x65],f:[x4,im+g89,x65,x65]},{t:g,v:i,r:[x65,x20,x80,x88,x20,x65],id:x90,f:[x4,im+g91,x65,x65]},{t:g,v:i,r:[x92,x20,x93,x88,x20,x65],id:x94,f:[x4,im+g95,x65,x65]}],sI:[]},s:{},tl:{"Default Timeline":{fS:a,tS:"",d:1750,a:y,l:{"right":750,"open":1250},tt:[]}}}};var S1=symbols[x18];var tl0=S1.tl[dt].tt,st1=S1.s[a]={},A1=A(_,tl0,st1);A1.A(e19).P(bt,205).P(lf,750).P(w,35.61,_,_,"%");A1.A(e21).P(tp,x20).P(lf,-1276).P(bt,2102);A1.A(e22).P(tp,x20).P(lf,1813).P(bt,425);A1.A(e23).P(bt,203).P(lf,2518).P(w,50.07,_,_,"%");A1.A(e25).P(tp,x20).P(lf,-1268).P(bt,1153);A1.A(e26).P(lf,-1).P(bt,-4);A1.A(e27).P(bt,203).P(lf,415).P(w,50.07,_,_,"%");A1.A(e28).P(w,50.07,_,_,"%").P(lf,-1675,_,_,p).P(bt,203);A1.A(e29).P(cl,[0,904,38,580],_,x24).P(lf,750).P(bt,285);A1.A(e30).P(bg,x9,c).P(bt,0).P(h,2213).P(o,0.14,_,_,"").P(lf,0,_,_,p).P(w,200);A1.A(e32).P(bg,x31,c).P(bt,0).P(h,2213).P(o,0.14,_,_,"").P(lf,25,_,_,p).P(w,150);A1.A(e34).P(or,[0,50],_,x33).P(oz,[0,50],_,x33).P(om,[0,50],_,x33).P(on,[0,50],_,x33).P(oo,[0,50],_,x33).P(bt,867).P(h,2213).P(bg,x8,c).P(lf,1356).P(w,279);A1.A(e35).P(tp,x20).P(bt,80);A1.A(e36).P(bg,x31,c).P(bt,0).P(h,2213).P(o,0.14,_,_,"").P(lf,50,_,_,p).P(w,100);A1.A(e37).P(bt,202).P(lf,1885).P(w,44.8,_,_,"%");A1.A(e38).P(tp,x20).P(lf,830).P(bt,285);A1.A(e39).P(tp,x20).P(bt,203);A1.A(e40).P(cl,[546,1500,582,0],_,x24).P(lf,750).P(bt,285);A1.A(e41).P(bt,202).P(lf,0).P(w,44.8,_,_,"%");A1.A(e42).P(bg,x8,c).P(ov,x43).P(h,100,_,_,"%").P(w,3000,_,_,p);A1.A(e44).P(w,1.92,_,_,"%");A1.A(e45).P(lf,1446).P(bt,-4);A1.A(e46).P(tp,x20).P(lf,1176).P(bt,425);A1.A(e47).P(tp,x20).P(zy,1,t,_,"").P(w,200,_,_,p).P(zx,0.05,t,_,"").T(0,0.05).T(0.712,1,0.288,qiq).P(bt,3002,_,_,p).T(0,867,0.712).T(1,867);A1.A(e48).P(lf,1448).P(d,i).T(0,i).T(2.695,b).T(2.952,i).P(bt,537).T(2.695,339,0.243,ql).T(2.938,243,0.014);A1.A(e49).P(bg,x16,c).P(bt,322).P(lf,1468).P(w,54).P(h,26).T(2.952,90,0.772,ql).P(d,i).T(0,i).T(2.952,b);A1.A(e50).P(lf,1468).P(bt,322).P(d,i).T(0,i).T(2.952,b);A1.A(e51).P(lf,1448).P(d,i).T(0,i).T(0.712,b).T(1.75,i).P(bt,2889).T(0.712,820,0.755,qoq).T(1.467,648,0.274).T(1.741,568,0.009);A1.A(e52).P(lf,1487).P(d,i).T(0,i).T(2.318,b).T(2.495,i).P(bt,569).T(2.318,558,0.158,ql).T(2.476,467,0.019);A1.A(e53).P(tp,x20).P(lf,1493).P(d,b).T(0,b).T(2.652,i).T(2.75,b).P(h,226).T(0,226).T(2.495,0,0.157,ql).T(2.652,226,0.043).T(2.75,226,0.088,_,9).T(3.427,196,0.227).T(3.654,54,0.069,qiq).P(bt,367).T(0,367).T(2.495,367).T(2.652,567,_,_,287).T(2.75,368,0.088,ql);A1.A(e54).P(lf,1386).P(zx,1,t,_,"").T(1.75,0.9,0.7,ql).T(2.952,0.03,0.772).P(d,b).T(3.661,i).P(zy,1,t).T(1.75,0.9,0.7).T(2.952,0.03,0.772).P(bt,562,_,_,p).T(1.75,557,0.546).T(2.296,556,0.154).T(2.952,522,0.682).T(3.634,427,0.09);A1.A(e55).P(tp,x20).P(bt,538).P(d,i).T(0,i).T(2.495,b).T(2.695,i);A1.A(e56).P(lf,1468).P(cl,[0,53,64,0],_,x24).P(d,i).T(0,i).T(1.75,b).T(2.318,i).P(bt,646).T(1.75,559,0.568,ql);A1.A(e57).P(zx,1,t,_,"").P(zy,1,t).P(cl,[0,242.9999857935836,120.9999928967918,0],_,x24).P(h,50,_,_,p).T(1.75,61,0.745,ql).T(2.952,121,0.772,qoq).P(bt,321).T(1.75,321).T(2.495,321).T(2.952,320,0.772).P(lf,1448).T(1.75,1436,0.745,ql).T(2.952,1376,0.772,qoq).P(w,100).T(1.75,123,0.745,ql).T(2.952,243,0.772,qoq);var S2=symbols[x64];var tl1=S2.tl[dt].tt,st2=S2.s[a]={},A2=A(_,tl1,st2);A2.A(e71).P(bt,0).P(lf,2774).P(w,50.17,_,_,"%");A2.A(e72).P(bt,0).P(lf,0).P(w,50.17,_,_,"%");A2.A(e73).P(h,968).P(w,5564);A2.A(e74).P(cl,[0,5567.1166992188,968,0],_,x24).P(lf,0).T(0,0).T(0.5,60).T(1,-30).T(1.5,-190);var S3=symbols[x84];var tl2=S3.tl[dt].tt,st3=S3.s[a]={},A3=A(_,tl2,st3);A3.A(e73).P(h,35).P(w,60);A3.A(e85).P(lf,18).P(bt,8).P(d,i).T(0,i).T(0.5,b).T(1,i);A3.A(e86).P(lf,0).P(bt,0).P(d,b).T(0.5,i).T(1,b);var S4=symbols[x96];var tl3=S4.tl[dt].tt,st4=S4.s[a]={},A4=A(_,tl3,st4);A4.A(e73).P(h,50).P(w,24);A4.A(e97).P(lf,-26).P(bt,0).P(d,i).T(0,i).T(1.25,b).T(1.75,b);A4.A(e98).P(lf,0).P(bt,0).P(d,i).T(0,i).T(0.75,b).T(1.25,i);A4.A(e99).P(lf,0).P(bt,0).P(d,b).T(0,b).T(0.75,i).T(1.75,b);Edge.registerCompositionDefn(compId,symbols,fonts,resources);$(window).ready(function(){Edge.launchComposition(compId);});})(jQuery,AdobeEdge,"EDGE-14388321");
+var fonts = {};
+
+
+var resources = [
+];
+var symbols = {
+"stage": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+         dom: [
+         {
+            id:'static_bg',
+            type:'group',
+            rect:['0px','auto','4212','787','auto','80px'],
+            c:[
+            {
+               id:'man-fly',
+               type:'image',
+               rect:['905','auto','1.9%','89px','auto','391px'],
+               fill:["rgba(0,0,0,0)",'svgs/l1-svg/man-fly.svg','0px','0px']
+            },
+            {
+               id:'bg-highlight',
+               type:'image',
+               rect:['0px','auto','44.8%','299px','auto','202px'],
+               fill:["rgba(0,0,0,0)",im+"bg-highlight.svg",'0px','0px']
+            },
+            {
+               id:'bg-highlightCopy',
+               type:'image',
+               rect:['1885px','auto','44.8%','299px','auto','202px'],
+               fill:["rgba(0,0,0,0)",im+"bg-highlight.svg",'0px','0px']
+            },
+            {
+               id:'rain2',
+               type:'rect',
+               rect:['-1274','auto','auto','auto','auto','203px']
+            },
+            {
+               id:'rain2Copy2',
+               type:'rect',
+               rect:['-1268px','auto','auto','auto','auto','1153px']
+            },
+            {
+               id:'rain2Copy3',
+               type:'rect',
+               rect:['-1276px','auto','auto','auto','auto','2102px']
+            },
+            {
+               id:'city',
+               type:'image',
+               rect:['415px','auto','50.1%','206px','auto','203px'],
+               fill:["rgba(0,0,0,0)",im+"city.svg",'0px','0px']
+            },
+            {
+               id:'cityCopy2',
+               type:'image',
+               rect:['-1675px','auto','50.1%','206px','auto','203px'],
+               fill:["rgba(0,0,0,0)",im+"city.svg",'0px','0px']
+            },
+            {
+               id:'cityCopy',
+               type:'image',
+               rect:['2518px','auto','50.1%','206px','auto','203px'],
+               fill:["rgba(0,0,0,0)",im+"city.svg",'0px','0px']
+            },
+            {
+               id:'clocks',
+               type:'image',
+               rect:['750px','auto','35.6%','582px','auto','205px'],
+               fill:["rgba(0,0,0,0)",im+"clocks.svg",'0px','0px']
+            }]
+         },
+         {
+            id:'Rectangle',
+            type:'rect',
+            rect:['1356px','auto','279px','2213px','auto','867px'],
+            fill:["rgba(102,102,204,1.00)"],
+            stroke:[0,"rgba(0,0,0,1)","none"],
+            transform:[]
+         },
+         {
+            id:'LightRay',
+            type:'group',
+            rect:['1396px','auto','200','2213','auto','3002px'],
+            transform:[],
+            c:[
+            {
+               id:'RectangleCopy',
+               type:'rect',
+               rect:['0px','auto','200px','2213px','auto','0px'],
+               opacity:0.14260864257812,
+               fill:["rgba(255,255,255,1.00)"],
+               stroke:[0,"rgba(0,0,0,1)","none"]
+            },
+            {
+               id:'RectangleCopy2',
+               type:'rect',
+               rect:['25px','auto','150px','2213px','auto','0px'],
+               opacity:0.14260864257812,
+               fill:["rgba(255,255,255,1.00)"],
+               stroke:[0,"rgba(0,0,0,1)","none"]
+            },
+            {
+               id:'RectangleCopy3',
+               type:'rect',
+               rect:['50px','auto','100px','2213px','auto','0px'],
+               opacity:0.14260864257812,
+               fill:["rgba(255,255,255,1.00)"],
+               stroke:[0,"rgba(0,0,0,1)","none"]
+            }]
+         },
+         {
+            id:'sand-bottom',
+            type:'image',
+            rect:['1448px','auto','100px','50px','auto','241px'],
+            clip:['rect(0px 242.99998474121094px 120.99999237060547px 0px)'],
+            fill:["rgba(0,0,0,0)",im+"sand-bottom.svg",'0px','0px']
+         },
+         {
+            id:'sand_center',
+            type:'rect',
+            rect:['1493px','auto','9px','226px','auto','288px'],
+            fill:["rgba(204,153,51,1)"],
+            stroke:[0,"rgb(0, 0, 0)","none"]
+         },
+         {
+            id:'man-fly2',
+            display:'none',
+            type:'image',
+            rect:['1448px','auto','82px','89px','auto','2889px'],
+            fill:["rgba(0,0,0,0)",im+"man-fly.svg",'0px','0px']
+         },
+         {
+            id:'man-stand',
+            display:'none',
+            type:'image',
+            rect:['1468px','auto','53px','90px','auto','566px'],
+            clip:['rect(0px 53px 70px 0px)'],
+            fill:["rgba(0,0,0,0)",im+"man-stand.svg",'0px','0px']
+         },
+         {
+            id:'man-legs-stand',
+            display:'none',
+            type:'image',
+            rect:['1487px','auto','24px','2.7%','auto','489px'],
+            fill:["rgba(0,0,0,0)",im+"man-legs-stand.svg",'0px','0px']
+         },
+         {
+            id:'clocks_top_mask',
+            type:'image',
+            rect:['750px','auto','1500px','582px','auto','285px'],
+            clip:['rect(0px 904px 38px 580px)'],
+            fill:["rgba(0,0,0,0)",im+"clocks.svg",'0px','0px']
+         },
+         {
+            id:'Legs',
+            display:'none',
+            type:'rect',
+            rect:['1469','auto','auto','auto','auto','538px']
+         },
+         {
+            id:'man-stand2',
+            display:'none',
+            type:'image',
+            rect:['1468px','auto','53px','90px','auto','322px'],
+            clip:['rect(0px 53px 64px 0px)'],
+            fill:["rgba(0,0,0,0)",im+"man-stand.svg",'0px','0px']
+         },
+         {
+            id:'sand-top',
+            type:'image',
+            rect:['1386px','auto','222px','110px','auto','482px'],
+            fill:["rgba(0,0,0,0)",im+"sand-top.svg",'0px','0px'],
+            transform:[]
+         },
+         {
+            id:'clocks3',
+            type:'image',
+            rect:['750px','auto','1500px','582px','auto','285px'],
+            clip:['rect(546px 1500px 582px 0px)'],
+            fill:["rgba(0,0,0,0)",im+"clocks.svg",'0px','0px']
+         },
+         {
+            id:'Symbol_1',
+            type:'rect',
+            rect:['1176px','auto','auto','auto','auto','425px']
+         },
+         {
+            id:'Symbol_1Copy',
+            type:'rect',
+            rect:['830px','auto','auto','auto','auto','285px']
+         },
+         {
+            id:'Symbol_1Copy2',
+            type:'rect',
+            rect:['1813px','auto','auto','auto','auto','425px']
+         },
+         {
+            id:'brics2',
+            type:'image',
+            rect:['0px','auto','3000px','287px','auto','-2px'],
+            fill:["rgba(0,0,0,0)",im+"brics.svg",'0px','0px']
+         }],
+         symbolInstances: [
+         {
+            id:'Symbol_1Copy2',
+            symbolName:'Symbol_1'
+         },
+         {
+            id:'rain2Copy2',
+            symbolName:'rain'
+         },
+         {
+            id:'Symbol_1',
+            symbolName:'Symbol_1'
+         },
+         {
+            id:'Legs',
+            symbolName:'Legs'
+         },
+         {
+            id:'rain2',
+            symbolName:'rain'
+         },
+         {
+            id:'Symbol_1Copy',
+            symbolName:'Symbol_1'
+         },
+         {
+            id:'rain2Copy3',
+            symbolName:'rain'
+         }
+         ]
+      },
+   states: {
+      "Base State": {
+         "${_bg-highlightCopy}": [
+            ["style", "width", '44.8%'],
+            ["style", "left", '1885px'],
+            ["style", "bottom", '202px']
+         ],
+         "${_clocks3}": [
+            ["style", "clip", [546,1500,582,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+            ["style", "left", '750px'],
+            ["style", "bottom", '285px']
+         ],
+         "${_Stage}": [
+            ["color", "background-color", 'rgba(102,102,204,1.00)'],
+            ["style", "width", '3000px'],
+            ["style", "height", '100%'],
+            ["style", "overflow", 'hidden']
+         ],
+         "${_sand_center}": [
+            ["style", "top", 'auto'],
+            ["style", "bottom", '367px'],
+            ["style", "height", '226px'],
+            ["style", "left", '1493px'],
+            ["style", "display", 'block']
+         ],
+         "${_clocks}": [
+            ["style", "width", '35.61%'],
+            ["style", "left", '750px'],
+            ["style", "bottom", '205px']
+         ],
+         "${_man-fly2}": [
+            ["style", "display", 'none'],
+            ["style", "left", '1448px'],
+            ["style", "bottom", '2889px']
+         ],
+         "${_rain2Copy3}": [
+            ["style", "top", 'auto'],
+            ["style", "left", '-1276px'],
+            ["style", "bottom", '2102px']
+         ],
+         "${_RectangleCopy2}": [
+            ["color", "background-color", 'rgba(255,255,255,1)'],
+            ["style", "bottom", '0px'],
+            ["style", "height", '2213px'],
+            ["style", "opacity", '0.142608642578125'],
+            ["style", "left", '25px'],
+            ["style", "width", '150px']
+         ],
+         "${_Symbol_1Copy2}": [
+            ["style", "top", 'auto'],
+            ["style", "left", '1813px'],
+            ["style", "bottom", '425px']
+         ],
+         "${_cityCopy}": [
+            ["style", "width", '50.07%'],
+            ["style", "left", '2518px'],
+            ["style", "bottom", '203px']
+         ],
+         "${_man-stand2}": [
+            ["style", "display", 'none'],
+            ["style", "clip", [0,53,64,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+            ["style", "left", '1468px'],
+            ["style", "bottom", '322px']
+         ],
+         "${_sand-top}": [
+            ["transform", "scaleY", '1'],
+            ["style", "bottom", '562px'],
+            ["transform", "scaleX", '1'],
+            ["style", "left", '1386px'],
+            ["style", "display", 'block']
+         ],
+         "${_Symbol_1Copy}": [
+            ["style", "top", 'auto'],
+            ["style", "left", '830px'],
+            ["style", "bottom", '285px']
+         ],
+         "${_man-fly}": [
+            ["style", "width", '1.92%']
+         ],
+         "${_man-stand}": [
+            ["style", "display", 'none'],
+            ["style", "clip", [0,53,64,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+            ["style", "left", '1468px'],
+            ["style", "bottom", '646px']
+         ],
+         "${_LightRay}": [
+            ["style", "top", 'auto'],
+            ["transform", "scaleY", '1'],
+            ["style", "bottom", '3002px'],
+            ["transform", "scaleX", '0.05'],
+            ["style", "width", '200px']
+         ],
+         "${_static_bg}": [
+            ["style", "top", 'auto'],
+            ["style", "bottom", '80px']
+         ],
+         "${_sand-bottom}": [
+            ["transform", "scaleX", '1'],
+            ["transform", "scaleY", '1'],
+            ["style", "bottom", '321px'],
+            ["style", "height", '50px'],
+            ["style", "clip", [0,242.9999857935836,120.9999928967918,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+            ["style", "left", '1448px'],
+            ["style", "width", '100px']
+         ],
+         "${_rain2Copy2}": [
+            ["style", "top", 'auto'],
+            ["style", "left", '-1268px'],
+            ["style", "bottom", '1153px']
+         ],
+         "${_RectangleCopy}": [
+            ["color", "background-color", 'rgba(255,255,255,1.00)'],
+            ["style", "bottom", '0px'],
+            ["style", "height", '2213px'],
+            ["style", "opacity", '0.14260864257812'],
+            ["style", "left", '0px'],
+            ["style", "width", '200px']
+         ],
+         "${_RectangleCopy3}": [
+            ["color", "background-color", 'rgba(255,255,255,1)'],
+            ["style", "bottom", '0px'],
+            ["style", "height", '2213px'],
+            ["style", "opacity", '0.142608642578125'],
+            ["style", "left", '50px'],
+            ["style", "width", '100px']
+         ],
+         "${_rain2}": [
+            ["style", "top", 'auto'],
+            ["style", "bottom", '203px']
+         ],
+         "${_Symbol_1}": [
+            ["style", "top", 'auto'],
+            ["style", "left", '1176px'],
+            ["style", "bottom", '425px']
+         ],
+         "${_Rectangle}": [
+            ["color", "background-color", 'rgba(102,102,204,1.00)'],
+            ["style", "bottom", '867px'],
+            ["style", "height", '2213px'],
+            ["style", "-webkit-transform-origin", [0,50], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [0,50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [0,50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [0,50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [0,50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "left", '1356px'],
+            ["style", "width", '279px']
+         ],
+         "${_bg-highlight}": [
+            ["style", "width", '44.8%'],
+            ["style", "left", '0px'],
+            ["style", "bottom", '202px']
+         ],
+         "${_brics2}": [
+            ["style", "bottom", '-2px'],
+            ["style", "left", '0px'],
+            ["style", "width", '3000px']
+         ],
+         "${_man-legs-stand}": [
+            ["style", "display", 'none'],
+            ["style", "left", '1487px'],
+            ["style", "bottom", '569px']
+         ],
+         "${_city}": [
+            ["style", "width", '50.07%'],
+            ["style", "left", '415px'],
+            ["style", "bottom", '203px']
+         ],
+         "${_Legs}": [
+            ["style", "top", 'auto'],
+            ["style", "display", 'none'],
+            ["style", "bottom", '538px']
+         ],
+         "${_clocks_top_mask}": [
+            ["style", "clip", [0,904,38,580], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+            ["style", "left", '750px'],
+            ["style", "bottom", '285px']
+         ],
+         "${_cityCopy2}": [
+            ["style", "bottom", '203px'],
+            ["style", "left", '-1675px'],
+            ["style", "width", '50.07%']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 3750,
+         autoPlay: true,
+         labels: {
+            "start": 0,
+            "part0": 1769,
+            "part1": 2652,
+            "part2": 2960,
+            "part3": 3214,
+            "end": 3723
+         },
+         timeline: [
+            { id: "eid30", tween: [ "style", "${_man-stand}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutQuad" },
+            { id: "eid29", tween: [ "style", "${_man-stand}", "display", 'block', { fromValue: 'none'}], position: 1750, duration: 0, easing: "easeOutQuad" },
+            { id: "eid105", tween: [ "style", "${_man-stand}", "display", 'none', { fromValue: 'block'}], position: 2318, duration: 0 },
+            { id: "eid41", tween: [ "transform", "${_sand-top}", "scaleX", '0.9', { fromValue: '1'}], position: 1750, duration: 700 },
+            { id: "eid96", tween: [ "transform", "${_sand-top}", "scaleX", '0.03', { fromValue: '0.9'}], position: 2952, duration: 772 },
+            { id: "eid133", tween: [ "style", "${_sand_center}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
+            { id: "eid131", tween: [ "style", "${_sand_center}", "display", 'none', { fromValue: 'block'}], position: 2652, duration: 0 },
+            { id: "eid132", tween: [ "style", "${_sand_center}", "display", 'block', { fromValue: 'none'}], position: 2750, duration: 0 },
+            { id: "eid17", tween: [ "transform", "${_LightRay}", "scaleX", '0.05', { fromValue: '0.05'}], position: 0, duration: 0, easing: "easeInQuad" },
+            { id: "eid16", tween: [ "transform", "${_LightRay}", "scaleX", '1', { fromValue: '0.05'}], position: 712, duration: 288, easing: "easeInQuad" },
+            { id: "eid32", tween: [ "style", "${_man-stand}", "bottom", '559px', { fromValue: '646px'}], position: 1750, duration: 568 },
+            { id: "eid44", tween: [ "style", "${_sand-top}", "bottom", '557px', { fromValue: '562px'}], position: 1750, duration: 546 },
+            { id: "eid160", tween: [ "style", "${_sand-top}", "bottom", '556px', { fromValue: '557px'}], position: 2296, duration: 154 },
+            { id: "eid98", tween: [ "style", "${_sand-top}", "bottom", '522px', { fromValue: '556px'}], position: 2952, duration: 682 },
+            { id: "eid168", tween: [ "style", "${_sand-top}", "bottom", '427px', { fromValue: '522px'}], position: 3634, duration: 90 },
+            { id: "eid114", tween: [ "style", "${_sand-bottom}", "left", '1436px', { fromValue: '1448px'}], position: 1750, duration: 745 },
+            { id: "eid120", tween: [ "style", "${_sand-bottom}", "left", '1376px', { fromValue: '1436px'}], position: 2952, duration: 772, easing: "easeOutQuad" },
+            { id: "eid34", tween: [ "style", "${_man-legs-stand}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutQuad" },
+            { id: "eid33", tween: [ "style", "${_man-legs-stand}", "display", 'block', { fromValue: 'none'}], position: 2318, duration: 0, easing: "easeOutQuad" },
+            { id: "eid53", tween: [ "style", "${_man-legs-stand}", "display", 'none', { fromValue: 'block'}], position: 2495, duration: 0 },
+            { id: "eid171", tween: [ "style", "${_sand_center}", "height", '226px', { fromValue: '226px'}], position: 0, duration: 0 },
+            { id: "eid126", tween: [ "style", "${_sand_center}", "height", '0px', { fromValue: '226px'}], position: 2495, duration: 157 },
+            { id: "eid127", tween: [ "style", "${_sand_center}", "height", '226px', { fromValue: '0px'}], position: 2652, duration: 43 },
+            { id: "eid139", tween: [ "style", "${_sand_center}", "height", '226px', { fromValue: '9px'}], position: 2750, duration: 88 },
+            { id: "eid128", tween: [ "style", "${_sand_center}", "height", '196px', { fromValue: '226px'}], position: 3427, duration: 227 },
+            { id: "eid129", tween: [ "style", "${_sand_center}", "height", '54px', { fromValue: '196px'}], position: 3654, duration: 69, easing: "easeInQuad" },
+            { id: "eid42", tween: [ "transform", "${_sand-top}", "scaleY", '0.9', { fromValue: '1'}], position: 1750, duration: 700 },
+            { id: "eid97", tween: [ "transform", "${_sand-top}", "scaleY", '0.03', { fromValue: '0.9'}], position: 2952, duration: 772 },
+            { id: "eid177", tween: [ "style", "${_man-stand2}", "clip", [0,53,-3,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,53,64,0]}], position: 2952, duration: 771 },
+            { id: "eid36", tween: [ "style", "${_man-legs-stand}", "bottom", '558px', { fromValue: '569px'}], position: 2318, duration: 158 },
+            { id: "eid169", tween: [ "style", "${_man-legs-stand}", "bottom", '467px', { fromValue: '558px'}], position: 2476, duration: 19 },
+            { id: "eid110", tween: [ "style", "${_sand-bottom}", "width", '123px', { fromValue: '100px'}], position: 1750, duration: 745 },
+            { id: "eid118", tween: [ "style", "${_sand-bottom}", "width", '243px', { fromValue: '123px'}], position: 2952, duration: 772, easing: "easeOutQuad" },
+            { id: "eid106", tween: [ "style", "${_sand-top}", "display", 'none', { fromValue: 'block'}], position: 3661, duration: 0 },
+            { id: "eid170", tween: [ "style", "${_sand_center}", "bottom", '367px', { fromValue: '367px'}], position: 0, duration: 0 },
+            { id: "eid149", tween: [ "style", "${_sand_center}", "bottom", '367px', { fromValue: '367px'}], position: 2495, duration: 0 },
+            { id: "eid147", tween: [ "style", "${_sand_center}", "bottom", '567px', { fromValue: '287px'}], position: 2652, duration: 0 },
+            { id: "eid143", tween: [ "style", "${_sand_center}", "bottom", '368px', { fromValue: '567px'}], position: 2750, duration: 88 },
+            { id: "eid109", tween: [ "style", "${_sand-bottom}", "height", '61px', { fromValue: '50px'}], position: 1750, duration: 745 },
+            { id: "eid117", tween: [ "style", "${_sand-bottom}", "height", '121px', { fromValue: '61px'}], position: 2952, duration: 772, easing: "easeOutQuad" },
+            { id: "eid54", tween: [ "style", "${_Legs}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid55", tween: [ "style", "${_Legs}", "display", 'block', { fromValue: 'none'}], position: 2495, duration: 0 },
+            { id: "eid56", tween: [ "style", "${_Legs}", "display", 'none', { fromValue: 'block'}], position: 2695, duration: 0 },
+            { id: "eid26", tween: [ "style", "${_man-fly2}", "bottom", '820px', { fromValue: '2889px'}], position: 712, duration: 755, easing: "easeOutQuad" },
+            { id: "eid162", tween: [ "style", "${_man-fly2}", "bottom", '648px', { fromValue: '820px'}], position: 1467, duration: 283, easing: "easeOutQuad" },
+            { id: "eid176", tween: [ "style", "${_man-fly2}", "bottom", '325px', { fromValue: '543px'}], position: 2695, duration: 257, easing: "easeOutQuad" },
+            { id: "eid112", tween: [ "style", "${_sand-bottom}", "bottom", '321px', { fromValue: '321px'}], position: 1750, duration: 0 },
+            { id: "eid113", tween: [ "style", "${_sand-bottom}", "bottom", '321px', { fromValue: '321px'}], position: 2495, duration: 0 },
+            { id: "eid90", tween: [ "style", "${_sand-bottom}", "bottom", '320px', { fromValue: '321px'}], position: 2952, duration: 772, easing: "easeOutQuad" },
+            { id: "eid24", tween: [ "style", "${_man-fly2}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeInQuad" },
+            { id: "eid23", tween: [ "style", "${_man-fly2}", "display", 'block', { fromValue: 'none'}], position: 712, duration: 0, easing: "easeInQuad" },
+            { id: "eid28", tween: [ "style", "${_man-fly2}", "display", 'none', { fromValue: 'block'}], position: 1750, duration: 0, easing: "easeOutQuad" },
+            { id: "eid174", tween: [ "style", "${_man-fly2}", "display", 'block', { fromValue: 'none'}], position: 2695, duration: 0, easing: "easeOutQuad" },
+            { id: "eid173", tween: [ "style", "${_man-fly2}", "display", 'none', { fromValue: 'block'}], position: 2952, duration: 0 },
+            { id: "eid21", tween: [ "style", "${_LightRay}", "bottom", '867px', { fromValue: '3002px'}], position: 0, duration: 712, easing: "easeInQuad" },
+            { id: "eid22", tween: [ "style", "${_LightRay}", "bottom", '867px', { fromValue: '867px'}], position: 1000, duration: 0 },
+            { id: "eid64", tween: [ "style", "${_man-stand2}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid63", tween: [ "style", "${_man-stand2}", "display", 'block', { fromValue: 'none'}], position: 2952, duration: 0 }         ]
+      }
+   }
+},
+"rain": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      rect: ['0','0','5567','968','auto','auto'],
+      id: 'Group3',
+      clip: ['rect(0px 5567.1166992188pxpx 968pxpx 0px)'],
+      type: 'group',
+      c: [
+      {
+         id: 'rain',
+         type: 'image',
+         rect: ['0px','auto','50.2%','968px','auto','0px'],
+         fill: ['rgba(0,0,0,0)','images/rain.svg','0px','0px']
+      },
+      {
+         id: 'rainCopy',
+         type: 'image',
+         rect: ['2774px','auto','50.2%','968px','auto','0px'],
+         fill: ['rgba(0,0,0,0)','images/rain.svg','0px','0px']
+      }]
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${symbolSelector}": [
+            ["style", "height", '968px'],
+            ["style", "width", '5564px']
+         ],
+         "${_Group3}": [
+            ["style", "clip", [0,5567.1166992188,968,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+            ["style", "left", '0px']
+         ],
+         "${_rain}": [
+            ["style", "width", '50.17%'],
+            ["style", "left", '0px'],
+            ["style", "bottom", '0px']
+         ],
+         "${_rainCopy}": [
+            ["style", "width", '50.17%'],
+            ["style", "left", '2774px'],
+            ["style", "bottom", '0px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 1500,
+         autoPlay: true,
+         timeline: [
+            { id: "eid1", tween: [ "style", "${_Group3}", "left", '0px', { fromValue: '0px'}], position: 0, duration: 0 },
+            { id: "eid2", tween: [ "style", "${_Group3}", "left", '60px', { fromValue: '0px'}], position: 500, duration: 0 },
+            { id: "eid3", tween: [ "style", "${_Group3}", "left", '-30px', { fromValue: '60px'}], position: 1000, duration: 0 },
+            { id: "eid4", tween: [ "style", "${_Group3}", "left", '-190px', { fromValue: '-30px'}], position: 1500, duration: 0 }         ]
+      }
+   }
+},
+"Legs": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      id: 'man-legs',
+      type: 'image',
+      rect: ['0px','auto','60px','100%','auto','0px'],
+      fill: ['rgba(0,0,0,0)','images/man-legs.svg','0px','0px']
+   },
+   {
+      rect: ['18px','auto','24px','77.1%','auto','8px'],
+      id: 'man-legs-stand2',
+      type: 'image',
+      display: 'none',
+      fill: ['rgba(0,0,0,0)','images/man-legs-stand.svg','0px','0px']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_man-legs-stand2}": [
+            ["style", "display", 'none'],
+            ["style", "left", '18px'],
+            ["style", "bottom", '8px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '35px'],
+            ["style", "width", '60px']
+         ],
+         "${_man-legs}": [
+            ["style", "display", 'block'],
+            ["style", "left", '0px'],
+            ["style", "bottom", '0px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 1000,
+         autoPlay: true,
+         timeline: [
+            { id: "eid51", tween: [ "style", "${_man-legs-stand2}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid50", tween: [ "style", "${_man-legs-stand2}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
+            { id: "eid49", tween: [ "style", "${_man-legs-stand2}", "display", 'none', { fromValue: 'block'}], position: 1000, duration: 0 },
+            { id: "eid47", tween: [ "style", "${_man-legs}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0 },
+            { id: "eid48", tween: [ "style", "${_man-legs}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 }         ]
+      }
+   }
+},
+"Symbol_1": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      id: 'pigeon-right',
+      type: 'image',
+      rect: ['0px','auto','24px','50px','auto','0px'],
+      fill: ['rgba(0,0,0,0)','images/pigeon-right.svg','0px','0px']
+   },
+   {
+      rect: ['0px','auto','24px','50px','auto','0px'],
+      id: 'pigeon-left',
+      type: 'image',
+      display: 'none',
+      fill: ['rgba(0,0,0,0)','images/pigeon-left.svg','0px','0px']
+   },
+   {
+      rect: ['-26px','auto','75px','50px','auto','0px'],
+      id: 'pigeon-open',
+      type: 'image',
+      display: 'none',
+      fill: ['rgba(0,0,0,0)','images/pigeon-open.svg','0px','0px']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_pigeon-right}": [
+            ["style", "display", 'block'],
+            ["style", "left", '0px'],
+            ["style", "bottom", '0px']
+         ],
+         "${_pigeon-open}": [
+            ["style", "display", 'none'],
+            ["style", "left", '-26px'],
+            ["style", "bottom", '0px']
+         ],
+         "${_pigeon-left}": [
+            ["style", "display", 'none'],
+            ["style", "left", '0px'],
+            ["style", "bottom", '0px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '50px'],
+            ["style", "width", '24px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 1750,
+         autoPlay: true,
+         labels: {
+            "right": 750,
+            "open": 1250
+         },
+         timeline: [
+            { id: "eid151", tween: [ "style", "${_pigeon-right}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
+            { id: "eid152", tween: [ "style", "${_pigeon-right}", "display", 'none', { fromValue: 'block'}], position: 750, duration: 0 },
+            { id: "eid153", tween: [ "style", "${_pigeon-right}", "display", 'block', { fromValue: 'none'}], position: 1750, duration: 0 },
+            { id: "eid156", tween: [ "style", "${_pigeon-left}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid154", tween: [ "style", "${_pigeon-left}", "display", 'block', { fromValue: 'none'}], position: 750, duration: 0 },
+            { id: "eid155", tween: [ "style", "${_pigeon-left}", "display", 'none', { fromValue: 'block'}], position: 1250, duration: 0 },
+            { id: "eid159", tween: [ "style", "${_pigeon-open}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid157", tween: [ "style", "${_pigeon-open}", "display", 'block', { fromValue: 'none'}], position: 1250, duration: 0 },
+            { id: "eid158", tween: [ "style", "${_pigeon-open}", "display", 'block', { fromValue: 'block'}], position: 1750, duration: 0 }         ]
+      }
+   }
+}
+};
+
+
+Edge.registerCompositionDefn(compId, symbols, fonts, resources);
+
+/**
+ * Adobe Edge DOM Ready Event Handler
+ */
+$(window).ready(function() {
+     Edge.launchComposition(compId);
+});
+})(jQuery, AdobeEdge, "EDGE-14388321");

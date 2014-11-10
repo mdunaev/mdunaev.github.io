@@ -1,99 +1,20 @@
-iframe {
-  display: none;
-}
-html,
-body {
-  overflow: hidden;
-  height: 100%;
-  background-color: #66c;
-}
-.content {
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  margin-left: 50%;
-}
-.floor {
-  width: 5px;
-  height: 550px;
-}
-.eighth_floor {
-  height: 690px;
-  background: linear-gradient(to bottom, #4499e7 0%, #1de718 100%);
-}
-.eighth_floor .animation {
-  margin-left: -1500px;
-  overflow: hidden;
-}
-#Stage {
-  margin-left: -1500px;
-}
-.popup {
-  position: absolute;
-  left: -355px;
-  width: 660px;
-  height: 190px;
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: #000;
-  border-radius: 8px;
-  background-image: url("../images/popup1.png");
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-  color: #fff;
-  font-family: DIN Ro;
-  font-size: 17px;
-}
-.popup .img_header {
-  position: absolute;
-  top: 5px;
-  left: 0px;
-}
-.popup .popup_content {
-  overflow: hidden;
-  height: 55px;
-  margin-top: 100px;
-  margin-left: 20px;
-  width: 615px;
-}
-.popup .images_container {
-  left: 355px;
-  bottom: -20px;
-  position: absolute;
-}
-.popup .images_container .read_btn {
-  margin-left: -43px;
-  cursor: pointer;
-}
-.popup .images_container .close_btn {
-  margin-left: -23px;
-  cursor: pointer;
-}
-.seventh_floor {
-  height: 400px;
-}
-.seventh_floor .animation {
-  width: 3000px;
-  margin-left: -1500px;
-  height: 400px;
-  background-image: url("../images/temp7.png");
-}
-.sixth_floor {
-  background: linear-gradient(to bottom, #00e70a 0%, #e7b400 100%);
-}
-.fifth_floor {
-  background: linear-gradient(to bottom, #1be700 0%, #dedee7 100%);
-}
-.fourth_floor {
-  background: linear-gradient(to bottom, #a3e79e 0%, #e7962a 100%);
-}
-.third_floor {
-  background: linear-gradient(to bottom, #e75401 0%, #e776b8 100%);
-}
-.second_floor {
-  background: linear-gradient(to bottom, #afbde7 0%, #dc11e7 100%);
-}
-.first_floor {
-  background: linear-gradient(to bottom, #e0000b 0%, #000 100%);
-}
+/*iframe*/
+/*display none*/
+/*html, body*/
+/*overflow: hidden;*/
+/*height: 100%;*/
+/*background-color #6666cc*/
+/*.content*/
+/*width 100%*/
+/*position fixed*/
+/*top 0px*/
+/*left 0px*/
+/*margin-left 50%*/
+/*.floor*/
+/*width 5px*/
+/*height 1000px*/
+/*position relative*/
+/*#Stage*/
+/*margin-left -1500px*/
+/*height 100%*/
+/*overflow hidden*/

@@ -519,6 +519,7 @@ build_video = (_id)->
     $('.popup_menu .video').css('opacity', 1)
     $('.popup_menu .video').text('Video')
     $('video').attr('src', 'data/'+_id+'/video/1.mov')
+    $('video').attr('src-mp4', 'data/'+_id+'/video/1.mp4')
 
 
 date = new Date()
@@ -537,9 +538,12 @@ setInterval(check_time, 1000)
 
 
 $("video").on("error", ()->
-    is_video_enable = false
-    $('.popup_menu .video').css('opacity', 0.5)
-    $('.popup_menu .video').text('No Video')
+    if $('video').attr('src') == $('video').attr('src-mp4')
+        is_video_enable = false
+        $('.popup_menu .video').css('opacity', 0.5)
+        $('.popup_menu .video').text('No Video')
+    else
+        $('video').attr('src', $('video').attr('src-mp4'))
 )
 
 
