@@ -82,9 +82,10 @@
       }
     });
     set_floor_height();
-    console.log('init');
-    return $('body').on('DOMMouseScroll mousewheel wheel', function(e) {
+    console.log('init2');
+    return $(document).on('DOMMouseScroll mousewheel wheel', function(e) {
       var timeNow, wheel;
+      console.log('whl');
       wheel = e.originalEvent.wheelDelta;
       console.log('wheel ' + wheel);
       timeNow = new Date().getTime();
