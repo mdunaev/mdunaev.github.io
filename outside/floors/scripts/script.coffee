@@ -66,6 +66,7 @@ init = ()->
 
   set_floor_height()
 
+  console.log 'init'
   $('body').on('DOMMouseScroll mousewheel wheel', (e)->
     wheel = e.originalEvent.wheelDelta
 

@@ -82,6 +82,7 @@
       }
     });
     set_floor_height();
+    console.log('init');
     return $('body').on('DOMMouseScroll mousewheel wheel', function(e) {
       var timeNow, wheel;
       wheel = e.originalEvent.wheelDelta;
