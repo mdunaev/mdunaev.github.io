@@ -67,15 +67,16 @@ init = ()->
   set_floor_height()
 
   console.log 'init2'
-  $('iframe').contents().on('DOMMouseScroll mousewheel wheel click', (e)->
-
-    console.log 'whl'
+  $('iframe').contents().on('DOMMouseScroll mousewheel wheel', (e)->
 
     wheel = e.originalEvent.wheelDelta
+    if wheel == undefined then return
 
     console.log 'wheel '+wheel
 
     timeNow = new Date().getTime()
+
+    console.log 'd_time' + (timeNow - timeStamp)
 
     if timeNow - timeStamp < 100
       timeStamp = timeNow
@@ -154,7 +155,7 @@ enter_frame_handler = ()->
 is_first_frame = false
 
 goto_next = ()->
-  console.log 777
+  console.log 'play next'
   floors['floor'+current_scene].play()
 
   _sym = floors['floor'+current_scene]
@@ -178,6 +179,7 @@ goto_next = ()->
 
 
 goto_prev = ()->
+  console.log 'play prev'
   floors['floor'+current_scene].playReverse()
 
   _sym = floors['floor'+current_scene]
@@ -202,6 +204,8 @@ goto_prev = ()->
 
 
 move_scroll_to_position = (_position)->
+
+  console.log 'move to position ' + _position
 
   position_pix = points['floor'+current_scene][_position]
 

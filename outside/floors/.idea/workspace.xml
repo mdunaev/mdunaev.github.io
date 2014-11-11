@@ -97,8 +97,8 @@
       <file leaf-file-name="script.coffee" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/script.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43378997" vertical-offset="720" max-vertical-offset="3300">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.65753424" vertical-offset="2673" max-vertical-offset="3360">
+              <caret line="207" column="45" selection-start-line="207" selection-start-column="45" selection-end-line="207" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -127,11 +127,11 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="3690">
-              <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="3765">
+              <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
               <folding>
-                <marker date="1415696295000" expanded="true" signature="478:488" placeholder="{...}" />
-                <marker date="1415696295000" expanded="true" signature="614:651" placeholder="{...}" />
+                <marker date="1415697725000" expanded="true" signature="478:488" placeholder="{...}" />
+                <marker date="1415697725000" expanded="true" signature="614:651" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -932,11 +932,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3020" max-vertical-offset="3690">
-          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="3765">
+          <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
           <folding>
-            <marker date="1415696295000" expanded="true" signature="478:488" placeholder="{...}" />
-            <marker date="1415696295000" expanded="true" signature="614:651" placeholder="{...}" />
+            <marker date="1415697725000" expanded="true" signature="478:488" placeholder="{...}" />
+            <marker date="1415697725000" expanded="true" signature="614:651" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -959,8 +959,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/script.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43378997" vertical-offset="720" max-vertical-offset="3300">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.65753424" vertical-offset="2673" max-vertical-offset="3360">
+          <caret line="207" column="45" selection-start-line="207" selection-start-column="45" selection-end-line="207" selection-end-column="45" />
           <folding />
         </state>
       </provider>

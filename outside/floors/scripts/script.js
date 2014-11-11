@@ -83,12 +83,15 @@
     });
     set_floor_height();
     console.log('init2');
-    return $('iframe').contents().on('DOMMouseScroll mousewheel wheel click', function(e) {
+    return $('iframe').contents().on('DOMMouseScroll mousewheel wheel', function(e) {
       var timeNow, wheel;
-      console.log('whl');
       wheel = e.originalEvent.wheelDelta;
+      if (wheel === void 0) {
+        return;
+      }
       console.log('wheel ' + wheel);
       timeNow = new Date().getTime();
+      console.log('d_time' + (timeNow - timeStamp));
       if (timeNow - timeStamp < 100) {
         timeStamp = timeNow;
         if (is_next_play && wheel > 0) {
@@ -173,7 +176,7 @@
 
   goto_next = function() {
     var next_num, _label_name, _labels, _next_label, _position, _prev_position, _stage, _sym;
-    console.log(777);
+    console.log('play next');
     floors['floor' + current_scene].play();
     _sym = floors['floor' + current_scene];
     _stage = _sym.getComposition().getStage();
@@ -198,6 +201,7 @@
 
   goto_prev = function() {
     var next_num, _label_name, _labels, _next_label, _position, _prev_position, _stage, _sym;
+    console.log('play prev');
     floors['floor' + current_scene].playReverse();
     _sym = floors['floor' + current_scene];
     _stage = _sym.getComposition().getStage();
@@ -222,6 +226,7 @@
 
   move_scroll_to_position = function(_position) {
     var el, gap, position_pix;
+    console.log('move to position ' + _position);
     position_pix = points['floor' + current_scene][_position];
     el = $('.floor' + current_scene);
     gap = -(el.position().top + el.height()) + $(window).height() + position_pix;
