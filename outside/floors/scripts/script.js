@@ -91,15 +91,15 @@
     console.log('init3');
     touchStart = function(e) {
       console.log('touch start');
-      start.x = event.touches[0].pageX;
-      return start.y = event.touches[0].pageY;
+      start.x = e.touches[0].pageX;
+      return start.y = e.touches[0].pageY;
     };
     touchMove = function(e) {
       var offset;
       console.log('touch move');
       offset = {};
-      offset.x = start.x - event.touches[0].pageX;
-      offset.y = start.y - event.touches[0].pageY;
+      offset.x = start.x - e.touches[0].pageX;
+      offset.y = start.y - e.touches[0].pageY;
       if (offset.y > 0) {
         return goto_next();
       } else {
