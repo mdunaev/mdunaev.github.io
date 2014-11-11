@@ -89,11 +89,13 @@
     });
     set_floor_height();
     touchStart = function(e) {
+      console.log('touch start');
       start.x = event.touches[0].pageX;
       return start.y = event.touches[0].pageY;
     };
     touchMove = function(e) {
       var offset;
+      console.log('touch move');
       offset = {};
       offset.x = start.x - event.touches[0].pageX;
       offset.y = start.y - event.touches[0].pageY;
@@ -103,8 +105,8 @@
         return goto_prev();
       }
     };
-    $(document).on("touchstart", touchStart);
-    $(document).on("touchmove", touchMove);
+    $('iframe').on("touchstart", touchStart);
+    $('iframe').on("touchmove", touchMove);
     return $('iframe').contents().on('DOMMouseScroll mousewheel wheel', function(e) {
       var timeNow, wheel;
       wheel = e.originalEvent.wheelDelta;
