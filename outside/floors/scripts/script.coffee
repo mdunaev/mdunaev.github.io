@@ -86,8 +86,8 @@ init = ()->
       goto_prev()
 
 
-  $('document').on("touchstart", touchStart)
-  $('document').on("touchmove", touchMove)
+  $('iframe').contents().on("touchstart", touchStart)
+  $('iframe').contents().on("touchmove", touchMove)
 
 
   $('iframe').contents().on('DOMMouseScroll mousewheel wheel', (e)->

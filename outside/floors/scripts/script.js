@@ -106,8 +106,8 @@
         return goto_prev();
       }
     };
-    $('document').on("touchstart", touchStart);
-    $('document').on("touchmove", touchMove);
+    $('iframe').contents().on("touchstart", touchStart);
+    $('iframe').contents().on("touchmove", touchMove);
     return $('iframe').contents().on('DOMMouseScroll mousewheel wheel', function(e) {
       var timeNow, wheel;
       wheel = e.originalEvent.wheelDelta;
