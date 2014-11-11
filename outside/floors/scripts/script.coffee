@@ -66,6 +66,8 @@ init = ()->
 
   set_floor_height()
 
+  console.log 'init3'
+
   touchStart = (e)->
     console.log 'touch start'
     start.x = event.touches[0].pageX
@@ -84,8 +86,8 @@ init = ()->
       goto_prev()
 
 
-  $('iframe').on("touchstart", touchStart)
-  $('iframe').on("touchmove", touchMove)
+  $('document').on("touchstart", touchStart)
+  $('document').on("touchmove", touchMove)
 
 
   $('iframe').contents().on('DOMMouseScroll mousewheel wheel', (e)->
