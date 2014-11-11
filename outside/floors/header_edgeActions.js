@@ -117,4 +117,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    })("monkey");
    //Edge symbol end:'monkey'
 
+   //=========================================================
+   
+   //Edge symbol: 'Preloader'
+   (function(symbolName) {   
+   
+   })("Preloader");
+   //Edge symbol end:'Preloader'
+
 })(jQuery, AdobeEdge, "EDGE-23395930");

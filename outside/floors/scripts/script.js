@@ -77,7 +77,7 @@
   };
 
   init = function() {
-    var touchMove, touchStart;
+    var touchMove, touchStart, wheel_event_handler;
     enter_frame_handler();
     $('body').on('keydown', function(e) {
       if (e.keyCode === 83) {
@@ -108,7 +108,9 @@
     };
     $('iframe').contents().on("touchstart", touchStart);
     $('iframe').contents().on("touchmove", touchMove);
-    return $('iframe').contents().on('DOMMouseScroll mousewheel wheel', function(e) {
+    $(window).on("touchstart", touchStart);
+    $(window).on("touchmove", touchMove);
+    wheel_event_handler = function(e) {
       var timeNow, wheel;
       wheel = e.originalEvent.wheelDelta;
       if (wheel === void 0) {
@@ -140,7 +142,9 @@
         }
       }
       return e.preventDefault();
-    });
+    };
+    $('iframe').contents().on('DOMMouseScroll mousewheel wheel', wheel_event_handler);
+    return $(window).on('DOMMouseScroll mousewheel wheel', wheel_event_handler);
   };
 
   $(window).on('resize', set_floor_height);

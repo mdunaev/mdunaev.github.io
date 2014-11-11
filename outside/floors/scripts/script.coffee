@@ -89,8 +89,12 @@ init = ()->
   $('iframe').contents().on("touchstart", touchStart)
   $('iframe').contents().on("touchmove", touchMove)
 
+  $(window).on("touchstart", touchStart)
+  $(window).on("touchmove", touchMove)
 
-  $('iframe').contents().on('DOMMouseScroll mousewheel wheel', (e)->
+
+
+  wheel_event_handler = (e)->
 
     wheel = e.originalEvent.wheelDelta
     if wheel == undefined then return
@@ -125,7 +129,9 @@ init = ()->
         is_next_play = false
 
     e.preventDefault()
-  )
+
+  $('iframe').contents().on('DOMMouseScroll mousewheel wheel', wheel_event_handler)
+  $(window).on('DOMMouseScroll mousewheel wheel', wheel_event_handler)
 
 $(window).on('resize', set_floor_height)
 
