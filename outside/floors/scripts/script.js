@@ -88,7 +88,7 @@
       }
     });
     set_floor_height();
-    console.log('init8');
+    console.log('init9');
     touchStart = function(e) {
       console.log('touch start');
       start.x = e.originalEvent.touches[0].pageX;
@@ -107,7 +107,7 @@
       }
     };
     $('iframe').contents().on("touchstart", touchStart);
-    $('iframe').contents().on("touchmove", touchMove);
+    $('iframe').contents().on("touchend", touchMove);
     return $('iframe').contents().on('DOMMouseScroll mousewheel wheel', function(e) {
       var timeNow, wheel;
       wheel = e.originalEvent.wheelDelta;

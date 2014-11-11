@@ -66,7 +66,7 @@ init = ()->
 
   set_floor_height()
 
-  console.log 'init8'
+  console.log 'init9'
 
   touchStart = (e)->
     console.log 'touch start'
@@ -87,7 +87,7 @@ init = ()->
 
 
   $('iframe').contents().on("touchstart", touchStart)
-  $('iframe').contents().on("touchmove", touchMove)
+  $('iframe').contents().on("touchend", touchMove)
 
 
   $('iframe').contents().on('DOMMouseScroll mousewheel wheel', (e)->
