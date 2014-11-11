@@ -495,11 +495,26 @@
   };
 
   build_video = function(_id) {
+    var video_parent;
     is_video_enable = true;
     $('.popup_menu .video').css('opacity', 1);
     $('.popup_menu .video').text('Video');
+    video_parent = $('video').parent();
+    $('video').remove();
+    video_parent.append('<video></video>');
     $('video').attr('src', 'data/' + _id + '/video/1.mov');
-    return $('video').attr('src-mp4', 'data/' + _id + '/video/1.mp4');
+    $('video').attr('src-mp4', 'data/' + _id + '/video/1.mp4');
+    $('video').attr('preload', 'auto');
+    $('video').attr('controls', 'true');
+    return $("video").on("error", function() {
+      if ($('video').attr('src') === $('video').attr('src-mp4')) {
+        is_video_enable = false;
+        $('.popup_menu .video').css('opacity', 0.5);
+        return $('.popup_menu .video').text('No Video');
+      } else {
+        return $('video').attr('src', $('video').attr('src-mp4'));
+      }
+    });
   };
 
   date = new Date();
@@ -521,16 +536,6 @@
   };
 
   setInterval(check_time, 1000);
-
-  $("video").on("error", function() {
-    if ($('video').attr('src') === $('video').attr('src-mp4')) {
-      is_video_enable = false;
-      $('.popup_menu .video').css('opacity', 0.5);
-      return $('.popup_menu .video').text('No Video');
-    } else {
-      return $('video').attr('src', $('video').attr('src-mp4'));
-    }
-  });
 
 }).call(this);
 

@@ -67,7 +67,7 @@ init = ()->
   set_floor_height()
 
   console.log 'init2'
-  $(document).on('DOMMouseScroll mousewheel wheel', (e)->
+  $('iframe').contents().on('DOMMouseScroll mousewheel wheel click', (e)->
 
     console.log 'whl'
 
