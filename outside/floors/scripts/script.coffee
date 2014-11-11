@@ -48,7 +48,7 @@ wait_while_all_loaded  = (sym)->
 
 timeStamp = new Date().getTime()
 is_next_play = false
-
+start = {x:0,y:0}
 
 init = ()->
   enter_frame_handler()
@@ -66,7 +66,26 @@ init = ()->
 
   set_floor_height()
 
-  console.log 'init2'
+  touchStart = (e)->
+    start.x = event.touches[0].pageX
+    start.y = event.touches[0].pageY
+
+
+  touchMove = (e)->
+    offset = {}
+    offset.x = start.x - event.touches[0].pageX
+    offset.y = start.y - event.touches[0].pageY
+
+    if offset.y > 0
+      goto_next()
+    else
+      goto_prev()
+
+      
+  $(document).on("touchstart", touchStart)
+  $(document).on("touchmove", touchMove)
+
+
   $('iframe').contents().on('DOMMouseScroll mousewheel wheel', (e)->
 
     wheel = e.originalEvent.wheelDelta
