@@ -88,18 +88,18 @@
       }
     });
     set_floor_height();
-    console.log('init3');
+    console.log('init8');
     touchStart = function(e) {
       console.log('touch start');
-      start.x = e.touches[0].pageX;
-      return start.y = e.touches[0].pageY;
+      start.x = e.originalEvent.touches[0].pageX;
+      return start.y = e.originalEvent.touches[0].pageY;
     };
     touchMove = function(e) {
       var offset;
       console.log('touch move');
       offset = {};
-      offset.x = start.x - e.touches[0].pageX;
-      offset.y = start.y - e.touches[0].pageY;
+      offset.x = start.x - e.originalEvent.touches[0].pageX;
+      offset.y = start.y - e.originalEvent.touches[0].pageY;
       if (offset.y > 0) {
         return goto_next();
       } else {

@@ -66,19 +66,19 @@ init = ()->
 
   set_floor_height()
 
-  console.log 'init3'
+  console.log 'init8'
 
   touchStart = (e)->
     console.log 'touch start'
-    start.x = e.touches[0].pageX
-    start.y = e.touches[0].pageY
+    start.x = e.originalEvent.touches[0].pageX
+    start.y = e.originalEvent.touches[0].pageY
 
 
   touchMove = (e)->
     console.log 'touch move'
     offset = {}
-    offset.x = start.x - e.touches[0].pageX
-    offset.y = start.y - e.touches[0].pageY
+    offset.x = start.x - e.originalEvent.touches[0].pageX
+    offset.y = start.y - e.originalEvent.touches[0].pageY
 
     if offset.y > 0
       goto_next()
