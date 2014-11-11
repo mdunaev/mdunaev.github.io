@@ -85,6 +85,189 @@
             text-align: center;
         }
 
+        .popup{
+            position: absolute;
+            left: 1235px;
+            bottom: 500px;
+            background-color: #000000;
+            color: white;
+            width: 530px;
+            height: auto;
+            text-align: center;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+        }
+
+        .popup h1{
+            margin-top: 0px;
+            padding: 20px;
+            padding-bottom: 0px;
+            margin-top: -20px;
+            text-transform: uppercase;
+        }
+
+        .popup .popup_content{
+            margin: -50px;
+            margin-bottom: 0px;
+
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-top: 0px;
+            background-color: #000000;
+            z-index: 20;
+            overflow: hidden;
+        }
+
+        .read_btn{
+            position: absolute;
+            bottom: -35px;
+            font-size: 17px;
+            width: 60px;
+            left: 235px;
+            text-align: center;
+
+            background-color: #000000;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+
+            padding: 7px;
+
+            cursor: pointer;
+            display: none;
+        }
+
+
+
+        .close_btn{
+            position: absolute;
+            bottom: -17px;
+            font-size: 41px;
+            width: 50px;
+            left: 240px;
+            text-align: center;
+            font-family: "DIN Round Regular";
+            height: 37px;
+            line-height: 30px;
+            margin: 0px;
+
+            background-color: #000000;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+            padding: 0px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .floor8 .popup{
+            background-color: #FFF022;
+            color: #6666CC;
+            bottom: 900px;
+        }
+        .floor8 .popup div {
+            background-color: #FFF022;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+        }
+
+        .floor7 .popup{
+            background-color: #814B39;
+            color: #FFFFFF;
+            bottom: 380px;
+            width: 530px;
+        }
+        .floor7 .close_btn{
+             left: 240px;
+         }
+        .floor7 .read_btn{
+            left: 235px;
+        }
+
+        .floor7 .popup div{
+            background-color: #814B39;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+        }
+
+        .floor6 .popup{
+            background-color: #663399;
+            color: #FFFFFF;
+            bottom: 410px;
+        }
+        .floor6 .popup div{
+            background-color: #663399;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+        }
+
+        .floor5 .popup{
+            background-color: #2F6F75;
+            color: #FFFFFF;
+            bottom: 320px;
+            width: 1100px;
+            left: 950px;
+        }
+        .floor5 .close_btn{
+            left: 525px;
+        }
+        .floor5 .read_btn{
+            left: 520px;
+        }
+
+        .floor5 .popup div{
+            background-color: #2F6F75;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+        }
+
+        .floor4 .popup{
+            background-color: #7E40CC;
+            color: #FFFFFF;
+            bottom: 300px;
+            width: 940px;
+            left: 1030px;
+        }
+        .floor4 .close_btn{
+            left: 220px;
+        }
+        .floor4 .read_btn{
+            left: 215px;
+        }
+
+        .floor4 .popup div{
+            background-color: #7E40CC;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+        }
+
+        .floor3 .popup{
+            background-color: #FFE624;
+            color: #7E40CC;
+            bottom: 1070px;
+            width: 590px;
+            left: 1205px;
+        }
+        .floor3 .close_btn{
+            left: 270px;
+        }
+        .floor3 .read_btn{
+            left: 265px;
+        }
+
+        .floor3 .popup div{
+            background-color: #FFE624;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+        }
+
     </style>
 
 </head>
@@ -95,35 +278,119 @@
     <div class="floor floor9">
         <iframe src="header.html" style="background-color: #000000" frameBorder="0" scrolling="no"></iframe>
 
+
         <div class="header_header"><h1>"КРУГИ АДА" НАЧИНАЮЩЕГО<br>
             ПРЕДПРИНИМАТЕЛЯ</h1></div>
         <div class="sub_header_header">Многие начинающие бизнесмены совершают одни и те же ошибки, <br>
             которые могут привести даже к банкротству компании. Наш герой <br>
-            прошел по "всем кругам ада" начинающего предпринимателя.</div>
+            прошел по всем «кругам ада» начинающего предпринимателя.</div>
+
+
     </div>
 
     <div class="floor floor8" style="background-color: #6666cc">
         <iframe src="floor1.html" frameBorder="0" scrolling="no"></iframe>
+
+
+        <!--POPUP-->
+        <div class="popup">
+            <div class="popup_header"><h1>
+                Плохой <br>тайм-менеджмент
+            </h1></div>
+            <div class="popup_content">
+                Если вы неправильно распоряжаетесь своим временем и не умеете планировать, то в какой-то момент вас «накроет» срочными задачами, а сорванные сроки серьезно подмочат репутацию.
+            </div>
+
+            <div class="read_btn">читать</div>
+            <div class="close_btn">×</div>
+        </div>
+        <!--POPUP ENД-->
+
     </div>
 
     <div class="floor floor7" style="background-color: #ffe600">
         <iframe src="floor7.html" frameBorder="0" scrolling="no"></iframe>
+        <!--POPUP-->
+        <div class="popup">
+            <div class="popup_header"><h1>
+                Неправильный подбор персонала
+            </h1></div>
+            <div class="popup_content">
+                Иногда даже один бестолковый сотрудник, занимающий не свое место, может создать проблему для всего бизнеса.
+            </div>
+
+            <div class="read_btn">читать</div>
+            <div class="close_btn">×</div>
+        </div>
+        <!--POPUP ENД-->
     </div>
 
     <div class="floor floor6" style="background-color: #6666cc">
         <iframe src="floor6.html" frameBorder="0" scrolling="no"></iframe>
+        <!--POPUP-->
+        <div class="popup">
+            <div class="popup_header"><h1>
+                Высокая зависимость от подрядчиков
+            </h1></div>
+            <div class="popup_content">
+                Среди ваших поставщиков или подрядчиков вы можете отдавать предпочтение кому-то одному и сотрудничать только с ним. Но с неожиданным уходом вашего любимчика вы останетесь ни с чем.
+            </div>
+
+            <div class="read_btn">читать</div>
+            <div class="close_btn">×</div>
+        </div>
+        <!--POPUP ENД-->
     </div>
 
     <div class="floor floor5" style="background-color: #6666cc">
         <iframe src="floor5.html" frameBorder="0" scrolling="no"></iframe>
+        <!--POPUP-->
+        <div class="popup">
+            <div class="popup_header"><h1>
+                Погружение в операционное управление в ущерб стратегическому
+            </h1></div>
+            <div class="popup_content">
+                «Хочешь сделать хорошо - сделай сам» - это правило не всегда работает, особенно если руководитель постоянно отвлекается на выполнение мелких задач вместо того, чтобы управлять бизнесом.
+            </div>
+
+            <div class="read_btn">читать</div>
+            <div class="close_btn">×</div>
+        </div>
+        <!--POPUP ENД-->
     </div>
 
     <div class="floor floor4" style="background-color: #6666cc">
         <iframe src="floor4.html" frameBorder="0" scrolling="no"></iframe>
+        <!--POPUP-->
+        <div class="popup">
+            <div class="popup_header"><h1>
+                Концентрация на сиюминутной прибыли в ущерб развитию бизнеса
+            </h1></div>
+            <div class="popup_content">
+                Если вы будете все время «спускать» заработанные деньги, вместо того, чтобы вкладывать их в бизнес, в какой-то момент ваша компания перестанет быть жизнеспособной.
+            </div>
+
+            <div class="read_btn">читать</div>
+            <div class="close_btn">×</div>
+        </div>
+        <!--POPUP ENД-->
     </div>
 
     <div class="floor floor3" style="background-color: #6666cc">
         <iframe src="floor3.html" frameBorder="0" scrolling="no"></iframe>
+        <!--POPUP-->
+        <div class="popup">
+            <div class="popup_header"><h1>
+                Отсутствие четкого бизнес-плана
+            </h1></div>
+            <div class="popup_content">
+                Вы, конечно, можете начать свой бизнес и действовать дальше по ситуации, но без четкого плана и цели ваши действия будут похожи на хождение по кругу.
+            </div>
+
+            <div class="read_btn">читать</div>
+            <div class="close_btn">×</div>
+        </div>
+        <!--POPUP ENД-->
     </div>
 </div>
 

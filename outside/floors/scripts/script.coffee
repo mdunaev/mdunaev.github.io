@@ -164,11 +164,11 @@ enter_frame_handler = ()->
     current_scene--
     _sym = floors['floor'+current_scene]
     _sym.play('start')
-
     move_scroll_to_position(0)
 
   if _current_label == 'start' && !is_first_frame
     current_scene++
+    open_popup()
     _sym = floors['floor'+current_scene]
     _sym.stop('end')
     _sym.playReverse()
@@ -236,6 +236,11 @@ move_scroll_to_position = (_position)->
 
   console.log 'move to position ' + _position
 
+  if _position != 0
+    close_popup()
+  else
+    open_popup()
+
   position_pix = points['floor'+current_scene][_position]
 
   el = $('.floor'+current_scene)
@@ -246,3 +251,48 @@ move_scroll_to_position = (_position)->
 
 
 current_scene = 9
+
+
+
+#POPUP
+
+
+open_popup = ()->
+  $('.read_btn').hide()
+  $('.close_btn').show()
+
+  $('.popup').each( ()->
+    el = $(this)
+    cont = el.find('.popup_content')
+    cont.css('height',  'auto' )
+    cont.css('padding-bottom',  '20px' )
+    el.find('h1').css('padding-bottom', 20)
+
+    el.css('bottom', parseInt(el.attr('bottom')) + 'px')
+  )
+
+close_popup = ()->
+  $('.read_btn').show()
+  $('.close_btn').hide()
+
+  $('.popup').each( ()->
+    el = $(this)
+    cont = el.find('.popup_content')
+    if !el.attr('content-height')
+      el.attr('content-height', cont.height() )
+      el.attr('bottom', el.css('bottom').replace('px', '') )
+    cont.css('height', 0 )
+    cont.css('padding-bottom',  '0px' )
+    el.find('h1').css('padding-bottom', 20)
+    el.css('bottom', parseInt(el.attr('bottom')) + parseInt(el.attr('content-height')) + 'px')
+  )
+
+$('.read_btn').on('click', ()->
+  open_popup()
+)
+
+$('.close_btn').on('click', ()->
+  close_popup()
+)
+
+close_popup()
