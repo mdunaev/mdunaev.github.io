@@ -19,7 +19,9 @@
     'floor6': [0, 0, 0, 0, 0, 0],
     'floor5': [0, 0, 0, 0],
     'floor4': [0, 0, 0, 0],
-    'floor3': [770, 530, 530, 245, 77]
+    'floor3': [770, 530, 530, 245, 77],
+    'floor2': [0, 0, 0, 0, 0],
+    'floor1': [200, 200, 200, 200, 200, 0, 0]
   };
 
   $('.floor9 iframe')[0].contentWindow.init9 = function(sym) {
@@ -57,12 +59,23 @@
     return wait_while_all_loaded(floors.floor3);
   };
 
+  $('.floor2 iframe')[0].contentWindow.init2 = function(sym) {
+    floors.floor2 = sym;
+    return wait_while_all_loaded(floors.floor2);
+  };
+
+  $('.floor1 iframe')[0].contentWindow.init1 = function(sym) {
+    floors.floor1 = sym;
+    console.log('fl1 loaded');
+    return wait_while_all_loaded(floors.floor1);
+  };
+
   iframes_loaded = 0;
 
   wait_while_all_loaded = function(sym) {
     sym.stop();
     iframes_loaded++;
-    if (iframes_loaded === 7) {
+    if (iframes_loaded === 9) {
       return init();
     }
   };
@@ -116,9 +129,7 @@
       if (wheel === void 0) {
         return;
       }
-      console.log('wheel ' + wheel);
       timeNow = new Date().getTime();
-      console.log('d_time' + (timeNow - timeStamp));
       if (timeNow - timeStamp < 100) {
         timeStamp = timeNow;
         if (is_next_play && wheel > 0) {
@@ -179,8 +190,12 @@
       el = $('.floor' + current_scene);
       gap = (el.offset().top + el.height()) - $(document).scrollTop() - $(window).height();
     }
+    if (_current_label === 'end') {
+      console.log('end ' + current_scene);
+    }
     if (_current_label === 'end' && !is_first_frame) {
       current_scene--;
+      console.log('scene go ' + current_scene);
       _sym = floors['floor' + current_scene];
       _sym.play('start');
       move_scroll_to_position(0);
@@ -256,7 +271,7 @@
 
   move_scroll_to_position = function(_position) {
     var el, gap, position_pix;
-    console.log('move to position ' + _position);
+    console.log('current_scene ' + current_scene);
     if (_position !== 0) {
       close_popup();
     } else {

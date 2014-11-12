@@ -506,6 +506,7 @@
     $('video').attr('src-mp4', 'data/' + _id + '/video/1.mp4');
     $('video').attr('preload', 'auto');
     $('video').attr('controls', 'true');
+    $('video').attr('autoplay', 'true');
     return $("video").on("error", function() {
       if ($('video').attr('src') === $('video').attr('src-mp4')) {
         is_video_enable = false;

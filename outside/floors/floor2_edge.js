@@ -90,16 +90,15 @@ var symbols = {
       },
    states: {
       "Base State": {
-         "${_man_go}": [
+         "${_hero2}": [
             ["style", "display", 'none'],
-            ["style", "top", 'auto'],
-            ["style", "left", '1137px'],
-            ["style", "bottom", '117px']
+            ["style", "left", '1296px'],
+            ["style", "bottom", '118px']
          ],
-         "${_man2stand}": [
-            ["transform", "scaleX", '-1'],
-            ["style", "display", 'block'],
-            ["style", "left", '1145px'],
+         "${_man_go}": [
+            ["style", "top", 'auto'],
+            ["style", "display", 'none'],
+            ["style", "left", '1137px'],
             ["style", "bottom", '117px']
          ],
          "${_bg}": [
@@ -116,16 +115,16 @@ var symbols = {
             ["style", "left", '1822px'],
             ["style", "bottom", '217px']
          ],
+         "${_Stage}": [
+            ["color", "background-color", 'rgba(255,255,255,1)'],
+            ["style", "width", '3000px'],
+            ["style", "height", '100%'],
+            ["style", "overflow", 'hidden']
+         ],
          "${_monkey22}": [
             ["style", "display", 'none'],
             ["style", "left", '1816px'],
             ["style", "bottom", '117px']
-         ],
-         "${_Stage}": [
-            ["color", "background-color", 'rgba(255,255,255,1)'],
-            ["style", "overflow", 'hidden'],
-            ["style", "height", '100%'],
-            ["style", "width", '3000px']
          ],
          "${_monkey1}": [
             ["style", "left", '1816px'],
@@ -136,10 +135,11 @@ var symbols = {
             ["style", "left", '1296px'],
             ["style", "bottom", '788px']
          ],
-         "${_hero2}": [
-            ["style", "display", 'none'],
-            ["style", "left", '1296px'],
-            ["style", "bottom", '118px']
+         "${_man2stand}": [
+            ["style", "display", 'block'],
+            ["transform", "scaleX", '-1'],
+            ["style", "left", '1145px'],
+            ["style", "bottom", '117px']
          ]
       }
    },
@@ -147,7 +147,7 @@ var symbols = {
       "Default Timeline": {
          fromState: "Base State",
          toState: "",
-         duration: 6301.1004059008,
+         duration: 6352,
          autoPlay: true,
          labels: {
             "start": 0,
@@ -157,25 +157,24 @@ var symbols = {
             "part3": 3158,
             "part4": 3942,
             "part5": 4945,
-            "end": 6301
+            "end": 6352
          },
          timeline: [
-            { id: "eid63", tween: [ "style", "${_man_go}", "left", '743px', { fromValue: '1137px'}], position: 3784, duration: 1937 },
-            { id: "eid40", tween: [ "style", "${_alien2}", "bottom", '124px', { fromValue: '118px'}], position: 2500, duration: 53, easing: "easeInQuad" },
-            { id: "eid45", tween: [ "style", "${_alien2}", "bottom", '118px', { fromValue: '119px'}], position: 2612, duration: 0, easing: "easeInQuad" },
-            { id: "eid24", tween: [ "style", "${_monkey1}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
-            { id: "eid22", tween: [ "style", "${_monkey1}", "display", 'none', { fromValue: 'block'}], position: 1090, duration: 0 },
-            { id: "eid26", tween: [ "style", "${_monkey1}", "display", 'block', { fromValue: 'none'}], position: 1176, duration: 0 },
-            { id: "eid76", tween: [ "style", "${_hero2}", "bottom", '127px', { fromValue: '118px'}], position: 3219, duration: 15 },
-            { id: "eid77", tween: [ "style", "${_hero2}", "bottom", '118px', { fromValue: '127px'}], position: 3234, duration: 16 },
             { id: "eid23", tween: [ "style", "${_monkey22}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
             { id: "eid21", tween: [ "style", "${_monkey22}", "display", 'block', { fromValue: 'none'}], position: 1090, duration: 0 },
             { id: "eid25", tween: [ "style", "${_monkey22}", "display", 'none', { fromValue: 'block'}], position: 1176, duration: 0 },
+            { id: "eid20", tween: [ "style", "${_hero2}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid19", tween: [ "style", "${_hero2}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
+            { id: "eid1", tween: [ "transform", "${_man2stand}", "scaleX", '-1', { fromValue: '-1'}], position: 0, duration: 0 },
+            { id: "eid76", tween: [ "style", "${_hero2}", "bottom", '127px', { fromValue: '118px'}], position: 3219, duration: 15 },
+            { id: "eid77", tween: [ "style", "${_hero2}", "bottom", '118px', { fromValue: '127px'}], position: 3234, duration: 16 },
+            { id: "eid63", tween: [ "style", "${_man_go}", "left", '743px', { fromValue: '1137px'}], position: 3784, duration: 1937 },
             { id: "eid3", tween: [ "style", "${_man2stand}", "bottom", '117px', { fromValue: '117px'}], position: 0, duration: 0 },
             { id: "eid46", tween: [ "style", "${_man2stand}", "bottom", '127px', { fromValue: '117px'}], position: 1828, duration: 47, easing: "easeInQuad" },
             { id: "eid47", tween: [ "style", "${_man2stand}", "bottom", '117px', { fromValue: '127px'}], position: 1875, duration: 38, easing: "easeInQuad" },
-            { id: "eid20", tween: [ "style", "${_hero2}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-            { id: "eid19", tween: [ "style", "${_hero2}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
+            { id: "eid24", tween: [ "style", "${_monkey1}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
+            { id: "eid22", tween: [ "style", "${_monkey1}", "display", 'none', { fromValue: 'block'}], position: 1090, duration: 0 },
+            { id: "eid26", tween: [ "style", "${_monkey1}", "display", 'block', { fromValue: 'none'}], position: 1176, duration: 0 },
             { id: "eid18", tween: [ "style", "${_man-fly}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
             { id: "eid17", tween: [ "style", "${_man-fly}", "display", 'none', { fromValue: 'block'}], position: 1000, duration: 0 },
             { id: "eid56", tween: [ "style", "${_man_go}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
@@ -193,7 +192,8 @@ var symbols = {
             { id: "eid67", tween: [ "style", "${_Ellipse}", "bottom", '119px', { fromValue: '418px'}], position: 5500, duration: 309, easing: "easeInQuad" },
             { id: "eid69", tween: [ "style", "${_Ellipse}", "bottom", '149px', { fromValue: '119px'}], position: 5809, duration: 159, easing: "easeOutQuad" },
             { id: "eid72", tween: [ "style", "${_Ellipse}", "bottom", '119px', { fromValue: '149px'}], position: 5968, duration: 158, easing: "easeInQuad" },
-            { id: "eid1", tween: [ "transform", "${_man2stand}", "scaleX", '-1', { fromValue: '-1'}], position: 0, duration: 0 },
+            { id: "eid40", tween: [ "style", "${_alien2}", "bottom", '124px', { fromValue: '118px'}], position: 2500, duration: 53, easing: "easeInQuad" },
+            { id: "eid45", tween: [ "style", "${_alien2}", "bottom", '118px', { fromValue: '119px'}], position: 2612, duration: 0, easing: "easeInQuad" },
             { id: "eid27", tween: [ "style", "${_Ellipse}", "left", '1194px', { fromValue: '1822px'}], position: 1176, duration: 574 },
             { id: "eid30", tween: [ "style", "${_Ellipse}", "left", '1500px', { fromValue: '1194px'}], position: 1828, duration: 289 },
             { id: "eid32", tween: [ "style", "${_Ellipse}", "left", '1654px', { fromValue: '1500px'}], position: 2117, duration: 271 },
@@ -226,11 +226,11 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','svg_floor2/alien0.svg','0px','0px']
    },
    {
-      rect: ['0px','auto','95px','107px','auto','0px'],
-      transform: [[],[],[],['-1']],
-      id: 'alien',
+      transform: [[0,0],[],[],['-1']],
       type: 'image',
+      id: 'alien',
       display: 'none',
+      rect: ['0px','auto','95px','107px','auto','0px'],
       fill: ['rgba(0,0,0,0)','svg_floor2/alien.svg','0px','0px']
    }],
    symbolInstances: [
@@ -239,14 +239,14 @@ var symbols = {
    states: {
       "Base State": {
          "${_alien}": [
-            ["transform", "scaleX", '-1'],
             ["style", "display", 'none'],
+            ["transform", "scaleX", '-1'],
             ["style", "left", '0px'],
             ["style", "bottom", '0px']
          ],
          "${_alien0}": [
-            ["transform", "scaleX", '-1'],
             ["style", "display", 'block'],
+            ["transform", "scaleX", '-1'],
             ["style", "left", '0px'],
             ["style", "bottom", '0px']
          ],
@@ -263,12 +263,12 @@ var symbols = {
          duration: 2000,
          autoPlay: true,
          timeline: [
-            { id: "eid12", tween: [ "style", "${_alien}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-            { id: "eid14", tween: [ "style", "${_alien}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
-            { id: "eid16", tween: [ "style", "${_alien}", "display", 'none', { fromValue: 'block'}], position: 2000, duration: 0 },
             { id: "eid11", tween: [ "style", "${_alien0}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
             { id: "eid13", tween: [ "style", "${_alien0}", "display", 'none', { fromValue: 'block'}], position: 1000, duration: 0 },
-            { id: "eid15", tween: [ "style", "${_alien0}", "display", 'block', { fromValue: 'none'}], position: 2000, duration: 0 }         ]
+            { id: "eid15", tween: [ "style", "${_alien0}", "display", 'block', { fromValue: 'none'}], position: 2000, duration: 0 },
+            { id: "eid12", tween: [ "style", "${_alien}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid14", tween: [ "style", "${_alien}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
+            { id: "eid16", tween: [ "style", "${_alien}", "display", 'none', { fromValue: 'block'}], position: 2000, duration: 0 }         ]
       }
    }
 },
@@ -289,10 +289,10 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','svg_floor2/man.svg','0px','0px']
    },
    {
-      rect: ['0px','auto','67px','90px','auto','0px'],
-      id: 'man22',
       type: 'image',
       display: 'none',
+      rect: ['0px','auto','67px','90px','auto','0px'],
+      id: 'man22',
       fill: ['rgba(0,0,0,0)','svg_floor2/man2.svg','0px','0px']
    }],
    symbolInstances: [

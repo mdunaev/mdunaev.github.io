@@ -526,6 +526,7 @@ build_video = (_id)->
 
     $('video').attr('preload','auto')
     $('video').attr('controls','true')
+    $('video').attr('autoplay','true')
 
 
     $("video").on("error", ()->

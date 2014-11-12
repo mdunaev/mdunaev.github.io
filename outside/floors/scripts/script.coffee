@@ -1,5 +1,5 @@
 floors = {'floor9':null, 'floor8':null, 'floor7':null, 'floor6':null, 'floor5':null, 'floor4':null, 'floor3':null};
-points = {'floor9':[0], 'floor8':[500, 430, 150, 150], 'floor7':[0,0,0,0,0,0], 'floor6':[0,0,0,0,0,0], 'floor5':[0,0,0,0], 'floor4':[0,0,0,0], 'floor3':[770, 530, 530, 245, 77]};
+points = {'floor9':[0], 'floor8':[500, 430, 150, 150], 'floor7':[0,0,0,0,0,0], 'floor6':[0,0,0,0,0,0], 'floor5':[0,0,0,0], 'floor4':[0,0,0,0], 'floor3':[770, 530, 530, 245, 77], 'floor2':[0, 0, 0, 0, 0], 'floor1':[200, 200, 200, 200, 200, 0, 0]};
 
 
 $('.floor9 iframe')[0].contentWindow.init9 = (sym)->
@@ -37,12 +37,23 @@ $('.floor3 iframe')[0].contentWindow.init3 = (sym)->
   wait_while_all_loaded(floors.floor3)
 
 
+$('.floor2 iframe')[0].contentWindow.init2 = (sym)->
+  floors.floor2 = sym
+  wait_while_all_loaded(floors.floor2)
+
+
+$('.floor1 iframe')[0].contentWindow.init1 = (sym)->
+  floors.floor1 = sym
+  console.log('fl1 loaded')
+  wait_while_all_loaded(floors.floor1)
+
+
 iframes_loaded = 0
 wait_while_all_loaded  = (sym)->
   sym.stop()
 
   iframes_loaded++
-  if iframes_loaded == 7
+  if iframes_loaded == 9
     init()
 
 
@@ -99,11 +110,7 @@ init = ()->
     wheel = e.originalEvent.wheelDelta
     if wheel == undefined then return
 
-    console.log 'wheel '+wheel
-
     timeNow = new Date().getTime()
-
-    console.log 'd_time' + (timeNow - timeStamp)
 
     if timeNow - timeStamp < 100
       timeStamp = timeNow
@@ -160,8 +167,10 @@ enter_frame_handler = ()->
     el = $('.floor'+current_scene)
     gap = (el.offset().top + el.height()) - $(document).scrollTop() - $(window).height();
 
+  if _current_label == 'end' then console.log 'end '+current_scene
   if _current_label == 'end' && !is_first_frame
     current_scene--
+    console.log 'scene go ' + current_scene
     _sym = floors['floor'+current_scene]
     _sym.play('start')
     move_scroll_to_position(0)
@@ -234,7 +243,7 @@ goto_prev = ()->
 
 move_scroll_to_position = (_position)->
 
-  console.log 'move to position ' + _position
+  console.log 'current_scene ' + current_scene
 
   if _position != 0
     close_popup()
