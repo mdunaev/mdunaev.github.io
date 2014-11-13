@@ -15,13 +15,14 @@
   points = {
     'floor9': [0],
     'floor8': [500, 430, 150, 150],
-    'floor7': [0, 0, 0, 0, 0, 0],
-    'floor6': [0, 0, 0, 0, 0, 0],
-    'floor5': [0, 0, 0, 0],
+    'floor7': [0, 0, 0, 0, 0],
+    'floor6': [0, 0, 0, 0, 0],
+    'floor5': [0, 0, 0],
     'floor4': [0, 0, 0, 0],
     'floor3': [770, 530, 530, 245, 77],
     'floor2': [0, 0, 0, 0, 0],
-    'floor1': [200, 200, 200, 200, 200, 0, 0]
+    'floor1': [200, 200, 200, 200, 200, 200, 0],
+    'floor0': [0]
   };
 
   $('.floor9 iframe')[0].contentWindow.init9 = function(sym) {
@@ -70,12 +71,18 @@
     return wait_while_all_loaded(floors.floor1);
   };
 
+  $('.floor0 iframe')[0].contentWindow.init0 = function(sym) {
+    floors.floor0 = sym;
+    console.log('fl0 loaded');
+    return wait_while_all_loaded(floors.floor0);
+  };
+
   iframes_loaded = 0;
 
   wait_while_all_loaded = function(sym) {
     sym.stop();
     iframes_loaded++;
-    if (iframes_loaded === 9) {
+    if (iframes_loaded === 10) {
       return init();
     }
   };

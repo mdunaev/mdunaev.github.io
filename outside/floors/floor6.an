@@ -1,6 +1,6 @@
 {
 
-	"PubChromeFrameInstallerPrompt":"none",
+	"HTMLFileName":"floor6.html",
 	"XProperty":"left",
 	"PubUseChromeFrameInstaller":"false",
 	"PubWebDir":"/Volumes/Projects/mdunaev.github.io/outside/floors/",
@@ -26,10 +26,10 @@
 }",
 	"UseMotionPaths":"false",
 	"pref__general__FilterNonAnimatedElements":"false",
-	"pref__general__GenerateSmoothTransitions":"true",
-	"usedBOM":"false",
+	"UseCDN":"false",
+	"pref__general__AutoKeyframeProperties":"false",
 	"pref__general__AutoKeyframePropertiesArmed":"false",
-	"HTMLFileName":"floor6.html",
+	"stage-Default Timeline_mark_ms":"-1",
 	"symbol_stage":{
 		"dummyStageParentWidth":"3000px",
 		"element_${_basket22}":{
@@ -44,13 +44,11 @@
 			"timelineColor3":"0x295a6d",
 			"animationEnabled":"true",
 			"timelineColor":"0x008dc8"},
-		"element_${_ball-pink}":{
-			"timelineColor2":"0xd8b467",
-			"timelineColor3":"0x81714f",
-			"timelineColor":"0xffd46d",
-			"timelineTreeOpened":"true",
-			"animationEnabled":"true",
-			"invisible":"false"},
+		"element_${_bg1}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"animationEnabled":"false",
+			"timelineColor":"0x00a096"},
 		"element_${_ManWalk}":{
 			"timelineColor2":"0xb099ce",
 			"timelineColor3":"0x70657c",
@@ -79,15 +77,16 @@
 			"timelineTreeOpened":"true",
 			"animationEnabled":"true"},
 		"vGuides":"1500px",
-		"element_${_bg1}":{
+		"element_${_furniture}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"false",
+			"timelineColor":"0x50bd82"},
+		"element_${_basket2}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
-			"animationEnabled":"false",
+			"animationEnabled":"true",
 			"timelineColor":"0x00a096"},
-		"element_${_Stage}":{
-			"timelineColor2":"0xcbbd71",
-			"timelineColor3":"0x7b7652",
-			"timelineColor":"0xeedf79"},
 		"element_${_man-fly}":{
 			"timelineColor2":"0x1095d2",
 			"timelineColor3":"0x29647e",
@@ -105,11 +104,7 @@
 			"timelineColor":"0xeedf79",
 			"timelineTreeOpened":"true",
 			"animationEnabled":"true"},
-		"element_${_bg}":{
-			"timelineColor2":"0x107faa",
-			"timelineColor3":"0x295a6d",
-			"animationEnabled":"true",
-			"timelineColor":"0x008dc8"},
+		"defaultStageParentWidth":"3000px",
 		"element_${_BG}":{
 			"timelineColor2":"0x1aa38f",
 			"timelineColor3":"0x2a6a61",
@@ -118,7 +113,7 @@
 		"element_${_bg2}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
-			"animationEnabled":"false",
+			"animationEnabled":"true",
 			"timelineColor":"0x2f73ad"},
 		"element_${_basket}":{
 			"timelineColor2":"0xd35d6e",
@@ -139,27 +134,32 @@
 			"timelineColor":"0xdb619d",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true"},
-		"defaultStageParentWidth":"3000px",
-		"hGuides":"",
-		"element_${_basket2}":{
-			"timelineColor2":"0x168c84",
-			"timelineColor3":"0x2a605c",
+		"element_${_bg}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
 			"animationEnabled":"true",
-			"timelineColor":"0x00a096"},
-		"element_${_furniture}":{
-			"timelineColor2":"0x4fa275",
-			"timelineColor3":"0x456a55",
-			"animationEnabled":"false",
-			"timelineColor":"0x50bd82"}},
-	"TransitionIdCounter":"142",
+			"timelineColor":"0x008dc8"},
+		"hGuides":"",
+		"element_${_Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"element_${_ball-pink}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"timelineColor":"0xffd46d",
+			"timelineTreeOpened":"true",
+			"animationEnabled":"true",
+			"invisible":"false"}},
+	"TransitionIdCounter":"144",
 	"CompZoomFactor":"100",
-	"viewStartY":"472",
+	"viewStartY":"0",
 	"pixelsPerMs":"0.059301573321494",
-	"StageZoomFactor":"100",
-	"nextElementColorIndex":"9",
-	"stage-Default Timeline_mark_ms":"-1",
+	"stage-Default Timeline_playhead_ms":"1000",
 	"ShowRulers":"false",
-	"stage-Default Timeline_playhead_ms":"0",
+	"usedBOM":"false",
+	"nextElementColorIndex":"9",
+	"pref__general__GenerateSmoothTransitions":"false",
 	"YProperty":"bottom",
-	"pref__general__AutoKeyframeProperties":"true",
-	"UseCDN":"false"}
+	"StageZoomFactor":"50",
+	"PubChromeFrameInstallerPrompt":"none"}

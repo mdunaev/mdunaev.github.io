@@ -31,7 +31,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3054, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3037, function(sym, e) {
          sym.stop();
 
       });
@@ -42,6 +42,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       });
       //Edge binding end
+
+      
 
    })("stage");
    //Edge symbol end:'stage'
@@ -268,5 +270,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    })("doom");
    //Edge symbol end:'doom'
+
+   //=========================================================
+   
+   //Edge symbol: 'Hand3'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 500, function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play(0);
+
+      });
+      //Edge binding end
+
+   })("Hand3");
+   //Edge symbol end:'Hand3'
 
 })(jQuery, AdobeEdge, "EDGE-126001979");

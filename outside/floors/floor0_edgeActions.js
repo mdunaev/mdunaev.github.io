@@ -13,9 +13,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6500, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6250, function(sym, e) {
          // stop the timeline at the given position (ms or label)
-         sym.stop('part7');
+         sym.stop('end');
 
       });
       //Edge binding end

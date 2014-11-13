@@ -1,5 +1,5 @@
 floors = {'floor9':null, 'floor8':null, 'floor7':null, 'floor6':null, 'floor5':null, 'floor4':null, 'floor3':null};
-points = {'floor9':[0], 'floor8':[500, 430, 150, 150], 'floor7':[0,0,0,0,0,0], 'floor6':[0,0,0,0,0,0], 'floor5':[0,0,0,0], 'floor4':[0,0,0,0], 'floor3':[770, 530, 530, 245, 77], 'floor2':[0, 0, 0, 0, 0], 'floor1':[200, 200, 200, 200, 200, 0, 0]};
+points = {'floor9':[0], 'floor8':[500, 430, 150, 150], 'floor7':[0,0,0,0,0], 'floor6':[0,0,0,0,0], 'floor5':[0,0,0], 'floor4':[0,0,0,0], 'floor3':[770, 530, 530, 245, 77], 'floor2':[0, 0, 0, 0, 0], 'floor1':[200, 200, 200, 200, 200, 200, 0], 'floor0':[0]};
 
 
 $('.floor9 iframe')[0].contentWindow.init9 = (sym)->
@@ -48,12 +48,18 @@ $('.floor1 iframe')[0].contentWindow.init1 = (sym)->
   wait_while_all_loaded(floors.floor1)
 
 
+$('.floor0 iframe')[0].contentWindow.init0 = (sym)->
+  floors.floor0 = sym
+  console.log('fl0 loaded')
+  wait_while_all_loaded(floors.floor0)
+
+
 iframes_loaded = 0
 wait_while_all_loaded  = (sym)->
   sym.stop()
 
   iframes_loaded++
-  if iframes_loaded == 9
+  if iframes_loaded == 10
     init()
 
 

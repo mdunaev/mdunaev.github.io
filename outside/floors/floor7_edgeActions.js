@@ -33,31 +33,27 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 9047, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 5442, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 8075, function(sym, e) {
+      
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4591, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6028, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3029, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4029, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2521, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2021, function(sym, e) {
          sym.stop();
 
       });
@@ -305,5 +301,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    })("Monkey_visit");
    //Edge symbol end:'Monkey_visit'
+
+   //=========================================================
+   
+   //Edge symbol: 'ok'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1500, function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play(0);
+
+      });
+      //Edge binding end
+
+   })("ok");
+   //Edge symbol end:'ok'
 
 })(jQuery, AdobeEdge, "EDGE-48847544");
