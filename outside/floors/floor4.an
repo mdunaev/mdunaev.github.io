@@ -16,16 +16,15 @@
    }},\
 \"Down-level\": {\
    \"timelines\": {\
-      \"Default Timeline\": {\
-      }\
+\
    }}\
 }",
 	"UseMotionPaths":"false",
 	"pref__general__FilterNonAnimatedElements":"false",
-	"stage-Default Timeline_playhead_ms":"9750",
-	"viewStartMs":"678.70928955078",
-	"pref__general__AutoKeyframePropertiesArmed":"true",
-	"stage-Default Timeline_mark_ms":"-1",
+	"PubWebDir":"/Volumes/Projects/mdunaev.github.io/outside/floors/",
+	"viewStartMs":"-25.945998267204",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"PubUseChromeFrameInstaller":"false",
 	"symbol_stage":{
 		"dummyStageParentWidth":"3000px",
 		"dummyStageParentHeight":"1500px",
@@ -48,27 +47,32 @@
 			"timelineColor3":"0x734a5f",
 			"animationEnabled":"true",
 			"timelineColor":"0xdb619d"},
-		"element_${_hero}":{
-			"timelineColor2":"0x326a96",
-			"timelineColor3":"0x385063",
+		"element_${_moneys2Copy4}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
 			"animationEnabled":"true",
-			"timelineColor":"0x2f73ad"},
+			"timelineColor":"0xffd46d"},
 		"element_${_moneys2Copy5}":{
 			"timelineColor2":"0xcbbd71",
 			"timelineColor3":"0x7b7652",
 			"animationEnabled":"true",
 			"timelineColor":"0xeedf79"},
 		"vGuides":"1500px",
+		"element_${_man-fly-noCHD}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"animationEnabled":"false",
+			"timelineColor":"0x00a096"},
 		"element_${_man-right_and_cooler}":{
 			"timelineColor2":"0x107faa",
 			"timelineColor3":"0x295a6d",
 			"animationEnabled":"true",
 			"timelineColor":"0x008dc8"},
-		"element_${_moneys2Copy4}":{
-			"timelineColor2":"0xd8b467",
-			"timelineColor3":"0x81714f",
+		"element_${_girl}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
 			"animationEnabled":"true",
-			"timelineColor":"0xffd46d"},
+			"timelineColor":"0x50bd82"},
 		"element_${_car}":{
 			"timelineColor2":"0x81aa62",
 			"timelineColor3":"0x5b6c4d",
@@ -84,46 +88,46 @@
 			"timelineColor3":"0x4a485e",
 			"animationEnabled":"true",
 			"timelineColor":"0x63599f"},
-		"element_${_moneys2Copy2}":{
-			"timelineColor2":"0xd35d6e",
-			"timelineColor3":"0x7e4b52",
-			"animationEnabled":"true",
-			"timelineColor":"0xfb657a"},
-		"defaultStageParentWidth":"3000px",
+		"hGuides":"",
+		"element_${_bg}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"},
 		"defaultStageParentHeight":"1500px",
-		"element_${_moneys2Copy}":{
-			"timelineColor2":"0xb099ce",
-			"timelineColor3":"0x70657c",
-			"animationEnabled":"true",
-			"timelineColor":"0xceaef4"},
 		"element_${_man-fly}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
 			"animationEnabled":"true",
 			"timelineColor":"0x00a096"},
-		"element_${_bg}":{
-			"timelineColor2":"0x81aa62",
-			"timelineColor3":"0x5b6c4d",
-			"timelineColor":"0x91c767"},
-		"hGuides":"",
+		"element_${_moneys2Copy}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"animationEnabled":"true",
+			"timelineColor":"0xceaef4"},
+		"defaultStageParentWidth":"3000px",
+		"element_${_moneys2Copy2}":{
+			"timelineColor2":"0xd35d6e",
+			"timelineColor3":"0x7e4b52",
+			"animationEnabled":"true",
+			"timelineColor":"0xfb657a"},
 		"element_${_Stage}":{
 			"timelineColor2":"0xcbbd71",
 			"timelineColor3":"0x7b7652",
 			"timelineColor":"0xeedf79"},
-		"element_${_girl}":{
-			"timelineColor2":"0x4fa275",
-			"timelineColor3":"0x456a55",
+		"element_${_hero}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
 			"animationEnabled":"true",
-			"timelineColor":"0x50bd82"}},
+			"timelineColor":"0x2f73ad"}},
 	"TransitionIdCounter":"141",
 	"CompZoomFactor":"100",
 	"viewStartY":"666",
 	"pixelsPerMs":"0.19270794472842",
-	"PubChromeFrameInstallerPrompt":"none",
-	"StageZoomFactor":"150",
 	"usedBOM":"false",
-	"nextElementColorIndex":"5",
 	"pref__general__GenerateSmoothTransitions":"true",
+	"stage-Default Timeline_mark_ms":"-1",
+	"nextElementColorIndex":"6",
+	"stage-Default Timeline_playhead_ms":"0",
 	"YProperty":"bottom",
-	"PubUseChromeFrameInstaller":"false",
-	"PubWebDir":"/Volumes/Projects/mdunaev.github.io/outside/floors/"}
+	"StageZoomFactor":"100",
+	"PubChromeFrameInstallerPrompt":"none"}
