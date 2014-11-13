@@ -7,14 +7,6 @@ var data = [
         image: "t1.png"
     },
     {
-
-        header: "РИА Дизайн",
-        tech: "HTML / JavaScript / JQuery",
-        desc: "Неофициальное портфолио сотрудников Дизайн-центра РИА Новости за период 2011-14 гг.",
-        link: "http://ria-design.com",
-        image: "r2.png"
-    },
-    {
         header: "20 лет Государственной думы",
         tech: "CoffeeScript / d3.js",
         desc: "Инфографика для ria.ru",
