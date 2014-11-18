@@ -34,6 +34,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle}", "click", function(sym, e) {
+         console.log(window.start_autoplay);
+         window.start_autoplay();
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 

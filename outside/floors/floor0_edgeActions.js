@@ -68,6 +68,18 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4420, function(sym, e) {
+         window.scroll_down();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4369, function(sym, e) {
+         window.scroll_up();
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 

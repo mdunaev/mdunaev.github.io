@@ -1,6 +1,6 @@
 floors = {'floor9':null, 'floor8':null, 'floor7':null, 'floor6':null, 'floor5':null, 'floor4':null, 'floor3':null};
-points = {'floor9':[0], 'floor8':[500, 430, 150, 150], 'floor7':[0,0,0,0,0], 'floor6':[0,0,0,0,0], 'floor5':[0,0,0], 'floor4':[0,0,0,0], 'floor3':[770, 530, 530, 245, 77], 'floor2':[0, 0, 0, 0, 0], 'floor1':[200, 200, 200, 200, 200, 200, 0], 'floor0':[0]};
-
+points = {'floor9':[0], 'floor8':[500, 430, 150, 150], 'floor7':[0,0,0,0,0], 'floor6':[0,0,0,0,0], 'floor5':[0,0,0], 'floor4':[0,0,0,0], 'floor3':[770, 530, 530, 245, 77], 'floor2':[0, 0, 0, 0, 0], 'floor1':[200, 200, 200, 200, 200, 200, 200, 200, 0], 'floor0':[0]};
+is_autoplay = false
 
 $('.floor9 iframe')[0].contentWindow.init9 = (sym)->
   floors.floor9 = sym
@@ -47,6 +47,18 @@ $('.floor1 iframe')[0].contentWindow.init1 = (sym)->
   console.log('fl1 loaded')
   wait_while_all_loaded(floors.floor1)
 
+$('.floor1 iframe')[0].contentWindow.scroll_down = ()->
+  el = $('.floor1')
+  gap = -(el.position().top + el.height()) + $(window).height() + 0;
+  $('.content').stop()
+  $('.content').animate( {marginTop: gap} )
+
+$('.floor1 iframe')[0].contentWindow.scroll_up = ()->
+  el = $('.floor1')
+  gap = -(el.position().top + el.height()) + $(window).height() + 200;
+  $('.content').stop()
+  $('.content').animate( {marginTop: gap} )
+
 
 $('.floor0 iframe')[0].contentWindow.init0 = (sym)->
   floors.floor0 = sym
@@ -87,6 +99,7 @@ init = ()->
 
   touchStart = (e)->
     console.log 'touch start'
+    is_autoplay = false
     start.x = e.originalEvent.touches[0].pageX
     start.y = e.originalEvent.touches[0].pageY
 
@@ -112,6 +125,7 @@ init = ()->
 
 
   wheel_event_handler = (e)->
+    is_autoplay = false
 
     wheel = e.originalEvent.wheelDelta
     if wheel == undefined then return
@@ -172,6 +186,7 @@ enter_frame_handler = ()->
   if _current_label
     el = $('.floor'+current_scene)
     gap = (el.offset().top + el.height()) - $(document).scrollTop() - $(window).height();
+    if is_autoplay then goto_next()
 
   if _current_label == 'end' then console.log 'end '+current_scene
   if _current_label == 'end' && !is_first_frame
@@ -189,7 +204,6 @@ enter_frame_handler = ()->
     _sym.playReverse()
 
     move_scroll_to_position( points['floor'+current_scene].length - 1 )
-
 
   if _current_label == 'start' && is_first_frame then is_first_frame = false
   if _current_label == 'end' && is_first_frame then is_first_frame = false
@@ -268,7 +282,6 @@ move_scroll_to_position = (_position)->
 current_scene = 9
 
 
-
 #POPUP
 
 
@@ -311,3 +324,17 @@ $('.close_btn').on('click', ()->
 )
 
 close_popup()
+
+autoplay = ()->
+  console.log( is_autoplay )
+  if is_autoplay
+    goto_next()
+
+$('.floor9 iframe')[0].contentWindow.start_autoplay = ()->
+  is_autoplay = true
+  autoplay()
+#  setInterval(autoplay, 2000)
+
+
+
+

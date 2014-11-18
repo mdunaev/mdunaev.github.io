@@ -63,7 +63,7 @@ var symbols = {
             id:'palms',
             display:'none',
             type:'image',
-            rect:['625px','auto','317px','344px','auto','659px'],
+            rect:['710px','auto','317px','344px','auto','659px'],
             clip:['rect(0px 317px 311px 0px)'],
             fill:["rgba(0,0,0,0)",'svg_floor4/palms.svg','0px','0px']
          },
@@ -127,7 +127,7 @@ var symbols = {
             id:'girl',
             display:'none',
             type:'image',
-            rect:['784px','auto','56px','89px','auto','91px'],
+            rect:['1094px','auto','56px','89px','auto','91px'],
             fill:["rgba(0,0,0,0)",'svg_floor4/girl.svg','0px','0px']
          }],
          symbolInstances: [
@@ -144,7 +144,7 @@ var symbols = {
          ],
          "${_girl}": [
             ["style", "display", 'none'],
-            ["style", "left", '784px'],
+            ["style", "left", '1094px'],
             ["style", "bottom", '651px']
          ],
          "${_line}": [
@@ -165,7 +165,7 @@ var symbols = {
          ],
          "${_palms}": [
             ["style", "display", 'none'],
-            ["style", "left", '625px'],
+            ["style", "left", '710px'],
             ["style", "clip", [0,317,311,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
             ["style", "bottom", '659px']
          ],
@@ -254,7 +254,7 @@ var symbols = {
             "end": 9750
          },
          timeline: [
-            { id: "eid125", tween: [ "style", "${_palms}", "bottom", '59px', { fromValue: '659px'}], position: 8214, duration: 1036, easing: "easeOutBounce" },
+            { id: "eid125", tween: [ "style", "${_palms}", "bottom", '15px', { fromValue: '659px'}], position: 8214, duration: 1036, easing: "easeOutBounce" },
             { id: "eid106", tween: [ "transform", "${_man-fly}", "scaleY", '1', { fromValue: '1'}], position: 9124, duration: 0 },
             { id: "eid81", tween: [ "transform", "${_moneys2Copy4}", "rotateZ", '-11deg', { fromValue: '0deg'}], position: 8385, duration: 422 },
             { id: "eid88", tween: [ "transform", "${_moneys2Copy4}", "rotateZ", '-54deg', { fromValue: '-11deg'}], position: 8807, duration: 317 },

@@ -39,21 +39,21 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_RoundRectCopy2}", "click", function(sym, e) {
-         window.open('http://twitter.com/share?text=Неопытные бизнесмены часто совершают одни и те же ошибки. Наш начинающий предприниматель прошел все «круги ада». http://hallobusiness.ru');
+         window.open('http://twitter.com/share?text=Неопытные бизнесмены часто совершают одни и те же ошибки. Наш начинающий предприниматель прошел все «круги ада».');
          
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_RoundRectCopy}", "click", function(sym, e) {
-         window.open('http://twitter.com/share?text=Привет Мир');
+         window.open('https://facebook.com/sharer/sharer.php?u=hellobusiness.ru');
          
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_RoundRect}", "click", function(sym, e) {
-         window.open('http://twitter.com/share?text=Привет Мир');
+         window.open('http://vk.com/share.php?url=hallobusiness.ru');
          
 
       });
