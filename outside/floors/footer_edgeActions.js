@@ -32,6 +32,33 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${_RoundRectCopy3}", "click", function(sym, e) {
+         window.location.href = 'mailto:?subject=Промсвязьбанк&body=Начинающие бизнесмены часто совершают одни и те же ошибки, которые в итоге могут обанкротить компанию. Наш герой прошел все «круги ада» начинающего предпринимателя. http://hellobusiness.ru';
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_RoundRectCopy2}", "click", function(sym, e) {
+         window.open('http://twitter.com/share?text=Неопытные бизнесмены часто совершают одни и те же ошибки. Наш начинающий предприниматель прошел все «круги ада». http://hallobusiness.ru');
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_RoundRectCopy}", "click", function(sym, e) {
+         window.open('http://twitter.com/share?text=Привет Мир');
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_RoundRect}", "click", function(sym, e) {
+         window.open('http://twitter.com/share?text=Привет Мир');
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
