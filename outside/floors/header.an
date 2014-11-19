@@ -97,8 +97,8 @@
 		"defaultStageParentHeight":"2000px"},
 	"usedBOM":"false",
 	"pref__general__FilterNonAnimatedElements":"false",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
-	"viewStartY":"0",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"viewStartY":"60",
 	"symbol_stage":{
 		"element_${_about2}":{
 			"timelineColor2":"0x168c84",
@@ -305,7 +305,7 @@
 	"StageZoomFactor":"100",
 	"pixelsPerMs":"0.14794007467766",
 	"yellow-Default Timeline_playhead_ms":"0",
-	"TransitionIdCounter":"175",
+	"TransitionIdCounter":"176",
 	"orange-Default Timeline_mark_ms":"-1",
 	"nextElementColorIndex":"8",
 	"stage-Default Timeline_playhead_ms":"0",

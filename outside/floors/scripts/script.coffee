@@ -1,5 +1,5 @@
 floors = {'floor9':null, 'floor8':null, 'floor7':null, 'floor6':null, 'floor5':null, 'floor4':null, 'floor3':null};
-points = {'floor9':[0], 'floor8':[500, 430, 150, 150], 'floor7':[0,0,0,0,0], 'floor6':[0,0,0,0,0], 'floor5':[0,0,0], 'floor4':[0,0,0,0], 'floor3':[770, 530, 530, 245, 77], 'floor2':[0, 0, 0, 0, 0], 'floor1':[200, 200, 200, 200, 200, 200, 200, 200, 0], 'floor0':[0]};
+points = {'floor9':[0], 'floor8':[500, 430, 150, 150], 'floor7':[0,0,0,0], 'floor6':[0,0,0,0,0], 'floor5':[0,0,0], 'floor4':[0,0,0,0], 'floor3':[770, 530, 530, 245, 77], 'floor2':[0, 0, 0, 0, 0], 'floor1':[200, 200, 200, 200, 200, 200, 200, 200, 0, 0], 'floor0':[0]};
 is_autoplay = false
 
 $('.floor9 iframe')[0].contentWindow.init9 = (sym)->
@@ -169,7 +169,14 @@ set_floor_height = ()->
     $('.'+floor+' iframe').height(div_height)
 
 
+old_date = new Date()
+delayed_goto_next = ()->
+  current_date = new Date()
 
+  if current_date - old_date > 100
+    goto_next()
+    console.log 'next'
+  old_date = new Date();
 
 enter_frame_handler = ()->
   _position = 0
@@ -186,7 +193,7 @@ enter_frame_handler = ()->
   if _current_label
     el = $('.floor'+current_scene)
     gap = (el.offset().top + el.height()) - $(document).scrollTop() - $(window).height();
-    if is_autoplay then goto_next()
+    if is_autoplay then setTimeout(delayed_goto_next, 1000)
 
   if _current_label == 'end' then console.log 'end '+current_scene
   if _current_label == 'end' && !is_first_frame

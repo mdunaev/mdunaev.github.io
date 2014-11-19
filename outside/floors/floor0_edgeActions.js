@@ -13,7 +13,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6250, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6557, function(sym, e) {
          // stop the timeline at the given position (ms or label)
          sym.stop('end');
 
@@ -56,26 +56,33 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3463, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3426, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3540, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3716, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4420, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4544, function(sym, e) {
          window.scroll_down();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4369, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4493, function(sym, e) {
          window.scroll_up();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6288, function(sym, e) {
+         // insert code here
+         sym.stop();
 
       });
       //Edge binding end

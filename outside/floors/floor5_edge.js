@@ -81,10 +81,12 @@ var symbols = {
             rect:['1461','auto','auto','auto','auto','119px']
          },
          {
-            id:'man-fly',
-            type:'image',
-            rect:['1459px','auto','82px','89px','auto','860px'],
-            fill:["rgba(0,0,0,0)",'svg_floor5/man-fly.svg','0px','0px']
+            id:'Rectangle',
+            display:'none',
+            type:'rect',
+            rect:['1481px','auto','169px','8px','auto','112px'],
+            fill:["rgba(0,0,0,1.00)"],
+            stroke:[0,"rgba(0,0,0,1)","none"]
          },
          {
             id:'hero_print',
@@ -148,13 +150,6 @@ var symbols = {
             rect:['1471px','auto','auto','auto','auto','119px']
          },
          {
-            id:'table_clean',
-            display:'none',
-            type:'image',
-            rect:['1399px','auto','201px','48px','auto','119px'],
-            fill:["rgba(0,0,0,0)",'svg_floor5/table_clean.svg','0px','0px']
-         },
-         {
             id:'phone-tube',
             type:'image',
             rect:['1453px','auto','10px','28px','auto','150px'],
@@ -214,12 +209,17 @@ var symbols = {
             transform:[[],[],[],['1.28','1.28']]
          },
          {
-            id:'Rectangle',
+            id:'man-fly',
+            type:'image',
+            rect:['1459px','auto','82px','89px','auto','860px'],
+            fill:["rgba(0,0,0,0)",'svg_floor5/man-fly.svg','0px','0px']
+         },
+         {
+            id:'table_clean',
             display:'none',
-            type:'rect',
-            rect:['1481px','auto','169px','8px','auto','112px'],
-            fill:["rgba(0,0,0,1.00)"],
-            stroke:[0,"rgba(0,0,0,1)","none"]
+            type:'image',
+            rect:['1399px','auto','201px','48px','auto','119px'],
+            fill:["rgba(0,0,0,0)",'svg_floor5/table_clean.svg','0px','0px']
          }],
          symbolInstances: [
          {
@@ -265,9 +265,9 @@ var symbols = {
          ],
          "${_Rectangle2}": [
             ["style", "height", '10px'],
-            ["style", "bottom", '990px'],
+            ["style", "width", '5px'],
             ["style", "left", '238px'],
-            ["style", "width", '5px']
+            ["style", "bottom", '990px']
          ],
          "${_Man_Left}": [
             ["style", "top", 'auto'],
@@ -289,8 +289,8 @@ var symbols = {
             ["style", "display", 'none'],
             ["style", "bottom", '101px'],
             ["style", "height", '169px'],
-            ["style", "clip", [0,169,11,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
             ["style", "left", '1486px'],
+            ["style", "clip", [0,169,11,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
             ["style", "width", '169px']
          ],
          "${_chart12}": [
@@ -299,9 +299,9 @@ var symbols = {
          ],
          "${_BG}": [
             ["style", "top", 'auto'],
-            ["transform", "rotateZ", '0deg'],
+            ["style", "bottom", '0px'],
             ["style", "left", '0px'],
-            ["style", "bottom", '0px']
+            ["transform", "rotateZ", '0deg']
          ],
          "${_doom1}": [
             ["transform", "scaleY", '1.28'],
@@ -324,8 +324,8 @@ var symbols = {
             ["style", "width", '169px']
          ],
          "${_hero_print}": [
-            ["style", "top", 'auto'],
             ["style", "display", 'none'],
+            ["style", "top", 'auto'],
             ["style", "bottom", '119px']
          ],
          "${_doom2}": [
@@ -335,45 +335,41 @@ var symbols = {
             ["style", "left", '1595px'],
             ["style", "display", 'none']
          ],
-         "${_doom3}": [
-            ["transform", "scaleY", '1.28'],
-            ["style", "bottom", '11px'],
-            ["transform", "scaleX", '1.28'],
-            ["style", "left", '1554px'],
-            ["style", "display", 'none']
-         ],
-         "${_bg2}": [
-            ["color", "background-color", 'rgba(204,153,51,1)'],
-            ["style", "bottom", '96px'],
-            ["style", "height", '23px'],
-            ["style", "left", '0px'],
-            ["style", "width", '3000px']
-         ],
-         "${_man-fly}": [
-            ["style", "display", 'block'],
-            ["style", "left", '1459px'],
-            ["style", "bottom", '860px']
-         ],
-         "${_Hero_shiva}": [
+         "${_Hand3}": [
             ["style", "top", 'auto'],
             ["style", "display", 'none'],
             ["style", "bottom", '119px']
+         ],
+         "${_phone-tube}": [
+            ["style", "display", 'block'],
+            ["style", "bottom", '150px'],
+            ["style", "left", '1453px'],
+            ["transform", "rotateZ", '90deg']
+         ],
+         "${_Stage}": [
+            ["color", "background-color", 'rgba(133,204,204,1.00)'],
+            ["style", "width", '3000px'],
+            ["style", "height", '100%'],
+            ["style", "overflow", 'hidden']
+         ],
+         "${_furniture}": [
+            ["style", "left", '675px'],
+            ["style", "bottom", '118px']
          ],
          "${_hero12}": [
             ["style", "display", 'none'],
             ["style", "left", '1487px'],
             ["style", "bottom", '119px']
          ],
-         "${_woman_go}": [
-            ["style", "display", 'none'],
-            ["style", "top", 'auto'],
-            ["style", "left", '1219px'],
-            ["style", "bottom", '119px']
-         ],
-         "${_man3-1}": [
+         "${_man-fly}": [
             ["style", "display", 'block'],
-            ["style", "left", '1750px'],
-            ["style", "bottom", '119px']
+            ["style", "left", '1459px'],
+            ["style", "bottom", '860px']
+         ],
+         "${_Group}": [
+            ["style", "top", 'auto'],
+            ["style", "left", '0px'],
+            ["style", "bottom", '0px']
          ],
          "${_Right_man}": [
             ["style", "top", 'auto'],
@@ -390,45 +386,49 @@ var symbols = {
             ["style", "width", '3000px']
          ],
          "${_man3-13}": [
-            ["style", "display", 'none'],
             ["transform", "scaleX", '-1'],
+            ["style", "display", 'none'],
             ["style", "left", '2009px'],
             ["style", "bottom", '119px']
          ],
-         "${_Group}": [
-            ["style", "top", 'auto'],
-            ["style", "left", '0px'],
-            ["style", "bottom", '0px']
+         "${_man3-1}": [
+            ["style", "display", 'block'],
+            ["style", "left", '1750px'],
+            ["style", "bottom", '119px']
          ],
          "${_Hero_with_Phone}": [
-            ["style", "top", 'auto'],
             ["style", "display", 'none'],
+            ["style", "top", 'auto'],
             ["style", "bottom", '119px']
          ],
-         "${_furniture}": [
-            ["style", "left", '675px'],
-            ["style", "bottom", '118px']
+         "${_doom3}": [
+            ["transform", "scaleY", '1.28'],
+            ["style", "bottom", '11px'],
+            ["transform", "scaleX", '1.28'],
+            ["style", "left", '1554px'],
+            ["style", "display", 'none']
          ],
-         "${_Stage}": [
-            ["color", "background-color", 'rgba(133,204,204,1.00)'],
-            ["style", "overflow", 'hidden'],
-            ["style", "height", '100%'],
+         "${_woman_go}": [
+            ["style", "top", 'auto'],
+            ["style", "display", 'none'],
+            ["style", "left", '1219px'],
+            ["style", "bottom", '119px']
+         ],
+         "${_Hero_shiva}": [
+            ["style", "display", 'none'],
+            ["style", "top", 'auto'],
+            ["style", "bottom", '119px']
+         ],
+         "${_bg2}": [
+            ["color", "background-color", 'rgba(204,153,51,1)'],
+            ["style", "bottom", '96px'],
+            ["style", "height", '23px'],
+            ["style", "left", '0px'],
             ["style", "width", '3000px']
          ],
-         "${_phone-tube}": [
-            ["style", "display", 'block'],
-            ["transform", "rotateZ", '90deg'],
-            ["style", "left", '1453px'],
-            ["style", "bottom", '150px']
-         ],
-         "${_Hand3}": [
-            ["style", "display", 'none'],
-            ["style", "top", 'auto'],
-            ["style", "bottom", '119px']
-         ],
          "${_Woman_Stand}": [
-            ["style", "top", 'auto'],
             ["style", "display", 'block'],
+            ["style", "top", 'auto'],
             ["style", "left", '1222px'],
             ["style", "bottom", '119px']
          ]
@@ -464,12 +464,11 @@ var symbols = {
             { id: "eid160", tween: [ "style", "${_Woman_Stand}", "left", '1222px', { fromValue: '1222px'}], position: 0, duration: 0 },
             { id: "eid294", tween: [ "style", "${_Woman_Stand}", "left", '1222px', { fromValue: '1222px'}], position: 3091, duration: 0 },
             { id: "eid192", tween: [ "style", "${_Woman_Stand}", "left", '963px', { fromValue: '961px'}], position: 3696, duration: 1704, easing: "easeInElastic" },
-            { id: "eid454", tween: [ "style", "${_doomsCopy}", "left", '270px', { fromValue: '230px'}], position: 5357, duration: 750, easing: "easeInElastic" },
+            { id: "eid571", tween: [ "style", "${_Rectangle}", "width", '167px', { fromValue: '169px'}], position: 5845, duration: 213 },
             { id: "eid61", tween: [ "style", "${_Hero_with_Phone}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
             { id: "eid60", tween: [ "style", "${_Hero_with_Phone}", "display", 'block', { fromValue: 'none'}], position: 1750, duration: 0 },
             { id: "eid91", tween: [ "style", "${_Hero_with_Phone}", "display", 'none', { fromValue: 'block'}], position: 3000, duration: 0, easing: "easeOutBack" },
-            { id: "eid555", tween: [ "style", "${_doom4}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-            { id: "eid565", tween: [ "style", "${_doom4}", "display", 'block', { fromValue: 'none'}], position: 5655, duration: 0 },
+            { id: "eid570", tween: [ "style", "${_Rectangle}", "left", '1484px', { fromValue: '1481px'}], position: 5845, duration: 213 },
             { id: "eid52", tween: [ "style", "${_phone-tube}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
             { id: "eid51", tween: [ "style", "${_phone-tube}", "display", 'none', { fromValue: 'block'}], position: 1809, duration: 0 },
             { id: "eid111", tween: [ "style", "${_table}", "display", 'block', { fromValue: 'block'}], position: 11, duration: 0 },
@@ -506,12 +505,14 @@ var symbols = {
             { id: "eid145", tween: [ "style", "${_man3-13}", "left", '2009px', { fromValue: '2009px'}], position: 3091, duration: 0 },
             { id: "eid142", tween: [ "style", "${_man3-13}", "left", '1756px', { fromValue: '1756px'}], position: 4296, duration: 0 },
             { id: "eid158", tween: [ "style", "${_woman_go}", "left", '961px', { fromValue: '1219px'}], position: 3091, duration: 605 },
-            { id: "eid571", tween: [ "style", "${_Rectangle}", "width", '167px', { fromValue: '169px'}], position: 5845, duration: 213 },
+            { id: "eid555", tween: [ "style", "${_doom4}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid565", tween: [ "style", "${_doom4}", "display", 'block', { fromValue: 'none'}], position: 5655, duration: 0 },
             { id: "eid453", tween: [ "style", "${_doomsCopy}", "clip", [0,24,120,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,24,11,0]}], position: 5107, duration: 250, easing: "easeInCirc" },
-            { id: "eid570", tween: [ "style", "${_Rectangle}", "left", '1484px', { fromValue: '1481px'}], position: 5845, duration: 213 },
-            { id: "eid557", tween: [ "style", "${_doom2}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-            { id: "eid561", tween: [ "style", "${_doom2}", "display", 'block', { fromValue: 'none'}], position: 5292, duration: 0 },
-            { id: "eid562", tween: [ "style", "${_doom2}", "display", 'none', { fromValue: 'block'}], position: 5464, duration: 0 },
+            { id: "eid71", tween: [ "style", "${_man3-1}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
+            { id: "eid70", tween: [ "style", "${_man3-1}", "display", 'none', { fromValue: 'block'}], position: 1898, duration: 0 },
+            { id: "eid149", tween: [ "style", "${_Woman_Stand}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
+            { id: "eid148", tween: [ "style", "${_Woman_Stand}", "display", 'none', { fromValue: 'block'}], position: 3091, duration: 0 },
+            { id: "eid161", tween: [ "style", "${_Woman_Stand}", "display", 'block', { fromValue: 'none'}], position: 3696, duration: 0 },
             { id: "eid203", tween: [ "style", "${_Group}", "left", '0px', { fromValue: '0px'}], position: 5051, duration: 0, easing: "easeInElastic" },
             { id: "eid196", tween: [ "style", "${_Group}", "left", '-5px', { fromValue: '0px'}], position: 5107, duration: 0, easing: "easeInElastic" },
             { id: "eid197", tween: [ "style", "${_Group}", "left", '-4px', { fromValue: '-1px'}], position: 5185, duration: 0, easing: "easeInElastic" },
@@ -528,9 +529,7 @@ var symbols = {
             { id: "eid464", tween: [ "style", "${_chart2}", "clip", [0,169,73,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,169,73,0]}], position: 4296, duration: 0, easing: "easeInCirc" },
             { id: "eid164", tween: [ "style", "${_chart2}", "clip", [0,169,175,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,169,73,0]}], position: 4375, duration: 732, easing: "easeInCirc" },
             { id: "eid448", tween: [ "style", "${_Rectangle2}", "bottom", '880px', { fromValue: '990px'}], position: 5107, duration: 250, easing: "easeInCirc" },
-            { id: "eid558", tween: [ "style", "${_doom1}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-            { id: "eid559", tween: [ "style", "${_doom1}", "display", 'block', { fromValue: 'none'}], position: 5107, duration: 0 },
-            { id: "eid560", tween: [ "style", "${_doom1}", "display", 'none', { fromValue: 'block'}], position: 5292, duration: 0 },
+            { id: "eid454", tween: [ "style", "${_doomsCopy}", "left", '270px', { fromValue: '230px'}], position: 5357, duration: 750, easing: "easeInElastic" },
             { id: "eid568", tween: [ "style", "${_Rectangle}", "height", '122px', { fromValue: '8px'}], position: 5845, duration: 213 },
             { id: "eid556", tween: [ "style", "${_doom3}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
             { id: "eid563", tween: [ "style", "${_doom3}", "display", 'block', { fromValue: 'none'}], position: 5464, duration: 0 },
@@ -544,11 +543,12 @@ var symbols = {
             { id: "eid112", tween: [ "style", "${_table_clean}", "display", 'block', { fromValue: 'none'}], position: 3000, duration: 0 },
             { id: "eid143", tween: [ "transform", "${_Right_man}", "scaleX", '1', { fromValue: '1'}], position: 1898, duration: 0 },
             { id: "eid137", tween: [ "transform", "${_Right_man}", "scaleX", '-1', { fromValue: '1'}], position: 3091, duration: 0 },
-            { id: "eid149", tween: [ "style", "${_Woman_Stand}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
-            { id: "eid148", tween: [ "style", "${_Woman_Stand}", "display", 'none', { fromValue: 'block'}], position: 3091, duration: 0 },
-            { id: "eid161", tween: [ "style", "${_Woman_Stand}", "display", 'block', { fromValue: 'none'}], position: 3696, duration: 0 },
-            { id: "eid71", tween: [ "style", "${_man3-1}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
-            { id: "eid70", tween: [ "style", "${_man3-1}", "display", 'none', { fromValue: 'block'}], position: 1898, duration: 0 },
+            { id: "eid558", tween: [ "style", "${_doom1}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid559", tween: [ "style", "${_doom1}", "display", 'block', { fromValue: 'none'}], position: 5107, duration: 0 },
+            { id: "eid560", tween: [ "style", "${_doom1}", "display", 'none', { fromValue: 'block'}], position: 5292, duration: 0 },
+            { id: "eid557", tween: [ "style", "${_doom2}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid561", tween: [ "style", "${_doom2}", "display", 'block', { fromValue: 'none'}], position: 5292, duration: 0 },
+            { id: "eid562", tween: [ "style", "${_doom2}", "display", 'none', { fromValue: 'block'}], position: 5464, duration: 0 },
             { id: "eid76", tween: [ "style", "${_Right_man}", "left", '2009px', { fromValue: '1759px'}], position: 1898, duration: 1139 },
             { id: "eid138", tween: [ "style", "${_Right_man}", "left", '1756px', { fromValue: '2009px'}], position: 3091, duration: 1205 }         ]
       }
@@ -571,10 +571,10 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','svg_floor5/hero1.svg','0px','0px']
    },
    {
-      rect: ['0px','auto','58px','90px','auto','0px'],
-      id: 'hero1-1',
       type: 'image',
       display: 'none',
+      rect: ['0px','auto','58px','90px','auto','0px'],
+      id: 'hero1-1',
       fill: ['rgba(0,0,0,0)','svg_floor5/hero1-1.svg','0px','0px']
    }],
    symbolInstances: [
@@ -631,10 +631,10 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','svg_floor5/man1-1.svg','0px','0px']
    },
    {
-      rect: ['9px','auto','52px','84px','auto','0px'],
-      id: 'man1-2',
       type: 'image',
       display: 'none',
+      rect: ['9px','auto','52px','84px','auto','0px'],
+      id: 'man1-2',
       fill: ['rgba(0,0,0,0)','svg_floor5/man1-2.svg','0px','0px']
    }],
    symbolInstances: [
@@ -642,19 +642,19 @@ var symbols = {
    },
    states: {
       "Base State": {
-         "${symbolSelector}": [
-            ["style", "height", '84px'],
-            ["style", "width", '61px']
+         "${_man1-1}": [
+            ["style", "display", 'block'],
+            ["style", "left", '0px'],
+            ["style", "bottom", '0px']
          ],
          "${_man1-2}": [
             ["style", "display", 'none'],
             ["style", "left", '9px'],
             ["style", "bottom", '0px']
          ],
-         "${_man1-1}": [
-            ["style", "display", 'block'],
-            ["style", "left", '0px'],
-            ["style", "bottom", '0px']
+         "${symbolSelector}": [
+            ["style", "height", '84px'],
+            ["style", "width", '61px']
          ]
       }
    },
@@ -685,10 +685,10 @@ var symbols = {
    content: {
    dom: [
    {
-      rect: ['0px','auto','58px','85px','auto','0px'],
-      id: 'man2-2',
       type: 'image',
       display: 'none',
+      rect: ['0px','auto','58px','85px','auto','0px'],
+      id: 'man2-2',
       fill: ['rgba(0,0,0,0)','svg_floor5/man2-2.svg','0px','0px']
    },
    {
@@ -698,10 +698,10 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','svg_floor5/man2-3.svg','0px','0px']
    },
    {
-      rect: ['0px','auto','58px','85px','auto','0px'],
-      id: 'man2-1',
       type: 'image',
       display: 'none',
+      rect: ['0px','auto','58px','85px','auto','0px'],
+      id: 'man2-1',
       fill: ['rgba(0,0,0,0)','svg_floor5/man2-1.svg','0px','0px']
    }],
    symbolInstances: [
@@ -764,10 +764,10 @@ var symbols = {
    content: {
    dom: [
    {
-      rect: ['0px','auto','68px','90px','auto','0px'],
-      id: 'hero2',
       type: 'image',
       display: 'none',
+      rect: ['0px','auto','68px','90px','auto','0px'],
+      id: 'hero2',
       fill: ['rgba(0,0,0,0)','svg_floor5/hero2.svg','0px','0px']
    },
    {
@@ -824,18 +824,18 @@ var symbols = {
    content: {
    dom: [
    {
-      rect: ['0px','auto','60px','85px','auto','0px'],
-      id: 'man3-12',
       transform: [[0,0],[],[],['-1']],
+      id: 'man3-12',
       type: 'image',
+      rect: ['0px','auto','60px','85px','auto','0px'],
       fill: ['rgba(0,0,0,0)','svg_floor5/man3-1.svg','0px','0px']
    },
    {
-      type: 'image',
       transform: [[0,0],[],[],['-1']],
-      display: 'none',
       rect: ['0px','auto','60px','87px','auto','-2px'],
+      display: 'none',
       id: 'man3-22',
+      type: 'image',
       fill: ['rgba(0,0,0,0)','svg_floor5/man3-2.svg','0px','0px']
    }],
    symbolInstances: [
@@ -843,21 +843,21 @@ var symbols = {
    },
    states: {
       "Base State": {
-         "${_man3-22}": [
-            ["transform", "scaleX", '-1'],
-            ["style", "display", 'none'],
-            ["style", "left", '0px'],
-            ["style", "bottom", '-2px']
-         ],
-         "${_man3-12}": [
-            ["transform", "scaleX", '-1'],
-            ["style", "display", 'block'],
-            ["style", "left", '0px'],
-            ["style", "bottom", '0px']
-         ],
          "${symbolSelector}": [
             ["style", "height", '85px'],
             ["style", "width", '60px']
+         ],
+         "${_man3-12}": [
+            ["style", "display", 'block'],
+            ["transform", "scaleX", '-1'],
+            ["style", "left", '0px'],
+            ["style", "bottom", '0px']
+         ],
+         "${_man3-22}": [
+            ["style", "display", 'none'],
+            ["transform", "scaleX", '-1'],
+            ["style", "left", '0px'],
+            ["style", "bottom", '-2px']
          ]
       }
    },
@@ -936,9 +936,9 @@ var symbols = {
    },
    states: {
       "Base State": {
-         "${_list32}": [
-            ["style", "top", '-37px'],
-            ["style", "left", '29px']
+         "${symbolSelector}": [
+            ["style", "height", '90px'],
+            ["style", "width", '74px']
          ],
          "${_Man-4hands}": [
             ["style", "top", 'auto'],
@@ -948,9 +948,9 @@ var symbols = {
             ["style", "top", '-60px'],
             ["style", "left", '-62px']
          ],
-         "${symbolSelector}": [
-            ["style", "height", '90px'],
-            ["style", "width", '74px']
+         "${_list32}": [
+            ["style", "top", '-37px'],
+            ["style", "left", '29px']
          ]
       }
    },
@@ -962,8 +962,8 @@ var symbols = {
          autoPlay: true,
          timeline: [
             { id: "eid233", tween: [ "style", "${_list32}", "top", '-37px', { fromValue: '-37px'}], position: 0, duration: 0, easing: "easeOutExpo" },
-            { id: "eid220", tween: [ "style", "${_list1}", "top", '-60px', { fromValue: '-60px'}], position: 0, duration: 0, easing: "easeOutCirc" },
             { id: "eid221", tween: [ "style", "${_list1}", "left", '-62px', { fromValue: '-62px'}], position: 0, duration: 0, easing: "easeOutCirc" },
+            { id: "eid220", tween: [ "style", "${_list1}", "top", '-60px', { fromValue: '-60px'}], position: 0, duration: 0, easing: "easeOutCirc" },
             { id: "eid232", tween: [ "style", "${_list32}", "left", '29px', { fromValue: '29px'}], position: 0, duration: 0, easing: "easeOutExpo" }         ]
       }
    }
@@ -985,10 +985,10 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','svg_floor5/hero3-1.svg','0px','0px']
    },
    {
-      rect: ['7px','auto','62px','90px','auto','0px'],
-      id: 'hero3-2',
       type: 'image',
       display: 'none',
+      rect: ['7px','auto','62px','90px','auto','0px'],
+      id: 'hero3-2',
       fill: ['rgba(0,0,0,0)','svg_floor5/hero3-2.svg','0px','0px']
    }],
    symbolInstances: [
@@ -996,19 +996,19 @@ var symbols = {
    },
    states: {
       "Base State": {
-         "${_hero3-2}": [
-            ["style", "display", 'none'],
-            ["style", "left", '7px'],
-            ["style", "bottom", '0px']
+         "${symbolSelector}": [
+            ["style", "height", '90px'],
+            ["style", "width", '74px']
          ],
          "${_hero3-1}": [
             ["style", "display", 'block'],
             ["style", "left", '0px'],
             ["style", "bottom", '0px']
          ],
-         "${symbolSelector}": [
-            ["style", "height", '90px'],
-            ["style", "width", '74px']
+         "${_hero3-2}": [
+            ["style", "display", 'none'],
+            ["style", "left", '7px'],
+            ["style", "bottom", '0px']
          ]
       }
    },
@@ -1019,12 +1019,12 @@ var symbols = {
          duration: 500,
          autoPlay: true,
          timeline: [
-            { id: "eid93", tween: [ "style", "${_hero3-1}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0, easing: "easeOutBack" },
-            { id: "eid95", tween: [ "style", "${_hero3-1}", "display", 'none', { fromValue: 'block'}], position: 250, duration: 0, easing: "easeOutBack" },
-            { id: "eid97", tween: [ "style", "${_hero3-1}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0, easing: "easeOutBack" },
             { id: "eid92", tween: [ "style", "${_hero3-2}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutBack" },
             { id: "eid94", tween: [ "style", "${_hero3-2}", "display", 'block', { fromValue: 'none'}], position: 250, duration: 0, easing: "easeOutBack" },
-            { id: "eid96", tween: [ "style", "${_hero3-2}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0, easing: "easeOutBack" }         ]
+            { id: "eid96", tween: [ "style", "${_hero3-2}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0, easing: "easeOutBack" },
+            { id: "eid93", tween: [ "style", "${_hero3-1}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0, easing: "easeOutBack" },
+            { id: "eid95", tween: [ "style", "${_hero3-1}", "display", 'none', { fromValue: 'block'}], position: 250, duration: 0, easing: "easeOutBack" },
+            { id: "eid97", tween: [ "style", "${_hero3-1}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0, easing: "easeOutBack" }         ]
       }
    }
 },
@@ -1039,10 +1039,10 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'image',
-      id: 'list',
       rect: ['9px','auto','25px','31px','auto','0px'],
+      id: 'list',
       transform: [],
+      type: 'image',
       fill: ['rgba(0,0,0,0)','svg_floor5/list.svg','0px','0px']
    }],
    symbolInstances: [
@@ -1050,19 +1050,19 @@ var symbols = {
    },
    states: {
       "Base State": {
-         "${symbolSelector}": [
-            ["style", "height", '31px'],
-            ["style", "width", '25px']
-         ],
          "${_list}": [
             ["style", "-webkit-transform-origin", [-208,50], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [-208,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [-208,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [-208,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [-208,50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["transform", "rotateZ", '0deg'],
+            ["style", "bottom", '0px'],
             ["style", "left", '9px'],
-            ["style", "bottom", '0px']
+            ["transform", "rotateZ", '0deg']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '31px'],
+            ["style", "width", '25px']
          ]
       }
    },
@@ -1100,10 +1100,10 @@ var symbols = {
       rect: ['0','0','25','31','auto','auto'],
       c: [
       {
-         type: 'image',
-         id: 'list2',
          rect: ['0px','auto','25px','31px','auto','0px'],
+         id: 'list2',
          transform: [],
+         type: 'image',
          fill: ['rgba(0,0,0,0)','svg_floor5/list.svg','0px','0px']
       }]
    }],
@@ -1118,9 +1118,9 @@ var symbols = {
             ["style", "-ms-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["transform", "rotateZ", '0deg'],
+            ["style", "bottom", '0px'],
             ["style", "left", '0px'],
-            ["style", "bottom", '0px']
+            ["transform", "rotateZ", '0deg']
          ],
          "${symbolSelector}": [
             ["style", "height", '31px'],
@@ -1157,10 +1157,10 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'image',
-      id: 'list3',
       rect: ['0px','auto','25px','31px','auto','0px'],
+      id: 'list3',
       transform: [],
+      type: 'image',
       fill: ['rgba(0,0,0,0)','svg_floor5/list.svg','0px','0px']
    }],
    symbolInstances: [
@@ -1174,9 +1174,9 @@ var symbols = {
             ["style", "-ms-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "bottom", '0px'],
+            ["transform", "rotateZ", '0deg'],
             ["style", "left", '0px'],
-            ["transform", "rotateZ", '0deg']
+            ["style", "bottom", '0px']
          ],
          "${symbolSelector}": [
             ["style", "height", '31px'],
@@ -1211,23 +1211,23 @@ var symbols = {
    content: {
    dom: [
    {
-      rect: ['-9px','3px','28','25','auto','auto'],
-      id: 'Group',
       type: 'group',
+      id: 'Group',
+      rect: ['-9px','3px','28','25','auto','auto'],
       transform: [],
       c: [
       {
-         type: 'image',
-         id: 'phone-tube2',
          rect: ['9px','auto','10px','28px','auto','6px'],
+         id: 'phone-tube2',
          transform: [[0,0],['90']],
+         type: 'image',
          fill: ['rgba(0,0,0,0)','svg_floor5/phone-tube.svg','0px','0px']
       },
       {
-         type: 'image',
-         id: 'phone_body',
          rect: ['1px','auto','27px','19px','auto','0px'],
+         id: 'phone_body',
          transform: [],
+         type: 'image',
          fill: ['rgba(0,0,0,0)','svg_floor5/phone_body.svg','0px','0px']
       }]
    }],
@@ -1237,12 +1237,12 @@ var symbols = {
    states: {
       "Base State": {
          "${_Group}": [
-            ["style", "top", '3px'],
             ["style", "-webkit-transform-origin", [50,50], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "top", '3px'],
             ["style", "left", '-9px'],
             ["transform", "rotateZ", '0deg']
          ],
@@ -1252,9 +1252,9 @@ var symbols = {
             ["style", "-ms-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["transform", "rotateZ", '90deg'],
+            ["style", "bottom", '6px'],
             ["style", "left", '9px'],
-            ["style", "bottom", '6px']
+            ["transform", "rotateZ", '90deg']
          ],
          "${_phone_body}": [
             ["style", "-webkit-transform-origin", [477,50], {valueTemplate:'@@0@@% @@1@@%'} ],
@@ -1262,9 +1262,9 @@ var symbols = {
             ["style", "-ms-transform-origin", [477,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [477,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [477,50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["transform", "rotateZ", '0deg'],
+            ["style", "bottom", '0px'],
             ["style", "left", '1px'],
-            ["style", "bottom", '0px']
+            ["transform", "rotateZ", '0deg']
          ],
          "${symbolSelector}": [
             ["style", "height", '28px'],
@@ -1279,15 +1279,12 @@ var symbols = {
          duration: 1677,
          autoPlay: true,
          timeline: [
-            { id: "eid255", tween: [ "style", "${_Group}", "top", '-86px', { fromValue: '3px'}], position: 0, duration: 215 },
-            { id: "eid263", tween: [ "style", "${_Group}", "top", '-150px', { fromValue: '-86px'}], position: 215, duration: 205 },
-            { id: "eid261", tween: [ "style", "${_Group}", "top", '-119px', { fromValue: '-150px'}], position: 419, duration: 210 },
-            { id: "eid264", tween: [ "style", "${_Group}", "top", '-11px', { fromValue: '-119px'}], position: 629, duration: 210 },
-            { id: "eid257", tween: [ "style", "${_Group}", "top", '81px', { fromValue: '-11px'}], position: 839, duration: 226 },
-            { id: "eid267", tween: [ "style", "${_Group}", "top", '113px', { fromValue: '81px'}], position: 1065, duration: 193 },
-            { id: "eid259", tween: [ "style", "${_Group}", "top", '86px', { fromValue: '113px'}], position: 1258, duration: 240 },
-            { id: "eid269", tween: [ "style", "${_Group}", "top", '2px', { fromValue: '86px'}], position: 1498, duration: 179 },
             { id: "eid129", tween: [ "transform", "${_Group}", "rotateZ", '-360deg', { fromValue: '0deg'}], position: 0, duration: 1677 },
+            { id: "eid251", tween: [ "style", "${_Group}", "-webkit-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0 },
+            { id: "eid748", tween: [ "style", "${_Group}", "-moz-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0 },
+            { id: "eid749", tween: [ "style", "${_Group}", "-ms-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0 },
+            { id: "eid750", tween: [ "style", "${_Group}", "msTransformOrigin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0 },
+            { id: "eid751", tween: [ "style", "${_Group}", "-o-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0 },
             { id: "eid254", tween: [ "style", "${_Group}", "left", '29px', { fromValue: '-9px'}], position: 0, duration: 215 },
             { id: "eid262", tween: [ "style", "${_Group}", "left", '122px', { fromValue: '29px'}], position: 215, duration: 205 },
             { id: "eid260", tween: [ "style", "${_Group}", "left", '251px', { fromValue: '122px'}], position: 419, duration: 210 },
@@ -1296,11 +1293,14 @@ var symbols = {
             { id: "eid266", tween: [ "style", "${_Group}", "left", '115px', { fromValue: '229px'}], position: 1065, duration: 193 },
             { id: "eid258", tween: [ "style", "${_Group}", "left", '26px', { fromValue: '115px'}], position: 1258, duration: 240 },
             { id: "eid268", tween: [ "style", "${_Group}", "left", '-9px', { fromValue: '26px'}], position: 1498, duration: 179 },
-            { id: "eid251", tween: [ "style", "${_Group}", "-webkit-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0 },
-            { id: "eid684", tween: [ "style", "${_Group}", "-moz-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0 },
-            { id: "eid685", tween: [ "style", "${_Group}", "-ms-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0 },
-            { id: "eid686", tween: [ "style", "${_Group}", "msTransformOrigin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0 },
-            { id: "eid687", tween: [ "style", "${_Group}", "-o-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0 }         ]
+            { id: "eid255", tween: [ "style", "${_Group}", "top", '-86px', { fromValue: '3px'}], position: 0, duration: 215 },
+            { id: "eid263", tween: [ "style", "${_Group}", "top", '-150px', { fromValue: '-86px'}], position: 215, duration: 205 },
+            { id: "eid261", tween: [ "style", "${_Group}", "top", '-119px', { fromValue: '-150px'}], position: 419, duration: 210 },
+            { id: "eid264", tween: [ "style", "${_Group}", "top", '-11px', { fromValue: '-119px'}], position: 629, duration: 210 },
+            { id: "eid257", tween: [ "style", "${_Group}", "top", '81px', { fromValue: '-11px'}], position: 839, duration: 226 },
+            { id: "eid267", tween: [ "style", "${_Group}", "top", '113px', { fromValue: '81px'}], position: 1065, duration: 193 },
+            { id: "eid259", tween: [ "style", "${_Group}", "top", '86px', { fromValue: '113px'}], position: 1258, duration: 240 },
+            { id: "eid269", tween: [ "style", "${_Group}", "top", '2px', { fromValue: '86px'}], position: 1498, duration: 179 }         ]
       }
    }
 },
@@ -1315,10 +1315,10 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'image',
-      id: 'comp',
       rect: ['0px','auto','52px','23px','auto','0px'],
+      id: 'comp',
       transform: [],
+      type: 'image',
       fill: ['rgba(0,0,0,0)','svg_floor5/comp.svg','0px','0px']
    }],
    symbolInstances: [
@@ -1332,9 +1332,9 @@ var symbols = {
             ["style", "-ms-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["transform", "rotateZ", '0deg'],
+            ["style", "bottom", '0px'],
             ["style", "left", '0px'],
-            ["style", "bottom", '0px']
+            ["transform", "rotateZ", '0deg']
          ],
          "${symbolSelector}": [
             ["style", "height", '23px'],
@@ -1349,20 +1349,20 @@ var symbols = {
          duration: 1500,
          autoPlay: true,
          timeline: [
-            { id: "eid242", tween: [ "style", "${_comp}", "left", '-115px', { fromValue: '0px'}], position: 0, duration: 375, easing: "easeInCirc" },
-            { id: "eid245", tween: [ "style", "${_comp}", "left", '-184px', { fromValue: '-115px'}], position: 375, duration: 375, easing: "easeInCirc" },
-            { id: "eid247", tween: [ "style", "${_comp}", "left", '-83px', { fromValue: '-184px'}], position: 750, duration: 375, easing: "easeInCirc" },
-            { id: "eid249", tween: [ "style", "${_comp}", "left", '15px', { fromValue: '-83px'}], position: 1125, duration: 375, easing: "easeInCirc" },
+            { id: "eid240", tween: [ "style", "${_comp}", "-webkit-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0, easing: "easeInCirc" },
+            { id: "eid752", tween: [ "style", "${_comp}", "-moz-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0, easing: "easeInCirc" },
+            { id: "eid753", tween: [ "style", "${_comp}", "-ms-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0, easing: "easeInCirc" },
+            { id: "eid754", tween: [ "style", "${_comp}", "msTransformOrigin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0, easing: "easeInCirc" },
+            { id: "eid755", tween: [ "style", "${_comp}", "-o-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0, easing: "easeInCirc" },
             { id: "eid244", tween: [ "style", "${_comp}", "bottom", '-102px', { fromValue: '0px'}], position: 0, duration: 375, easing: "easeInCirc" },
             { id: "eid246", tween: [ "style", "${_comp}", "bottom", '5px', { fromValue: '-102px'}], position: 375, duration: 375, easing: "easeInCirc" },
             { id: "eid248", tween: [ "style", "${_comp}", "bottom", '69px', { fromValue: '5px'}], position: 750, duration: 375, easing: "easeInCirc" },
             { id: "eid250", tween: [ "style", "${_comp}", "bottom", '5px', { fromValue: '69px'}], position: 1125, duration: 375, easing: "easeInCirc" },
             { id: "eid130", tween: [ "transform", "${_comp}", "rotateZ", '-360deg', { fromValue: '0deg'}], position: 0, duration: 1500 },
-            { id: "eid240", tween: [ "style", "${_comp}", "-webkit-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0, easing: "easeInCirc" },
-            { id: "eid688", tween: [ "style", "${_comp}", "-moz-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0, easing: "easeInCirc" },
-            { id: "eid689", tween: [ "style", "${_comp}", "-ms-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0, easing: "easeInCirc" },
-            { id: "eid690", tween: [ "style", "${_comp}", "msTransformOrigin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0, easing: "easeInCirc" },
-            { id: "eid691", tween: [ "style", "${_comp}", "-o-transform-origin", [50,50], { valueTemplate: '@@0@@% @@1@@%', fromValue: [50,50]}], position: 0, duration: 0, easing: "easeInCirc" }         ]
+            { id: "eid242", tween: [ "style", "${_comp}", "left", '-115px', { fromValue: '0px'}], position: 0, duration: 375, easing: "easeInCirc" },
+            { id: "eid245", tween: [ "style", "${_comp}", "left", '-184px', { fromValue: '-115px'}], position: 375, duration: 375, easing: "easeInCirc" },
+            { id: "eid247", tween: [ "style", "${_comp}", "left", '-83px', { fromValue: '-184px'}], position: 750, duration: 375, easing: "easeInCirc" },
+            { id: "eid249", tween: [ "style", "${_comp}", "left", '15px', { fromValue: '-83px'}], position: 1125, duration: 375, easing: "easeInCirc" }         ]
       }
    }
 },
@@ -1377,18 +1377,18 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'image',
       transform: [[0,0],[],[],['-1']],
-      display: 'none',
       rect: ['0px','auto','61px','84px','auto','0px'],
+      display: 'none',
       id: 'man1-0',
+      type: 'image',
       fill: ['rgba(0,0,0,0)','svg_floor5/man1-0.svg','0px','0px']
    },
    {
-      rect: ['0px','auto','61px','84px','auto','0px'],
-      id: 'man1-12',
       transform: [[0,0],[],[],['-1']],
+      id: 'man1-12',
       type: 'image',
+      rect: ['0px','auto','61px','84px','auto','0px'],
       fill: ['rgba(0,0,0,0)','svg_floor5/man1-1.svg','0px','0px']
    }],
    symbolInstances: [
@@ -1397,14 +1397,14 @@ var symbols = {
    states: {
       "Base State": {
          "${_man1-0}": [
-            ["transform", "scaleX", '-1'],
             ["style", "display", 'none'],
+            ["transform", "scaleX", '-1'],
             ["style", "left", '0px'],
             ["style", "bottom", '0px']
          ],
          "${_man1-12}": [
-            ["transform", "scaleX", '-1'],
             ["style", "display", 'block'],
+            ["transform", "scaleX", '-1'],
             ["style", "left", '0px'],
             ["style", "bottom", '0px']
          ],
@@ -1421,12 +1421,12 @@ var symbols = {
          duration: 500,
          autoPlay: true,
          timeline: [
-            { id: "eid153", tween: [ "style", "${_man1-0}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-            { id: "eid157", tween: [ "style", "${_man1-0}", "display", 'block', { fromValue: 'none'}], position: 250, duration: 0 },
-            { id: "eid155", tween: [ "style", "${_man1-0}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0 },
             { id: "eid152", tween: [ "style", "${_man1-12}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
             { id: "eid156", tween: [ "style", "${_man1-12}", "display", 'none', { fromValue: 'block'}], position: 250, duration: 0 },
-            { id: "eid154", tween: [ "style", "${_man1-12}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 }         ]
+            { id: "eid154", tween: [ "style", "${_man1-12}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
+            { id: "eid153", tween: [ "style", "${_man1-0}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid157", tween: [ "style", "${_man1-0}", "display", 'block', { fromValue: 'none'}], position: 250, duration: 0 },
+            { id: "eid155", tween: [ "style", "${_man1-0}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0 }         ]
       }
    }
 },
@@ -1441,24 +1441,24 @@ var symbols = {
    content: {
    dom: [
    {
-      rect: ['0px','auto','24px','120px','auto','0px'],
+      type: 'image',
       id: 'dooms',
-      type: 'image',
-      clip: ['rect(0px 24pxpx 120pxpx 0px)'],
-      fill: ['rgba(0,0,0,0)','svg_floor5/dooms.svg','0px','0px']
-   },
-   {
       rect: ['0px','auto','24px','120px','auto','0px'],
-      id: 'doomsCopy',
-      type: 'image',
       clip: ['rect(0px 24pxpx 120pxpx 0px)'],
       fill: ['rgba(0,0,0,0)','svg_floor5/dooms.svg','0px','0px']
    },
    {
-      rect: ['8px','auto','5px','10px','auto','110px'],
+      type: 'image',
+      id: 'doomsCopy',
+      rect: ['0px','auto','24px','120px','auto','0px'],
+      clip: ['rect(0px 24pxpx 120pxpx 0px)'],
+      fill: ['rgba(0,0,0,0)','svg_floor5/dooms.svg','0px','0px']
+   },
+   {
+      type: 'rect',
       id: 'Rectangle2',
       stroke: [0,'rgb(0, 0, 0)','none'],
-      type: 'rect',
+      rect: ['8px','auto','5px','10px','auto','110px'],
       fill: ['rgba(0,0,0,1)']
    }],
    symbolInstances: [
@@ -1473,9 +1473,9 @@ var symbols = {
          ],
          "${_Rectangle2}": [
             ["style", "height", '10px'],
-            ["style", "width", '5px'],
+            ["style", "bottom", '110px'],
             ["style", "left", '8px'],
-            ["style", "bottom", '110px']
+            ["style", "width", '5px']
          ],
          "${_dooms}": [
             ["style", "clip", [0,24,11,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
@@ -1495,12 +1495,12 @@ var symbols = {
          duration: 1000,
          autoPlay: true,
          timeline: [
-            { id: "eid190", tween: [ "style", "${_Rectangle2}", "width", '266px', { fromValue: '5px'}], position: 250, duration: 750, easing: "easeInElastic" },
+            { id: "eid188", tween: [ "style", "${_Rectangle2}", "bottom", '0px', { fromValue: '110px'}], position: 0, duration: 250, easing: "easeInCirc" },
             { id: "eid182", tween: [ "style", "${_dooms}", "clip", [0,24,120,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,24,11,0]}], position: 0, duration: 250, easing: "easeInCirc" },
             { id: "eid187", tween: [ "style", "${_Rectangle2}", "height", '120px', { fromValue: '10px'}], position: 0, duration: 250, easing: "easeInCirc" },
             { id: "eid172", tween: [ "style", "${_dooms}", "left", '40px', { fromValue: '0px'}], position: 250, duration: 750, easing: "easeInElastic" },
             { id: "eid189", tween: [ "style", "${_Rectangle2}", "left", '-215px', { fromValue: '8px'}], position: 250, duration: 750, easing: "easeInElastic" },
-            { id: "eid188", tween: [ "style", "${_Rectangle2}", "bottom", '0px', { fromValue: '110px'}], position: 0, duration: 250, easing: "easeInCirc" },
+            { id: "eid190", tween: [ "style", "${_Rectangle2}", "width", '266px', { fromValue: '5px'}], position: 250, duration: 750, easing: "easeInElastic" },
             { id: "eid170", tween: [ "style", "${_doomsCopy}", "left", '-230px', { fromValue: '0px'}], position: 250, duration: 750, easing: "easeInElastic" },
             { id: "eid178", tween: [ "style", "${_doomsCopy}", "clip", [0,24,120,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,24,5,0]}], position: 0, duration: 250, easing: "easeInCirc" }         ]
       }
@@ -1523,10 +1523,10 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','svg_floor5/3hand1.svg','0px','0px']
    },
    {
-      type: 'image',
-      display: 'none',
       rect: ['0px','auto','95px','90px','auto','0px'],
       id: '_3hand2',
+      type: 'image',
+      display: 'none',
       fill: ['rgba(0,0,0,0)','svg_floor5/3hand2.svg','0px','0px']
    }],
    symbolInstances: [

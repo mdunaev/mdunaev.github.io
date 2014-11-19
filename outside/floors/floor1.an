@@ -2,7 +2,7 @@
 
 	"PubChromeFrameInstallerPrompt":"none",
 	"XProperty":"left",
-	"pref__general__AutoKeyframeProperties":"true",
+	"pref__general__AutoKeyframeProperties":"false",
 	"UseCDN":"false",
 	"UseMotionPaths":"false",
 	"Preloader-Default Timeline_playhead_ms":"0",
@@ -17,11 +17,11 @@
 		"defaultStageParentWidth":"3000px",
 		"defaultStageParentHeight":"1000px"},
 	"CompZoomFactor":"100",
-	"StageZoomFactor":"100",
+	"StageZoomFactor":"250",
 	"pixelsPerMs":"0.50453878600177",
 	"stage-Default Timeline_mark_ms":"-1",
 	"nextElementColorIndex":"3",
-	"stage-Default Timeline_playhead_ms":"2872",
+	"stage-Default Timeline_playhead_ms":"3723",
 	"symbol_rain":{
 		"element_${_Group3}":{
 			"timelineColor2":"0x1aa38f",
@@ -72,8 +72,8 @@
    }}\
 }",
 	"Symbol_1-Default Timeline_playhead_ms":"0",
-	"viewStartMs":"-9.9100408554077",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"viewStartMs":"287.83215332031",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"symbol_stage":{
 		"element_${_RectangleCopy4}":{
 			"timelineColor2":"0x5a558a",
@@ -289,7 +289,7 @@
 			"timelineColor3":"0x29647e",
 			"animationEnabled":"true",
 			"timelineColor":"0x00a9fa"},
-		"vGuides":"1499px",
+		"vGuides":"",
 		"element_${_sand_mask}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",
@@ -386,8 +386,8 @@
 			"animationEnabled":"true",
 			"locked":"false",
 			"invisible":"false"}},
-	"TransitionIdCounter":"182",
-	"viewStartY":"513",
+	"TransitionIdCounter":"188",
+	"viewStartY":"240",
 	"symbol_Symbol_1":{
 		"element_${_pigeon-right}":{
 			"timelineColor2":"0x81aa62",
