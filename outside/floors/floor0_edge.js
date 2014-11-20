@@ -594,7 +594,7 @@ var symbols = {
       "Default Timeline": {
          fromState: "Base State",
          toState: "",
-         duration: 6556.50390625,
+         duration: 7000,
          autoPlay: true,
          labels: {
             "start": 0,
@@ -606,7 +606,7 @@ var symbols = {
             "part5": 3426,
             "part6": 3716,
             "part7": 6288,
-            "end": 6557
+            "end": 7000
          },
          timeline: [
             { id: "eid216", tween: [ "style", "${_Ellipse3}", "left", '1535px', { fromValue: '1544px'}], position: 5589, duration: 285 },
