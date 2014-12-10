@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DINRoundProMedium';
+    src: url('ffdinroundpro-medium.eot');
+    src: url('ffdinroundpro-medium.eot') format('embedded-opentype'),
+         url('ffdinroundpro-medium.woff2') format('woff2'),
+         url('ffdinroundpro-medium.woff') format('woff'),
+         url('ffdinroundpro-medium.ttf') format('truetype'),
+         url('ffdinroundpro-medium.svg#DINRoundProMedium') format('svg');
+}

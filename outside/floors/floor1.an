@@ -17,7 +17,7 @@
 		"defaultStageParentWidth":"3000px",
 		"defaultStageParentHeight":"1000px"},
 	"CompZoomFactor":"100",
-	"StageZoomFactor":"250",
+	"StageZoomFactor":"75",
 	"pixelsPerMs":"0.50453878600177",
 	"stage-Default Timeline_mark_ms":"-1",
 	"nextElementColorIndex":"3",
@@ -64,7 +64,8 @@
    }},\
 \"Preloader\": {\
    \"timelines\": {\
-\
+      \"Default Timeline\": {\
+      }\
    }},\
 \"Down-level\": {\
    \"timelines\": {\
@@ -387,7 +388,7 @@
 			"locked":"false",
 			"invisible":"false"}},
 	"TransitionIdCounter":"188",
-	"viewStartY":"240",
+	"viewStartY":"92",
 	"symbol_Symbol_1":{
 		"element_${_pigeon-right}":{
 			"timelineColor2":"0x81aa62",

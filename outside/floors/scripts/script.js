@@ -120,6 +120,7 @@
 
   init = function() {
     var touchMove, touchStart, wheel_event_handler;
+    $('.preloader').css('display', 'none');
     enter_frame_handler();
     $('body').on('keydown', function(e) {
       if (e.keyCode === 83) {
@@ -160,6 +161,10 @@
       if (wheel === void 0) {
         return;
       }
+      if (Math.abs(wheel) < 100) {
+        return;
+      }
+      console.log(wheel);
       timeNow = new Date().getTime();
       if (timeNow - timeStamp < 100) {
         timeStamp = timeNow;

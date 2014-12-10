@@ -41,8 +41,15 @@ var symbols = {
          },
          {
             id:'man-fly',
+            display:'none',
             type:'image',
             rect:['1459px','auto','82px','89px','auto','689px'],
+            fill:["rgba(0,0,0,0)",'man-fly-noCHD.svg','0px','0px']
+         },
+         {
+            id:'man-fly-noCHD',
+            type:'image',
+            rect:['1474px','auto','61px','89px','auto','94px'],
             fill:["rgba(0,0,0,0)",'man-fly-noCHD.svg','0px','0px']
          },
          {
@@ -142,6 +149,11 @@ var symbols = {
             ["style", "left", '1340px'],
             ["transform", "rotateZ", '0deg']
          ],
+         "${_man-fly-noCHD}": [
+            ["style", "display", 'block'],
+            ["style", "left", '1474px'],
+            ["style", "bottom", '754px']
+         ],
          "${_girl}": [
             ["style", "display", 'none'],
             ["style", "left", '1094px'],
@@ -177,10 +189,10 @@ var symbols = {
          ],
          "${_man-fly}": [
             ["transform", "scaleY", '1'],
-            ["style", "bottom", '689px'],
+            ["style", "bottom", '94px'],
             ["transform", "scaleX", '-1'],
             ["style", "left", '1459px'],
-            ["style", "display", 'block']
+            ["style", "display", 'none']
          ],
          "${_moneys2Copy4}": [
             ["style", "display", 'none'],
@@ -255,7 +267,6 @@ var symbols = {
          },
          timeline: [
             { id: "eid125", tween: [ "style", "${_palms}", "bottom", '15px', { fromValue: '659px'}], position: 8214, duration: 1036, easing: "easeOutBounce" },
-            { id: "eid106", tween: [ "transform", "${_man-fly}", "scaleY", '1', { fromValue: '1'}], position: 9124, duration: 0 },
             { id: "eid81", tween: [ "transform", "${_moneys2Copy4}", "rotateZ", '-11deg', { fromValue: '0deg'}], position: 8385, duration: 422 },
             { id: "eid88", tween: [ "transform", "${_moneys2Copy4}", "rotateZ", '-54deg', { fromValue: '-11deg'}], position: 8807, duration: 317 },
             { id: "eid78", tween: [ "transform", "${_moneys2Copy5}", "rotateZ", '-11deg', { fromValue: '0deg'}], position: 8214, duration: 456 },
@@ -272,6 +283,7 @@ var symbols = {
             { id: "eid129", tween: [ "style", "${_hero}", "left", '1472px', { fromValue: '1477px'}], position: 4795, duration: 509 },
             { id: "eid134", tween: [ "style", "${_hero}", "left", '1466px', { fromValue: '1472px'}], position: 6923, duration: 476 },
             { id: "eid139", tween: [ "style", "${_hero}", "left", '1437px', { fromValue: '1466px'}], position: 8807, duration: 317 },
+            { id: "eid142", tween: [ "style", "${_man-fly-noCHD}", "bottom", '94px', { fromValue: '754px'}], position: 0, duration: 1500 },
             { id: "eid115", tween: [ "style", "${_man-fly}", "left", '1142px', { fromValue: '1459px'}], position: 9124, duration: 626 },
             { id: "eid22", tween: [ "style", "${_moneys2Copy}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutBounce" },
             { id: "eid25", tween: [ "style", "${_moneys2Copy}", "display", 'block', { fromValue: 'none'}], position: 4250, duration: 0, easing: "easeOutBounce" },
@@ -282,6 +294,7 @@ var symbols = {
             { id: "eid51", tween: [ "transform", "${_moneys2Copy2}", "rotateZ", '-7deg', { fromValue: '0deg'}], position: 6400, duration: 523, easing: "easeInSine" },
             { id: "eid66", tween: [ "transform", "${_moneys2Copy2}", "rotateZ", '-11deg', { fromValue: '-7deg'}], position: 6923, duration: 476, easing: "easeInSine" },
             { id: "eid93", tween: [ "transform", "${_moneys2Copy2}", "rotateZ", '-54deg', { fromValue: '-11deg'}], position: 8807, duration: 317 },
+            { id: "eid143", tween: [ "style", "${_man-fly-noCHD}", "display", 'none', { fromValue: 'block'}], position: 1500, duration: 0 },
             { id: "eid82", tween: [ "style", "${_moneys2Copy4}", "left", '1402px', { fromValue: '1412px'}], position: 8385, duration: 422 },
             { id: "eid89", tween: [ "style", "${_moneys2Copy4}", "left", '1403px', { fromValue: '1402px'}], position: 8807, duration: 317 },
             { id: "eid113", tween: [ "style", "${_moneys2Copy4}", "left", '1061px', { fromValue: '1403px'}], position: 9124, duration: 626 },
@@ -319,8 +332,6 @@ var symbols = {
             { id: "eid38", tween: [ "transform", "${_moneys2Copy}", "rotateZ", '-6deg', { fromValue: '4deg'}], position: 4795, duration: 509, easing: "easeInQuad" },
             { id: "eid60", tween: [ "transform", "${_moneys2Copy}", "rotateZ", '-11deg', { fromValue: '-6deg'}], position: 6923, duration: 476, easing: "easeInSine" },
             { id: "eid97", tween: [ "transform", "${_moneys2Copy}", "rotateZ", '-54deg', { fromValue: '-11deg'}], position: 8807, duration: 317 },
-            { id: "eid6", tween: [ "style", "${_man-fly}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
-            { id: "eid5", tween: [ "style", "${_man-fly}", "display", 'none', { fromValue: 'block'}], position: 1500, duration: 0 },
             { id: "eid101", tween: [ "style", "${_man-fly}", "display", 'block', { fromValue: 'none'}], position: 9124, duration: 0 },
             { id: "eid47", tween: [ "style", "${_moneys2Copy3}", "bottom", '73px', { fromValue: '483px'}], position: 6250, duration: 465, easing: "easeInSine" },
             { id: "eid65", tween: [ "style", "${_moneys2Copy3}", "bottom", '55px', { fromValue: '73px'}], position: 6923, duration: 476, easing: "easeInSine" },
@@ -360,7 +371,6 @@ var symbols = {
             { id: "eid34", tween: [ "transform", "${_line}", "rotateZ", '-6deg', { fromValue: '4deg'}], position: 4795, duration: 509, easing: "easeInQuad" },
             { id: "eid53", tween: [ "transform", "${_line}", "rotateZ", '-11deg', { fromValue: '-6deg'}], position: 6923, duration: 476, easing: "easeInSine" },
             { id: "eid83", tween: [ "transform", "${_line}", "rotateZ", '-53deg', { fromValue: '-11deg'}], position: 8807, duration: 317 },
-            { id: "eid2", tween: [ "style", "${_man-fly}", "bottom", '94px', { fromValue: '689px'}], position: 0, duration: 1500 },
             { id: "eid116", tween: [ "style", "${_man-fly}", "bottom", '-307px', { fromValue: '94px'}], position: 9124, duration: 626 },
             { id: "eid50", tween: [ "style", "${_moneys2Copy2}", "bottom", '77px', { fromValue: '573px'}], position: 6400, duration: 523, easing: "easeInSine" },
             { id: "eid68", tween: [ "style", "${_moneys2Copy2}", "bottom", '62px', { fromValue: '77px'}], position: 6923, duration: 476, easing: "easeInSine" },
@@ -379,8 +389,7 @@ var symbols = {
             { id: "eid19", tween: [ "style", "${_moneys2Copy5}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutBounce" },
             { id: "eid75", tween: [ "style", "${_moneys2Copy5}", "display", 'block', { fromValue: 'none'}], position: 8214, duration: 0 },
             { id: "eid79", tween: [ "style", "${_moneys2Copy5}", "left", '1367px', { fromValue: '1376px'}], position: 8214, duration: 456 },
-            { id: "eid111", tween: [ "style", "${_moneys2Copy5}", "left", '1030px', { fromValue: '1367px'}], position: 9124, duration: 626 },
-            { id: "eid104", tween: [ "transform", "${_man-fly}", "scaleX", '-1', { fromValue: '-1'}], position: 9124, duration: 0 }         ]
+            { id: "eid111", tween: [ "style", "${_moneys2Copy5}", "left", '1030px', { fromValue: '1367px'}], position: 9124, duration: 626 }         ]
       }
    }
 }

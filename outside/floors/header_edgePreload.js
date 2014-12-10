@@ -55,13 +55,7 @@ loadResources(aLoader, doDelayLoad);
 
 preContent={
    dom: [
-   {
-      id:'loader-bar',
-      type:'image',
-      tag:'img',
-      rect:['1390','991','127px','19px','auto','auto'],
-      fill:["rgba(0,0,0,0)",'images/loader-bar.gif','0px','0px']
-   }]};//simpleContent
+]};//simpleContent
 
 dlContent={dom: [ ]};//simpleContent
 

@@ -1,0 +1,440 @@
+Exception in thread Thread-24:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-27:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-26:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-29:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-28:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-34:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-32:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-31:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-30:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-33:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-36:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-38:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-37:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-39:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-35:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-44:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-40:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-41:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-43:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+
+Exception in thread Thread-42:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/threading.py", line 552, in __bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python2.7/threading.py", line 505, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/home/tenzorr/projects/metro4all/metro4all/metro4all/views.py", line 75, in get_routes
+    data = urllib2.urlopen(url)
+  File "/usr/local/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 60] Operation timed out>
+

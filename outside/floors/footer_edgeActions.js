@@ -32,14 +32,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${_RoundRectCopy3}", "click", function(sym, e) {
-         window.location.href = 'mailto:?subject=Промсвязьбанк&body=Начинающие бизнесмены часто совершают одни и те же ошибки, которые в итоге могут обанкротить компанию. Наш герой прошел все «круги ада» начинающего предпринимателя. http://hellobusiness.ru';
-
-      });
-      //Edge binding end
+      
 
       Symbol.bindElementAction(compId, symbolName, "${_RoundRectCopy2}", "click", function(sym, e) {
-         window.open('http://twitter.com/share?text=Неопытные бизнесмены часто совершают одни и те же ошибки. Наш начинающий предприниматель прошел все «круги ада».');
+         window.open('http://twitter.com/intent/tweet?text=Неопытные бизнесмены часто совершают одни и те же ошибки. Наш начинающий предприниматель прошел все «круги ада».http://hellobusiness.ru');
          
 
       });
@@ -53,8 +49,14 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_RoundRect}", "click", function(sym, e) {
-         window.open('http://vk.com/share.php?url=hallobusiness.ru');
+         window.open('http://vk.com/share.php?url=http://hellobusiness.ru');
          
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle}", "click", function(sym, e) {
+         window.open('http://www.psbank.ru/Business');
 
       });
       //Edge binding end
@@ -149,5 +151,114 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    })("Preloader");
    //Edge symbol end:'Preloader'
+
+   //=========================================================
+   
+   //Edge symbol: 'SUN'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3000, function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play(0);
+
+      });
+      //Edge binding end
+
+   })("SUN");
+   //Edge symbol end:'SUN'
+
+   //=========================================================
+   
+   //Edge symbol: 'Baloon'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1000, function(sym, e) {
+         sym.play(0);
+
+      });
+      //Edge binding end
+
+   })("Baloon");
+   //Edge symbol end:'Baloon'
+
+   //=========================================================
+   
+   //Edge symbol: 'Symbol_1'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 12000, function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play(0);
+
+      });
+      //Edge binding end
+
+   })("Symbol_1");
+   //Edge symbol end:'Symbol_1'
+
+   //=========================================================
+   
+   //Edge symbol: 'Symbol_2'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 600000, function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play('start');
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play(Math.random()*1000000);
+
+      });
+      //Edge binding end
+
+   })("Symbol_2");
+   //Edge symbol end:'Symbol_2'
+
+   //=========================================================
+   
+   //Edge symbol: 'Symbol_3'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 240000, function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play('start');
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         sym.play(Math.random()*300000);
+
+      });
+      //Edge binding end
+
+   })("Symbol_3");
+   //Edge symbol end:'Symbol_3'
+
+   //=========================================================
+   
+   //Edge symbol: 'Symbol_4'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play(Math.random()*300000);
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 180000, function(sym, e) {
+         // play the timeline from the given position (ms or label)
+         sym.play('start');
+
+      });
+      //Edge binding end
+
+   })("Symbol_4");
+   //Edge symbol end:'Symbol_4'
 
 })(jQuery, AdobeEdge, "EDGE-23395930");

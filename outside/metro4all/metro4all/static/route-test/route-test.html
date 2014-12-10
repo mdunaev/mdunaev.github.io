@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="testR" ng-controller="MainController">
+
+<h1 ng-hide="$route.current.params.searchData">Начальная страница!</h1>
+<h1>{{$route.current.params.searchData}}</h1>
+
+<a href="#/arbiten">arbiten</a>
+<a href="#/one">one</a>
+<a href="#/two">two</a>
+<a href="#">Start Page</a>
+
+<script type="text/javascript" src="../libs/angular/angular.min.js"></script>
+<script type="text/javascript" src="http://code.angularjs.org/1.2.15/angular-route.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

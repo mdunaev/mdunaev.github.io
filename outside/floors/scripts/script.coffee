@@ -80,8 +80,8 @@ is_next_play = false
 start = {x:0,y:0}
 
 init = ()->
+  $('.preloader').css('display', 'none')
   enter_frame_handler()
-
 
   $('body').on('keydown', (e) ->
 
@@ -129,6 +129,8 @@ init = ()->
 
     wheel = e.originalEvent.wheelDelta
     if wheel == undefined then return
+    if Math.abs(wheel) < 100 then return
+    console.log(wheel)
 
     timeNow = new Date().getTime()
 

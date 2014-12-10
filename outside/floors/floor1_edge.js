@@ -203,7 +203,7 @@ var symbols = {
          {
             id:'Symbol_1',
             type:'rect',
-            rect:['1176px','auto','auto','auto','auto','425px']
+            rect:['1176px','auto','auto','auto','auto','542px']
          },
          {
             id:'Symbol_1Copy',
@@ -372,7 +372,7 @@ var symbols = {
          "${_Symbol_1}": [
             ["style", "top", 'auto'],
             ["style", "left", '1176px'],
-            ["style", "bottom", '425px']
+            ["style", "bottom", '542px']
          ],
          "${_RectangleCopy3}": [
             ["color", "background-color", 'rgba(255,255,255,1)'],
