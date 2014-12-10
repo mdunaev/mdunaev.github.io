@@ -6,7 +6,7 @@ angular.module('myApp.services', [])
                 //return $http.get(url, {
                 //    params: params
                 //});
-                alert(params.q);
+                //alert(params.q);
                 return $http.get('test-data.json', {});
             }
         }
