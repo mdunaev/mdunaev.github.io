@@ -31,7 +31,7 @@
             <leaflet events-broadcast="events" bounds="bounds" center="center" paths="paths" markers="markers" controls="controls" defaults="defaults"></leaflet>
         </div>
 
-        <div class="popup">
+        <div class="popup" ng-show="$route.current.params.searchData" >
             <div class="search-bar" ng-click="$location.path( '/' );">
                 <div class="text">{{destination}}</div>
                 <img src="images/search-icon.png"/>
