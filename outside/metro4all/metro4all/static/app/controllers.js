@@ -6,6 +6,7 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             $scope.$location = $location;
             $scope.$routeParams = $routeParams;
             $scope.show_sharing = false;
+            $scope.code_show = false;
 
             $scope.$on('$routeChangeSuccess', function(){
                 $scope.searchData = $route.current.params.searchData;
@@ -15,10 +16,30 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
 
 
     $scope.fbshare = function(){
-        //https://facebook.com/sharer/sharer.php?u=
                 var url = 'https://facebook.com/sharer/sharer.php?u='+$location.absUrl();
-                window.location.href = url;
+                url = url.replace('#/','#');
+                window.open(
+                    url,
+                    '_blank'
+                );
         }
+    $scope.vkshare = function(){
+                var url = 'https://vk.com/share.php?url='+$location.absUrl();
+                url = url.replace('#/','#');
+                window.open(
+                    url,
+                    '_blank'
+                );
+        }
+    $scope.send_mail = function(){
+                var url = 'mailto:?body='+$location.absUrl()+'&subject=Ваш выход';
+                url = url.replace('#/','#');
+                window.open(
+                    url,
+                    '_blank'
+                );
+        }
+
     $scope.destination = "";
     $scope.stations = [];
 

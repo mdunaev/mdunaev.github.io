@@ -264,6 +264,20 @@ ul{
     cursor: pointer;
 }
 
+.html-share{
+    position: fixed;
+    right: 10px;
+    bottom: 98px;
+    cursor: pointer;
+    width: 200px;
+    height: 77px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+.form-control{
+    font-size: 13px;
+}
+
 .share-buttons{
     position: fixed;
     right: 10px;

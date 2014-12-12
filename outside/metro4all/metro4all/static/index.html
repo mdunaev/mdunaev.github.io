@@ -27,7 +27,7 @@
 
 
     <div class="mapScreen">
-        <div>
+        <div ng-click="show_sharing=false; code_show=false;">
             <leaflet events-broadcast="events" bounds="bounds" center="center" paths="paths" markers="markers" controls="controls" defaults="defaults"></leaflet>
         </div>
 
@@ -96,12 +96,15 @@
         </div>
 
         <div class="sharings">
-            <img ng-click="show_sharing = !show_sharing" class="share-btn shadow" src="images/share-png.png">
+            <img ng-click="show_sharing = !show_sharing; code_show = false" class="share-btn shadow" src="images/share-png.png">
             <div ng-show="show_sharing" class="share-buttons shadow">
                 <img ng-click="fbshare()" src="images/facebook-icon.png">
-                <img src="images/vk-icon.png">
-                <img src="images/email-icon.png">
-                <img src="images/html-icon.png">
+                <img ng-click="vkshare()" src="images/vk-icon.png">
+                <img ng-click="send_mail()" src="images/email-icon.png">
+                <img ng-click="code_show = !code_show" src="images/html-icon.png">
+            </div>
+            <div class="html-share shadow" ng-show="code_show" >
+                <textarea class="form-control" rows="3"><iframe src='{{$location.absUrl()}}' width='420px' height='600px' frameborder='0'/></textarea>
             </div>
         </div>
     </div>
@@ -117,7 +120,6 @@
 
                     <input type="submit" class="send_btn" value=""
                        style="background-image: url(images/search.png); border: solid 0px #000000; width: 50px; height: 40px;" />
-                    <!--<a ng-href="#/{{destination}}"> <img src="images/search.png"></a>-->
             </form>
         </div>
 
