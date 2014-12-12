@@ -5,6 +5,7 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             $scope.$route = $route;
             $scope.$location = $location;
             $scope.$routeParams = $routeParams;
+            $scope.show_sharing = false;
 
             $scope.$on('$routeChangeSuccess', function(){
                 $scope.searchData = $route.current.params.searchData;
@@ -12,6 +13,12 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
                 $scope.searchRoute($scope.searchData);
             });
 
+
+    $scope.fbshare = function(){
+        //https://facebook.com/sharer/sharer.php?u=
+                var url = 'https://facebook.com/sharer/sharer.php?u='+$location.absUrl();
+                window.location.href = url;
+        }
     $scope.destination = "";
     $scope.stations = [];
 

@@ -65,7 +65,7 @@
                         <b>Выход в город</b>
                         <div class="indor">
                                <ul>
-                                   <li ng-class="{
+                                   <li class="li-path" ng-class="{
                                    straight:instruction.toLowerCase().search('прямо')!=-1 || instruction.toLowerCase().search('вверх')!=-1,
                                    left:instruction.toLowerCase().search('лево')!=-1,
                                    right:instruction.toLowerCase().search('право')!=-1,
@@ -79,7 +79,7 @@
                         <b>В городе</b>
                         <div class="outdor">
                                <ul>
-                                   <li ng-class="{
+                                   <li class="li-path" ng-class="{
                                    straight:instruction.toLowerCase().search('прямо')!=-1 || instruction.toLowerCase().search('вверх')!=-1,
                                    left:instruction.toLowerCase().search('лево')!=-1,
                                    right:instruction.toLowerCase().search('право')!=-1,
@@ -94,16 +94,31 @@
             </div>
 
         </div>
+
+        <div class="sharings">
+            <img ng-click="show_sharing = !show_sharing" class="share-btn shadow" src="images/share-png.png">
+            <div ng-show="show_sharing" class="share-buttons shadow">
+                <img ng-click="fbshare()" src="images/facebook-icon.png">
+                <img src="images/vk-icon.png">
+                <img src="images/email-icon.png">
+                <img src="images/html-icon.png">
+            </div>
+        </div>
     </div>
 
     <div ng-hide="$route.current.params.searchData" class="searchScreen">
         <div class="whiteBg"></div>
 
         <div class="search_form">
-        <input type="text" class="form-control" id="destination" placeholder="Введите адрес"
-               typeahead="address for address in getLocation($viewValue) | filter:$viewValue"
-               ng-model="destination" autofocus/>
-            <a ng-href="#/{{destination}}"> <img src="images/search.png"></a>
+            <form action="{{'#/'+destination}}">
+                    <input type="text" class="form-control" id="destination" placeholder="Введите адрес"
+                       typeahead="address for address in getLocation($viewValue) | filter:$viewValue"
+                       ng-model="destination" autofocus/>
+
+                    <input type="submit" class="send_btn" value=""
+                       style="background-image: url(images/search.png); border: solid 0px #000000; width: 50px; height: 40px;" />
+                    <!--<a ng-href="#/{{destination}}"> <img src="images/search.png"></a>-->
+            </form>
         </div>
 
     </div>

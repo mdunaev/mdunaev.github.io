@@ -7,7 +7,7 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     border: 4px #fff solid;
     margin-bottom: 20px;
@@ -39,7 +39,7 @@ h2{
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 100vw;
+    width: 100%;
     height: 50px;
     background-color: #27adda;
     color: #ffffff;
@@ -59,7 +59,7 @@ h2{
     width: 600px;
     margin-left: -300px;
 }
-.search_form img{
+.send_btn{
     position: absolute;
     top: 0px;
     right: 0px;
@@ -108,8 +108,8 @@ h2{
 }
 
 .search-bar{
-    width: 350px;
-    height: 25px;
+    width: 400px;
+    height: 40px;
     background-color: #ffffff;
     overflow: hidden;
     cursor: pointer;
@@ -120,9 +120,9 @@ h2{
 }
 .search-bar .text{
     width: 1000px;
-    font-size: 14px;
-    padding-left: 5px;
-    line-height: 25px;
+    font-size: 18px;
+    padding-left: 16px;
+    line-height: 40px;
     color: #4b4b4b;
 }
 .search-bar img{
@@ -163,7 +163,7 @@ h2{
 .accordion{
     position: absolute;
     width: 350px;
-    top: 40px;
+    top: 53px;
 }
 
 .panel-heading{
@@ -196,7 +196,7 @@ ul{
     padding: 0px;
 }
 
-li{
+.li-path{
     margin: 0px;
     padding: 0px;
     list-style-type: none;
@@ -247,4 +247,36 @@ li{
 }
 .panel-group .panel-heading+.panel-collapse .panel-body {
     border-top: 0px;
+}
+
+.leaflet-top{
+    margin-top: 52px;
+}
+
+.angular-leaflet-map{
+    border-width: 0px;
+}
+
+.share-btn{
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+.share-buttons{
+    position: fixed;
+    right: 10px;
+    bottom: 54px;
+    cursor: pointer;
+    width: 132px;
+    height: 44px;
+    padding: 10px;
+    background-color: #44add8;
+}
+
+.shadow{
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    3px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         3px 3px 5px 0px rgba(50, 50, 50, 0.25);
 }
