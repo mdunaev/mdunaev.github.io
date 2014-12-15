@@ -35,8 +35,7 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
                 var url = 'mailto:?body='+$location.absUrl()+'&subject=Ваш выход';
                 url = url.replace('#/','#');
                 window.open(
-                    url,
-                    '_blank'
+                    url
                 );
         }
 
@@ -75,9 +74,9 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             message: "Выход из метро",
             icon: {
                 iconUrl: "assets/marker-from.png",
-                iconSize: [16, 16],
-                iconAnchor: [16, 16],
-                popupAnchor: [-8, -8],
+                iconSize: [42, 25],
+                iconAnchor: [42, 25],
+                popupAnchor: [-42, -13],
                 shadowSize: [0, 0]
             }
         },
@@ -87,9 +86,9 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             message: "Конечная точка",
             icon: {
                 iconUrl: "assets/marker-to.png",
-                iconSize: [16, 16],
-                iconAnchor: [16, 16],
-                popupAnchor: [-8, -8],
+                iconSize: [42, 25],
+                iconAnchor: [42, 25],
+                popupAnchor: [0, 0],
                 shadowSize: [0, 0]
             },
             draggable: true
@@ -204,6 +203,7 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
                     $scope.stations = response.data.result;
                     $scope.notify($scope.stations[0].exit.id);
                 }
+
             }
         );
     };
@@ -260,8 +260,8 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             message: "Выход из метро",
             icon: {
                 iconUrl: "assets/marker-from.png",
-                iconSize: [16, 16],
-                iconAnchor: [16, 16],
+                iconSize: [25, 25],
+                iconAnchor: [25, 25],
                 popupAnchor: [-8, -8],
                 shadowSize: [0, 0]
             }
@@ -272,8 +272,8 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             message: "Конечная точка",
             icon: {
                 iconUrl: "assets/marker-to.png",
-                iconSize: [16, 16],
-                iconAnchor: [16, 16],
+                iconSize: [25, 25],
+                iconAnchor: [25, 25],
                 popupAnchor: [-8, -8],
                 shadowSize: [0, 0]
             }
@@ -313,7 +313,7 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             array.push([lng * 1e-5, lat * 1e-5]);
         }
         return array;
-    }
+    };
 
     $scope.notify = function(route) {
         $scope.indoorSides = [];
@@ -351,19 +351,6 @@ angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             }
         };
 
-    };
-
-
-    $scope.$getLineClass = function(line_name, cls_name){
-        return true;
-        for(var i=0; i<metro_lines_colors.length; i++){
-            var cls = metro_lines_colors[i].class;
-            var nme = metro_lines_colors[i].name;
-            if(line_name.toLowerCase() == nme.toLowerCase()){
-                return cls_name == cls;
-            }
-        }
-        return true;
     };
 
     $scope.init = function() {

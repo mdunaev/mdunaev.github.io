@@ -664,6 +664,7 @@
                   var leafletBounds = createLeafletBounds(bounds);
                   if (leafletBounds && !map.getBounds().equals(leafletBounds)) {
                     $log.debug('Need to update map bounds.');
+                    leafletBounds._southWest.lng /= 1.00007;
                     map.fitBounds(leafletBounds);
                   }
                 }, true);
@@ -1179,7 +1180,7 @@
             mapDefaults.minZoom = d.minZoom;
           }
           if (isDefined(d.zoomAnimation)) {
-            mapDefaults.zoomAnimation = d.zoomAnimation;
+            mapDefaults.zoomAnimation = true;
           }
           if (isDefined(d.fadeAnimation)) {
             mapDefaults.fadeAnimation = d.fadeAnimation;

@@ -70,6 +70,16 @@ h2{
     font-size: 24px;
 }
 
+.search-desc{
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    font-size: 18px;
+    color: #444444;
+}
+
 .dropdown-menu{
     background-color: transparent;
     border: none;
@@ -172,7 +182,9 @@ h2{
     border-radius: 0px;
 }
 
-.sok * { border-left-color: #ed1b35 !important;}
+.sok .panel-heading { border-left-color: #ed1b35 !important;}
+.sok .indor { border-left-color: #ed1b35 !important;}
+
 .zam * { border-left-color: #44b85c !important;}
 .arb * { border-left-color: #0078bf !important;}
 .fil * { border-left-color: #19c1f3 !important;}
@@ -212,6 +224,10 @@ ul{
 .indor{
     background-image: url("../../images/list-bg.png");
     background-repeat: repeat-y;
+    background-position: 15px 0px;
+    border-left: 5px solid;
+    margin-left: -15px;
+    padding-left: 15px;
 }
 
 .outdor{
@@ -243,7 +259,7 @@ ul{
 
 .panel-body {
     font-size: 13px;
-    border-left: 5px solid;
+    border-left: 0px solid;
 }
 .panel-group .panel-heading+.panel-collapse .panel-body {
     border-top: 0px;
@@ -293,4 +309,11 @@ ul{
     -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.25);
     -moz-box-shadow:    3px 3px 5px 0px rgba(50, 50, 50, 0.25);
     box-shadow:         3px 3px 5px 0px rgba(50, 50, 50, 0.25);
+}
+
+.subheader{
+    position: fixed;
+    left: 180px;
+    top: 28px;
+    font-size: 12px;
 }
