@@ -1,5 +1,9 @@
 (function () {
   'use strict';
+
+  var _map;
+  var deco;
+
   angular.module('leaflet-directive', []).directive('leaflet', [
     '$q',
     'leafletData',
@@ -58,6 +62,7 @@
           // Create the Leaflet Map Object with the options
           var map = new L.Map(element[0], leafletMapDefaults.getMapCreationDefaults(attrs.id));
           _leafletMap.resolve(map);
+          _map = map;
           if (!isDefined(attrs.center)) {
             map.setView([
               defaults.center.lat,
@@ -858,12 +863,36 @@
                   bindPathEvents(newPath, newName, pathData, leafletScope);
                 }
               }
+
               // Delete paths (by name) from the array
               for (var name in leafletPaths) {
                 if (!isDefined(newPaths[name])) {
                   delete leafletPaths[name];
                 }
               }
+
+              var clock = function(){
+                if(leafletPaths.path) {
+
+                    var coords = leafletPaths.path._latlngs;
+                    coords = _.map(coords, function (a) {
+                      return [a.lat, a.lng]
+                    });
+                    coords = [coords];
+                    if(deco) _map.removeLayer(deco);
+                    deco = L.polylineDecorator(coords, {
+                      patterns: [
+                        {
+                          offset: 25,
+                          repeat: 20,
+                          symbol: L.Symbol.arrowHead({color: '#ff0000',pixelSize: 7, pathOptions: {color:'#eeeeff', fillOpacity: 1, weight: 0}})
+                        }
+                      ]
+                    }).addTo(_map);
+                };
+              };
+              setTimeout(clock, 100);
+
             }, true);
           });
         }
@@ -1992,6 +2021,7 @@
         return options;
       }
       var _updatePathOptions = function (path, data) {
+
         if (isDefined(data.weight)) {
           path.setStyle({ weight: data.weight });
         }
@@ -2021,7 +2051,9 @@
               return _isValidPolyline(latlngs);
             },
             createPath: function (options) {
-              return new L.Polyline([], options);
+
+              var polyline = new L.Polyline([], options);
+              return polyline;
             },
             setPath: function (path, data) {
               path.setLatLngs(_convertToLeafletLatLngs(data.latlngs));
