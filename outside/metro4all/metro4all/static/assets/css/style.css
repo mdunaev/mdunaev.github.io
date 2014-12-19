@@ -142,11 +142,11 @@ h2{
 }
 
 .panel{
-    border-width: 1px 0px 0px 0px;
+    border-width: 0px 0px 0px 0px;
 }
 
 .panel-group .panel{
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     border-radius: 0px;
     margin-top: -1px !important;
 
