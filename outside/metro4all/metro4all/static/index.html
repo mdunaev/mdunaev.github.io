@@ -61,7 +61,7 @@
                                      is-open="isOpen" ng-click="notify(station.exit.id)">
                     <!--<accordion-group ng-class="getLineClass(station.exit.station.line.name);" ng-repeat="(i, station) in stations" ng-init="isOpen = (i==0)" is-open="isOpen" ng-click="notify(station.exit.id)" heading='{{station.exit.station.name}}'>-->
                         <accordion-heading>
-                            {{station.exit.station.name}} <small>{{station.exit.station.line.name}} линия</small> <div class="distance"> {{station.distance.toFixed()}}м. </div>
+                            {{station.exit.station.name}} <small>{{station.exit.station.line.name}}</small> <div class="distance"> {{station.distance.toFixed()}}м </div>
                         </accordion-heading>
 
                         <div ng-if="indoorSides.length">{{indoorSides[0]}}<br \>{{indoorSides[1]}}<br \>{{indoorSides[2]}}</div>
