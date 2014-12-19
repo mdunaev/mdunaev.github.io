@@ -78,7 +78,7 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             icon: {
                 iconUrl: "assets/marker-from.png",
                 iconSize: [42, 25],
-                iconAnchor: [20, 25],
+                iconAnchor: [20, 20],
                 popupAnchor: [-42, -13],
                 shadowSize: [0, 0]
             }
@@ -227,6 +227,8 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             return addresses;
         });
     };
+
+
 })
 .config(function($routeProvider, $locationProvider){
         $routeProvider.when('/:searchData', {

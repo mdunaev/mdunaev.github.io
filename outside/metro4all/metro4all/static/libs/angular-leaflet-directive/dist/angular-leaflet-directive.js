@@ -63,6 +63,9 @@
           var map = new L.Map(element[0], leafletMapDefaults.getMapCreationDefaults(attrs.id));
           _leafletMap.resolve(map);
           _map = map;
+
+          L.control.locate({position: 'topright'}).addTo(map);
+
           if (!isDefined(attrs.center)) {
             map.setView([
               defaults.center.lat,

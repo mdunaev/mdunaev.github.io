@@ -317,3 +317,11 @@ ul{
     top: 28px;
     font-size: 12px;
 }
+
+.leaflet-control-locate{
+    border: 0 !important;
+}
+
+.leaflet-bar-part{
+    background-color: #ffffff !important;
+}

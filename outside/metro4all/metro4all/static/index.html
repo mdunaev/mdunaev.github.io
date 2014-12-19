@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="libs/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="libs/geolocation/L.Control.Locate.ie.min.css" />
+    <link rel="stylesheet" href="libs/geolocation/L.Control.Locate.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
 
@@ -20,6 +22,7 @@
     <script type="text/javascript" src="libs/leaflet/leaflet.js"></script>
     <script type="text/javascript" src="libs/Leaflet.PolylineDecorator/leaflet.polylineDecorator.min.js"></script>
     <script type="text/javascript" src="libs/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+    <script type="text/javascript" src="libs/geolocation/L.Control.Locate.min.js"></script>
     <script type="text/javascript" src="app/app.js"></script>
     <script type="text/javascript" src="app/controllers.js"></script>
     <script type="text/javascript" src="app/services.js"></script>
@@ -69,15 +72,16 @@
                                    <li class="li-path" ng-class="{
                                    straight:instruction.toLowerCase().search('прямо')!=-1 || instruction.toLowerCase().search('вверх')!=-1,
                                    left:instruction.toLowerCase().search('лево')!=-1,
-                                   right:instruction.toLowerCase().search('право')!=-1
+                                   right:instruction.toLowerCase().search('право')!=-1,
+                                   turnik:instruction.toLowerCase().search('турнике')!=-1,
+                                    escalat:instruction.toLowerCase().search('эскалат')!=-1,
+                                    lest:instruction.toLowerCase().search('лест')!=-1
                                    }" ng-repeat="instruction in station.indoor.instructions track by $index">{{instruction}}</li>
                                </ul>
                         </div>
 
                         <!--,-->
-                        <!--turnik:instruction.toLowerCase().search('турнике')!=-1,-->
-                        <!--escalat:instruction.toLowerCase().search('эскалат')!=-1,-->
-                        <!--lest:instruction.toLowerCase().search('лест')!=-1-->
+
 
                         <p></p>
                         <b>В городе</b>
