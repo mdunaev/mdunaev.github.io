@@ -13,6 +13,7 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
                         $scope.searchData = $route.current.params.searchData;
                         $scope.destination = $scope.searchData;
                         $scope.searchRoute($scope.searchData);
+
                     }
             });
 

@@ -672,7 +672,8 @@
                   var leafletBounds = createLeafletBounds(bounds);
                   if (leafletBounds && !map.getBounds().equals(leafletBounds)) {
                     $log.debug('Need to update map bounds.');
-                    leafletBounds._southWest.lng /= 1.00007;
+                    //leafletBounds._southWest.lng /= 1.00007;
+                    leafletBounds._southWest.lng += leafletBounds._southWest.lng - leafletBounds._northEast.lng;
                     map.fitBounds(leafletBounds);
                   }
                 }, true);
