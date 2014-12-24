@@ -72,11 +72,11 @@ h2{
 
 .search-desc{
     position: absolute;
-    top: -35px;
+    top: 49px;
     left: 50%;
-    width: 600px;
+    width: 540px;
     margin-left: -300px;
-    font-size: 18px;
+    font-size: 16px;
     color: #444444;
 }
 

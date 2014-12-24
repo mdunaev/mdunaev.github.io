@@ -876,8 +876,8 @@
               }
 
               var clock = function(){
-                if(leafletPaths.path) {
-
+                if(leafletPaths.path != undefined) {
+                    if(leafletPaths.path._latlngs.length == 0) return;
                     var coords = leafletPaths.path._latlngs;
                     coords = _.map(coords, function (a) {
                       return [a.lat, a.lng]

@@ -24,17 +24,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/metro4all/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="1515" max-vertical-offset="3255">
-              <caret line="114" column="64" selection-start-line="114" selection-start-column="64" selection-end-line="114" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.047244094" vertical-offset="15" max-vertical-offset="3315">
+              <caret line="3" column="31" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1419169830000" expanded="true" signature="2695:2697" placeholder="{...}" />
-                <marker date="1419169830000" expanded="true" signature="2695:3926" placeholder="{...}" />
-                <marker date="1419169830000" expanded="true" signature="4986:5608" placeholder="{...}" />
-                <marker date="1419169830000" expanded="true" signature="6024:6644" placeholder="{...}" />
+                <marker date="1419423125000" expanded="true" signature="2682:3913" placeholder="{...}" />
+                <marker date="1419423125000" expanded="true" signature="5107:5729" placeholder="{...}" />
+                <marker date="1419423125000" expanded="true" signature="6145:6765" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -43,8 +42,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/metro4all/static/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4225" max-vertical-offset="4980">
-              <caret line="301" column="13" selection-start-line="301" selection-start-column="13" selection-end-line="301" selection-end-column="13" />
+            <state vertical-scroll-proportion="-11.296296" vertical-offset="865" max-vertical-offset="4980">
+              <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -53,20 +52,20 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/metro4all/static/app/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3855">
-              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+            <state vertical-scroll-proportion="-11.111111" vertical-offset="3570" max-vertical-offset="4215">
+              <caret line="258" column="8" selection-start-line="258" selection-start-column="8" selection-end-line="261" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular-leaflet-directive.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="angular-leaflet-directive.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/metro4all/static/libs/angular-leaflet-directive/dist/angular-leaflet-directive.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84821427" vertical-offset="9555" max-vertical-offset="42795">
-              <caret line="675" column="96" selection-start-line="675" selection-start-column="96" selection-end-line="675" selection-end-column="96" />
+            <state vertical-scroll-proportion="-8.888889" vertical-offset="12945" max-vertical-offset="42795">
+              <caret line="879" column="70" selection-start-line="879" selection-start-column="70" selection-end-line="879" selection-end-column="70" />
               <folding>
-                <marker date="1419254678000" expanded="true" signature="84678:84689" placeholder="..." />
+                <marker date="1419422952000" expanded="true" signature="84761:84772" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -88,9 +87,9 @@
         <option value="$PROJECT_DIR$/metro4all/static/decor/example/example.js" />
         <option value="$PROJECT_DIR$/metro4all/static/decor/example/example.html" />
         <option value="$PROJECT_DIR$/metro4all/static/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/metro4all/static/index.html" />
         <option value="$PROJECT_DIR$/metro4all/static/app/controllers.js" />
         <option value="$PROJECT_DIR$/metro4all/static/libs/angular-leaflet-directive/dist/angular-leaflet-directive.js" />
+        <option value="$PROJECT_DIR$/metro4all/static/index.html" />
       </list>
     </option>
   </component>
@@ -253,6 +252,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metro4all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metro4all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metro4all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -376,10 +397,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419169830000" expanded="true" signature="2695:2697" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="2695:3926" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="4986:5608" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="6024:6644" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="2682:3913" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="5107:5729" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="6145:6765" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -405,7 +425,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="13034" max-vertical-offset="42780">
           <caret line="893" column="33" selection-start-line="893" selection-start-column="33" selection-end-line="893" selection-end-column="33" />
           <folding>
-            <marker date="1419254678000" expanded="true" signature="84678:84689" placeholder="..." />
+            <marker date="1419422952000" expanded="true" signature="84761:84772" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -416,10 +436,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419169830000" expanded="true" signature="2695:2697" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="2695:3926" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="4986:5608" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="6024:6644" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="2682:3913" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="5107:5729" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="6145:6765" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -445,7 +464,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="13034" max-vertical-offset="42780">
           <caret line="893" column="33" selection-start-line="893" selection-start-column="33" selection-end-line="893" selection-end-column="33" />
           <folding>
-            <marker date="1419254678000" expanded="true" signature="84678:84689" placeholder="..." />
+            <marker date="1419422952000" expanded="true" signature="84761:84772" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -456,10 +475,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419169830000" expanded="true" signature="2695:2697" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="2695:3926" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="4986:5608" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="6024:6644" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="2682:3913" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="5107:5729" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="6145:6765" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -585,40 +603,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/metro4all/static/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4225" max-vertical-offset="4980">
-          <caret line="301" column="13" selection-start-line="301" selection-start-column="13" selection-end-line="301" selection-end-column="13" />
+        <state vertical-scroll-proportion="-11.296296" vertical-offset="865" max-vertical-offset="4980">
+          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metro4all/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="1515" max-vertical-offset="3255">
-          <caret line="114" column="64" selection-start-line="114" selection-start-column="64" selection-end-line="114" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419169830000" expanded="true" signature="2695:2697" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="2695:3926" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="4986:5608" placeholder="{...}" />
-            <marker date="1419169830000" expanded="true" signature="6024:6644" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/metro4all/static/app/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3855">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state vertical-scroll-proportion="-11.111111" vertical-offset="3570" max-vertical-offset="4215">
+          <caret line="258" column="8" selection-start-line="258" selection-start-column="8" selection-end-line="261" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/metro4all/static/libs/angular-leaflet-directive/dist/angular-leaflet-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84821427" vertical-offset="9555" max-vertical-offset="42795">
-          <caret line="675" column="96" selection-start-line="675" selection-start-column="96" selection-end-line="675" selection-end-column="96" />
+        <state vertical-scroll-proportion="-8.888889" vertical-offset="12945" max-vertical-offset="42795">
+          <caret line="879" column="70" selection-start-line="879" selection-start-column="70" selection-end-line="879" selection-end-column="70" />
           <folding>
-            <marker date="1419254678000" expanded="true" signature="84678:84689" placeholder="..." />
+            <marker date="1419422952000" expanded="true" signature="84761:84772" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metro4all/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.047244094" vertical-offset="15" max-vertical-offset="3315">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1419423125000" expanded="true" signature="2682:3913" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="5107:5729" placeholder="{...}" />
+            <marker date="1419423125000" expanded="true" signature="6145:6765" placeholder="{...}" />
           </folding>
         </state>
       </provider>

@@ -2,25 +2,42 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
 
 .controller("metroCtrl", function($scope, $http, $route, $routeParams, $location, routingService) {
 
+
             $scope.$route = $route;
             $scope.$location = $location;
             $scope.$routeParams = $routeParams;
             $scope.show_sharing = false;
             $scope.code_show = false;
+            $scope.isPrint = false;
+            $scope.openedAcc = 0;
+            $scope.openedAccArr = [];
+
 
             $scope.$on('$routeChangeSuccess', function(){
                     if($route.current) {
+                        if ($routeParams.print) $scope.isPrint = true;
                         $scope.searchData = $route.current.params.searchData;
                         $scope.destination = $scope.searchData;
                         $scope.searchRoute($scope.searchData);
+                        $scope.openedAcc = $route.current.params.openedAcc;
+                        $scope.openedAccArr = [];
+                        var a=16;
+                        while(a --> 0){
+                            $scope.openedAccArr.push(false);
+                        }
+                        $scope.openedAccArr[$scope.openedAcc] = true;
 
                     }
             });
 
+            $scope.clickOnAccHeader = function(i, id){
+                $location.path('/'+$scope.destination+'/'+i);
+            };
+
 
     $scope.fbshare = function(){
                 var url = 'https://facebook.com/sharer/sharer.php?u='+$location.absUrl();
-                url = url.replace('#/','#');
+                url = url.replace('#','%23');
                 window.open(
                     url,
                     '_blank'
@@ -28,7 +45,14 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
         };
     $scope.vkshare = function(){
                 var url = 'https://vk.com/share.php?url='+$location.absUrl();
-                url = url.replace('#/','#');
+                url = url.replace('#','%23');
+                window.open(
+                    url,
+                    '_blank'
+                );
+        };
+    $scope.print = function(){
+                var url = $location.absUrl()+"?print";
                 window.open(
                     url,
                     '_blank'
@@ -208,7 +232,7 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
                 $scope.outdoorInstructions = [];
                 if (response.data !== "null") {
                     $scope.stations = response.data.result;
-                    $scope.notify($scope.stations[0].exit.id);
+                    $scope.notify($scope.stations[$scope.openedAcc].exit.id);
                 }
 
             }
@@ -232,7 +256,7 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
 
 })
 .config(function($routeProvider, $locationProvider){
-        $routeProvider.when('/:searchData', {
+        $routeProvider.when('/:searchData/:openedAcc', {
             template: ' ',
             controller: 'metroCtrl'
         });

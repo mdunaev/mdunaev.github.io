@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
+    <meta charset="windows-1251">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
-    <title>РњРµС‚СЂРѕ РґР»СЏ РІСЃРµС…</title>
+    <title>Метро для всех</title>
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="libs/leaflet/leaflet.css" />
@@ -42,40 +42,44 @@
             </div>
 
             <div class="accordion">
-                <accordion close-others='true'>
+                <accordion>
                     <accordion-group ng-class="{
-                                        sok: station.exit.station.line.name == 'РЎРѕРєРѕР»СЊРЅРёС‡РµСЃРєР°СЏ',
-                                        zam: station.exit.station.line.name == 'Р—Р°РјРѕСЃРєРІРѕСЂРµС†РєР°СЏ',
-                                        arb: station.exit.station.line.name == 'РђСЂР±Р°С‚СЃРєРѕ-РџРѕРєСЂРѕРІСЃРєР°СЏ',
-                                        fil: station.exit.station.line.name == 'Р¤РёР»РµРІСЃРєР°СЏ',
-                                        kol: station.exit.station.line.name == 'РљРѕР»СЊС†РµРІР°СЏ',
-                                        kri: station.exit.station.line.name == 'РљР°Р»СѓР¶СЃРєРѕ-Р РёР¶СЃРєР°СЏ',
-                                        tag: station.exit.station.line.name == 'РўР°РіР°РЅСЃРєРѕ-РљСЂР°СЃРЅРѕРїСЂРµСЃРЅРµРЅСЃРєР°СЏ',
-                                        kal: station.exit.station.line.name == 'РљР°Р»РёРЅРёРЅСЃРєРѕ-РЎРѕР»РЅС†РµРІСЃРєР°СЏ',
-                                        ser: station.exit.station.line.name == 'РЎРµСЂРїСѓС…РѕРІСЃРєРѕ-РўРёРјРёСЂСЏР·РµРІСЃРєР°СЏ',
-                                        lub: station.exit.station.line.name == 'Р›СЋР±Р»РёРЅСЃРєРѕ-Р”РјРёС‚СЂРѕРІСЃРєР°СЏ',
-                                        kah: station.exit.station.line.name == 'РљР°С…РѕРІСЃРєР°СЏ',
-                                        but: station.exit.station.line.name == 'Р‘СѓС‚РѕРІСЃРєР°СЏ'
+                                        sok: station.exit.station.line.name == 'Сокольническая',
+                                        zam: station.exit.station.line.name == 'Замоскворецкая',
+                                        arb: station.exit.station.line.name == 'Арбатско-Покровская',
+                                        fil: station.exit.station.line.name == 'Филевская',
+                                        kol: station.exit.station.line.name == 'Кольцевая',
+                                        kri: station.exit.station.line.name == 'Калужско-Рижская',
+                                        tag: station.exit.station.line.name == 'Таганско-Краснопресненская',
+                                        kal: station.exit.station.line.name == 'Калининско-Солнцевская',
+                                        ser: station.exit.station.line.name == 'Серпуховско-Тимирязевская',
+                                        lub: station.exit.station.line.name == 'Люблинско-Дмитровская',
+                                        kah: station.exit.station.line.name == 'Каховская',
+                                        but: station.exit.station.line.name == 'Бутовская'
                                         }"
-                                     ng-repeat="(i, station) in stations" ng-init="isOpen = (i==0)"
-                                     is-open="isOpen" ng-click="notify(station.exit.id)">
+                                     ng-repeat="(i, station) in stations"
+                                     is-open="openedAccArr[i]" ng-click="clickOnAccHeader(i);">
                     <!--<accordion-group ng-class="getLineClass(station.exit.station.line.name);" ng-repeat="(i, station) in stations" ng-init="isOpen = (i==0)" is-open="isOpen" ng-click="notify(station.exit.id)" heading='{{station.exit.station.name}}'>-->
                         <accordion-heading>
-                            {{station.exit.station.name}} <small>{{station.exit.station.line.name}}</small> <div class="distance"> {{station.distance.toFixed()}}Рј </div>
+                            <div class="num{{i}}">
+                                {{station.exit.station.name}}
+                                <small>{{station.exit.station.line.name}}</small>
+                                <div class="distance"> {{station.distance.toFixed()}}м </div>
+                            </div>
                         </accordion-heading>
 
                         <div ng-if="indoorSides.length">{{indoorSides[0]}}<br \>{{indoorSides[1]}}<br \>{{indoorSides[2]}}</div>
                         <p></p>
-                        <b>Р’С‹С…РѕРґ РІ РіРѕСЂРѕРґ</b>
+                        <b>Выход в город</b>
                         <div class="indor">
                                <ul>
                                    <li class="li-path" ng-class="{
-                                   straight:instruction.toLowerCase().search('РїСЂСЏРјРѕ')!=-1 || instruction.toLowerCase().search('РІРІРµСЂС…')!=-1,
-                                   left:instruction.toLowerCase().search('Р»РµРІРѕ')!=-1,
-                                   right:instruction.toLowerCase().search('РїСЂР°РІРѕ')!=-1,
-                                   turnik:instruction.toLowerCase().search('С‚СѓСЂРЅРёРєРµ')!=-1,
-                                    escalat:instruction.toLowerCase().search('СЌСЃРєР°Р»Р°С‚')!=-1,
-                                    lest:instruction.toLowerCase().search('Р»РµСЃС‚')!=-1
+                                   straight:instruction.toLowerCase().search('прямо')!=-1 || instruction.toLowerCase().search('вверх')!=-1,
+                                   left:instruction.toLowerCase().search('лево')!=-1,
+                                   right:instruction.toLowerCase().search('право')!=-1,
+                                   turnik:instruction.toLowerCase().search('турнике')!=-1,
+                                    escalat:instruction.toLowerCase().search('эскалат')!=-1,
+                                    lest:instruction.toLowerCase().search('лест')!=-1
                                    }" ng-repeat="instruction in station.indoor.instructions track by $index">{{instruction}}</li>
                                </ul>
                         </div>
@@ -84,16 +88,16 @@
 
 
                         <p></p>
-                        <b>Р’ РіРѕСЂРѕРґРµ</b>
+                        <b>В городе</b>
                         <div class="outdor">
                                <ul>
                                    <li class="li-path" ng-class="{
-                                   straight:instruction.toLowerCase().search('РїСЂСЏРјРѕ')!=-1 || instruction.toLowerCase().search('РІРІРµСЂС…')!=-1,
-                                   left:instruction.toLowerCase().search('Р»РµРІРѕ')!=-1,
-                                   right:instruction.toLowerCase().search('РїСЂР°РІРѕ')!=-1,
-                                   turnik:instruction.toLowerCase().search('С‚СѓСЂРЅРёРєРµ')!=-1,
-                                   escalat:instruction.toLowerCase().search('СЌСЃРєР°Р»Р°С‚')!=-1,
-                                   lest:instruction.toLowerCase().search('Р»РµСЃС‚')!=-1
+                                   straight:instruction.toLowerCase().search('прямо')!=-1 || instruction.toLowerCase().search('вверх')!=-1,
+                                   left:instruction.toLowerCase().search('лево')!=-1,
+                                   right:instruction.toLowerCase().search('право')!=-1,
+                                   turnik:instruction.toLowerCase().search('турнике')!=-1,
+                                   escalat:instruction.toLowerCase().search('эскалат')!=-1,
+                                   lest:instruction.toLowerCase().search('лест')!=-1
                                    }" ng-repeat="instruction in station.instructions.descriptions track by $index">{{instruction}}</li>
                                </ul>
                         </div>
@@ -110,7 +114,7 @@
                 <img ng-click="vkshare()" src="images/vk-icon.png">
                 <img ng-click="send_mail()" src="images/email-icon.png">
                 <img ng-click="code_show = !code_show" src="images/html-icon.png">
-                <img ng-click="print-page()" src="images/print.png">
+                <img ng-click="print()" src="images/print.png">
             </div>
             <div class="html-share shadow" ng-show="code_show" >
                 <textarea class="form-control" rows="3"><iframe src='{{$location.absUrl()}}' width='475px' height='600px' frameborder='0'/></textarea>
@@ -122,15 +126,15 @@
         <div class="whiteBg"></div>
 
         <div class="search_form">
-            <form autocomplete="off" action="{{'#/'+destination}}">
-                    <input type="text" class="form-control" id="destination" placeholder="Р’РІРµРґРёС‚Рµ Р°РґСЂРµСЃ"
+            <form autocomplete="off" action="{{'#/'+destination+'/0'}}">
+                    <input type="text" class="form-control" id="destination" placeholder="Введите адрес"
                        typeahead="address for address in getLocation($viewValue) | filter:$viewValue"
                        ng-model="destination" autofocus/>
 
                     <input type="submit" class="send_btn" value=""
                        style="background-image: url(images/search.png); border: solid 0px #000000; width: 50px; height: 40px;" />
             </form>
-            <div class="search-desc">РџРѕРёСЃРє СѓРґРѕР±РЅРѕРіРѕ РІС‹С…РѕРґР° РёР· РјРµС‚СЂРѕ</div>
+            <div class="search-desc">Узнайте, как добраться до своего пункта назначения от ближайших станций метро, включая маршрут под землей</div>
         </div>
 
 
@@ -138,27 +142,27 @@
 
     <div class="header">
         <a href="#">
-            <h2>Р’РђРЁ Р’Р«РҐРћР”</h2>
+            <h2>ВАШ ВЫХОД</h2>
         </a>
-        <div class="subheader">РџРѕРёСЃРє СѓРґРѕР±РЅРѕРіРѕ РІС‹С…РѕРґР° РёР· РјРµС‚СЂРѕ</div>
+        <div class="subheader">Поиск удобного выхода из метро</div>
         <img src="images/nextgis.png">
     </div>
     <!--
     <div class="container">
         <div class="page-header">
-            <h1>РњРµС‚СЂРѕ <small>РґР»СЏ РІСЃРµС…!</small></h1>
+            <h1>Метро <small>для всех!</small></h1>
         </div>
 
         <form role="form" ng-submit="searchRoute(destination)">
             <div class="col-sm-10">
-                <label class="sr-only" for="destination">РњРµСЃС‚Рѕ РЅР°Р·РЅР°С‡РµРЅРёСЏ</label>
-                <input type="text" class="form-control" id="destination" placeholder="РњРЅРµ СЃСЋРґР°"
+                <label class="sr-only" for="destination">Место назначения</label>
+                <input type="text" class="form-control" id="destination" placeholder="Мне сюда"
                        typeahead="address for address in getLocation($viewValue) | filter:$viewValue"
                        ng-model="destination" typeahead-on-select="searchRoute(destination)" autofocus/>
             </div>
             <div class="col-sm-2">
                 <button type="submit" class="btn btn-primary form-control"
-                        ng-disabled="isEmpty(destination)">РќР°Р№С‚Рё</button>
+                        ng-disabled="isEmpty(destination)">Найти</button>
             </div>
         </form>
 
@@ -168,7 +172,7 @@
             <leaflet events-broadcast="events" bounds="bounds" center="center" paths="paths" markers="markers" controls="controls" defaults="defaults"></leaflet>
         </div>
 
-        <a ng-if="exit_id" ng-href="/static/sharing.html?exit_id={{exit_id}}&lat={{lat}}&lon={{lon}}">РџРѕРґРµР»РёС‚СЊСЃСЏ</a>
+        <a ng-if="exit_id" ng-href="/static/sharing.html?exit_id={{exit_id}}&lat={{lat}}&lon={{lon}}">Поделиться</a>
 
         <div ng-if="stations.length">
         <table class="table table-striped table-condensed table-hover">
@@ -178,7 +182,7 @@
                     <div class="pull-left">
                         <strong>{{station.exit.station.name}}</strong>&nbsp;
                         <em><small>{{station.exit.station.line.name}}</small></em><br />
-                        <small>{{station.distance.toFixed()}} Рј.</small>
+                        <small>{{station.distance.toFixed()}} м.</small>
                     </div>
                 </td>
             </tr>
@@ -186,7 +190,7 @@
         </table>
 
         <div class="panel col-sm-6">
-            <h3>Р’С‹С…РѕРґ РІ РіРѕСЂРѕРґ</h3>
+            <h3>Выход в город</h3>
 
             <ul>
                 <li ng-if="indoorSides.length">{{indoorSides[0]}}<br \>{{indoorSides[1]}}<br \>{{indoorSides[2]}}</li>
@@ -196,7 +200,7 @@
         </div>
 
         <div class="panel col-sm-6">
-            <h3>Р’ РіРѕСЂРѕРґРµ</h3>
+            <h3>В городе</h3>
 
             <ul>
                 <li ng-repeat="instruction in outdoorInstructions track by $index">{{instruction.text}} ({{instruction.distance}})</li>
