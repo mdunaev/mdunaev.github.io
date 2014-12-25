@@ -27,14 +27,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/metro4all/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16535433" vertical-offset="0" max-vertical-offset="3450">
-              <caret line="7" column="106" selection-start-line="7" selection-start-column="106" selection-end-line="7" selection-end-column="106" />
+            <state vertical-scroll-proportion="0.9527559" vertical-offset="2875" max-vertical-offset="3600">
+              <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1419516091000" expanded="true" signature="3311:4542" placeholder="{...}" />
-                <marker date="1419516091000" expanded="true" signature="5736:6358" placeholder="{...}" />
-                <marker date="1419516091000" expanded="true" signature="6774:7394" placeholder="{...}" />
+                <marker date="1419527800000" expanded="true" signature="3311:4542" placeholder="{...}" />
+                <marker date="1419527800000" expanded="true" signature="5736:6358" placeholder="{...}" />
+                <marker date="1419527800000" expanded="true" signature="6774:7394" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -324,9 +324,9 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419516091000" expanded="true" signature="3311:4542" placeholder="{...}" />
-            <marker date="1419516091000" expanded="true" signature="5736:6358" placeholder="{...}" />
-            <marker date="1419516091000" expanded="true" signature="6774:7394" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="3311:4542" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="5736:6358" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="6774:7394" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -364,9 +364,9 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419516091000" expanded="true" signature="3311:4542" placeholder="{...}" />
-            <marker date="1419516091000" expanded="true" signature="5736:6358" placeholder="{...}" />
-            <marker date="1419516091000" expanded="true" signature="6774:7394" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="3311:4542" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="5736:6358" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="6774:7394" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -404,9 +404,9 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419516091000" expanded="true" signature="3311:4542" placeholder="{...}" />
-            <marker date="1419516091000" expanded="true" signature="5736:6358" placeholder="{...}" />
-            <marker date="1419516091000" expanded="true" signature="6774:7394" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="3311:4542" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="5736:6358" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="6774:7394" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -566,16 +566,21 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/metro4all/static/fbimg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/metro4all/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16535433" vertical-offset="0" max-vertical-offset="3450">
-          <caret line="7" column="106" selection-start-line="7" selection-start-column="106" selection-end-line="7" selection-end-column="106" />
+        <state vertical-scroll-proportion="0.9527559" vertical-offset="2875" max-vertical-offset="3600">
+          <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419516091000" expanded="true" signature="3311:4542" placeholder="{...}" />
-            <marker date="1419516091000" expanded="true" signature="5736:6358" placeholder="{...}" />
-            <marker date="1419516091000" expanded="true" signature="6774:7394" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="3311:4542" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="5736:6358" placeholder="{...}" />
+            <marker date="1419527800000" expanded="true" signature="6774:7394" placeholder="{...}" />
           </folding>
         </state>
       </provider>
