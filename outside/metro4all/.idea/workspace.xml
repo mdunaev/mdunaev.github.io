@@ -27,14 +27,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/metro4all/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61417323" vertical-offset="210" max-vertical-offset="3450">
-              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.16535433" vertical-offset="0" max-vertical-offset="3450">
+              <caret line="7" column="106" selection-start-line="7" selection-start-column="106" selection-end-line="7" selection-end-column="106" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1419516001000" expanded="true" signature="3304:4535" placeholder="{...}" />
-                <marker date="1419516001000" expanded="true" signature="5729:6351" placeholder="{...}" />
-                <marker date="1419516001000" expanded="true" signature="6767:7387" placeholder="{...}" />
+                <marker date="1419516091000" expanded="true" signature="3311:4542" placeholder="{...}" />
+                <marker date="1419516091000" expanded="true" signature="5736:6358" placeholder="{...}" />
+                <marker date="1419516091000" expanded="true" signature="6774:7394" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -175,6 +175,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metro4all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metro4all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metro4all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -302,9 +324,9 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419516001000" expanded="true" signature="3304:4535" placeholder="{...}" />
-            <marker date="1419516001000" expanded="true" signature="5729:6351" placeholder="{...}" />
-            <marker date="1419516001000" expanded="true" signature="6767:7387" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="3311:4542" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="5736:6358" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="6774:7394" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -342,9 +364,9 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419516001000" expanded="true" signature="3304:4535" placeholder="{...}" />
-            <marker date="1419516001000" expanded="true" signature="5729:6351" placeholder="{...}" />
-            <marker date="1419516001000" expanded="true" signature="6767:7387" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="3311:4542" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="5736:6358" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="6774:7394" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -382,9 +404,9 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419516001000" expanded="true" signature="3304:4535" placeholder="{...}" />
-            <marker date="1419516001000" expanded="true" signature="5729:6351" placeholder="{...}" />
-            <marker date="1419516001000" expanded="true" signature="6767:7387" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="3311:4542" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="5736:6358" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="6774:7394" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -534,16 +556,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/metro4all/static/images/fbimg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metro4all/static/images/fbimg_old.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/metro4all/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61417323" vertical-offset="210" max-vertical-offset="3450">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.16535433" vertical-offset="0" max-vertical-offset="3450">
+          <caret line="7" column="106" selection-start-line="7" selection-start-column="106" selection-end-line="7" selection-end-column="106" />
           <folding>
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1419516001000" expanded="true" signature="3304:4535" placeholder="{...}" />
-            <marker date="1419516001000" expanded="true" signature="5729:6351" placeholder="{...}" />
-            <marker date="1419516001000" expanded="true" signature="6767:7387" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="3311:4542" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="5736:6358" placeholder="{...}" />
+            <marker date="1419516091000" expanded="true" signature="6774:7394" placeholder="{...}" />
           </folding>
         </state>
       </provider>
