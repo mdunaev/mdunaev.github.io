@@ -51,6 +51,14 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
                     '_blank'
                 );
         };
+    $scope.twitter_share = function(){
+                var url = 'https://twitter.com/intent/tweet?text=Узнайте, как добраться до своего пункта назначения от ближайших станций метро, включая маршрут под землей. '+$location.absUrl();
+                url = url.replace('#','%23');
+                window.open(
+                    url,
+                    '_blank'
+                );
+        };
     $scope.print = function(){
                 var url = $location.absUrl()+"?print";
                 window.open(
@@ -103,8 +111,8 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             icon: {
                 iconUrl: "assets/marker-from.png",
                 iconSize: [42, 25],
-                iconAnchor: [20, 20],
-                popupAnchor: [-42, -13],
+                iconAnchor: [20, 15],
+                popupAnchor: [0, -13],
                 shadowSize: [0, 0]
             }
         },
@@ -116,7 +124,7 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
                 iconUrl: "assets/marker-to.png",
                 iconSize: [42, 25],
                 iconAnchor: [20, 25],
-                popupAnchor: [0, 0],
+                popupAnchor: [0, -25],
                 shadowSize: [0, 0]
             },
             draggable: true

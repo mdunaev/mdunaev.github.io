@@ -247,6 +247,10 @@ ul{
     background-image: url("../../images/right.png");
 }
 
+.exit{
+    background-image: url("../../images/exit.png");
+}
+
 .turnik{
     background-image: url("../../images/turnikets.png");
 }
@@ -299,7 +303,7 @@ ul{
     right: 10px;
     bottom: 54px;
     cursor: pointer;
-    width: 162px;
+    width: 190px;
     height: 44px;
     padding: 10px;
     background-color: #44add8;
@@ -324,4 +328,15 @@ ul{
 
 .leaflet-bar-part{
     background-color: #ffffff !important;
+}
+
+.likes{
+    position: fixed;
+    left: 426px;
+    top: 22px;
+}
+
+.uv-icon.uv-bottom-right{
+    bottom: 20px!important;
+    right: 48px!important;
 }
