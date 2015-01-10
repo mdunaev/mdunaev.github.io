@@ -4,7 +4,7 @@
 }
 
 .angular-leaflet-map {
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -41,8 +41,8 @@ h2{
     left: 0px;
     width: 100%;
     height: 50px;
-    background-color: #27adda !important;
-    color: #ffffff !important;
+    background-color: #27adda;
+    color: #ffffff;
     padding-left: 20px;
 }
 
@@ -213,18 +213,18 @@ ul{
     padding: 0px;
     list-style-type: none;
 
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat;
     padding-left: 30px;
     line-height: 15px;
     margin-top: 5px;
     padding-top: 9px;
-    background-image: url("../../images/dot.png") !important;
+    background-image: url("../../images/straight.png");
 }
 
 .indor{
-    background-image: url("../../images/list-bg.png") !important;
-    background-repeat: repeat-y !important;
-    background-position: 15px 0px !important;
+    background-image: url("../../images/list-bg.png");
+    background-repeat: repeat-y;
+    background-position: 15px 0px;
     border-left: 5px solid;
     margin-left: -15px;
     padding-left: 15px;
@@ -232,67 +232,34 @@ ul{
 
 .outdor{
     background-image: url("../../images/list-bg.png");
-    background-repeat: repeat-y !important;
+    background-repeat: repeat-y;
 }
 
 .straight{
-    background-image: url("../../images/straight.png") !important;
+    background-image: url("../../images/straight.png");
 }
 
 .left{
-    background-image: url("../../images/left.png") !important;
+    background-image: url("../../images/left.png");
 }
 
 .right{
-    background-image: url("../../images/right.png") !important;
+    background-image: url("../../images/right.png");
 }
 
 .exit{
-    background-image: url("../../images/exit.png") !important;
+    background-image: url("../../images/exit.png");
 }
 
 .turnik{
-    background-image: url("../../images/turnikets.png") !important;
+    background-image: url("../../images/turnikets.png");
 }
 .escalat{
-    background-image: url("../../images/escalator.png") !important;
+    background-image: url("../../images/escalator.png");
 }
 .lest{
-    background-image: url("../../images/stairs.png") !important;
+    background-image: url("../../images/stairs.png");
 }
-
-
-
-
-
-.escalator_down{
-    background-image: url("../../images/escalator-down.png") !important;
-}
-.stairs_up{
-    background-image: url("../../images/stairs-up.png") !important;
-}
-.stairs_down{
-    background-image: url("../../images/stairs-down.png") !important;
-}
-.doors_left{
-    background-image: url("../../images/doors-left.png") !important;
-}
-.doors_right{
-    background-image: url("../../images/doors-right.png") !important;
-}
-.right2{
-    background-image: url("../../images/right2.png") !important;
-}
-.left2{
-    background-image: url("../../images/left2.png") !important;
-}
-.right3{
-    background-image: url("../../images/right3.png") !important;
-}
-.left3{
-    background-image: url("../../images/left3.png") !important;
-}
-
 
 .panel-body {
     font-size: 13px;
@@ -349,9 +316,9 @@ ul{
 }
 
 .subheader{
-    position: absolute;
-    left: 105px;
-    top: 29px;
+    position: fixed;
+    left: 180px;
+    top: 28px;
     font-size: 12px;
 }
 
@@ -391,8 +358,6 @@ ul{
 
 .print .accordion{
     top: 10px;
-    position: absolute;
-    z-index: 10;
 }
 
 .print .noprint{
@@ -407,40 +372,28 @@ ul{
     display: none;
 }
 
-.print .angular-leaflet-map {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 1000px;
-    height: 600px;
-    z-index: -1;
-    padding-left: 100px;
+
+
+html,
+body,
+#content,
+#mappan,
+#map {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
-.print .header{
-    position: absolute;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 1000px;
-    height: 50px;
-}
-
-.print .panel-body{
-    background-color: #ffffff !important;
-}
-
-.print {
-    -webkit-print-color-adjust: exact;
-}
-
-.print-input{
-    position: absolute;
-    top: 610px;
-    left: 30px;
-    padding-bottom: 100px;
-}
-
-textarea{
-    width: 940px;
+body>nav,
+#menupan,
+#toppan,
+#leftpan,
+#htpbutton,
+#ltoggle,
+#ttoggle,
+#search_container,
+.leaflet-control-container>div {
+    display: none !important;
 }

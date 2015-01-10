@@ -34,6 +34,24 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
                 $location.path('/'+$scope.destination+'/'+i);
             };
 
+        $scope.getRouteIcon = function(instruction){
+            instruction = instruction;
+            return {
+                escalator:instruction.search('Вверх по эскалатору')!=-1,
+                escalator_down:instruction.search('Вниз по эскалатору')!=-1,
+                stairs_up:instruction.search('Вверх по лестнице')!=-1,
+                stairs_down:instruction.search('Вниз по лестнице')!=-1,
+                right:instruction.search('Направо')!=-1,
+                left:instruction.search('Налево')!=-1,
+                doors_left:instruction.search('Из дверей налево')!=-1,
+                doors_right:instruction.search('Из дверей направо')!=-1,
+                right2:instruction.search('Второй поворот направо')!=-1,
+                left2:instruction.search('Второй поворот налево')!=-1,
+                left3:instruction.search('Третий поворот налево')!=-1,
+                right3:instruction.search('Третий поворот направо')!=-1,
+                exit:instruction.search('Выход в город')!=-1
+            };
+        };
 
     $scope.fbshare = function(){
                 var url = 'https://facebook.com/sharer/sharer.php?u='+$location.absUrl();

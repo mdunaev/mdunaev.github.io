@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="libs/geolocation/L.Control.Locate.ie.min.css" />
     <link rel="stylesheet" href="libs/geolocation/L.Control.Locate.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
     <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
 
 
@@ -27,7 +28,9 @@
     </script>
 
 </head>
-<body>
+<body ng-class="{print:isPrint}">
+
+<div class="container">
     <script type="text/javascript" src="libs/angular/angular.min.js"></script>
     <script type="text/javascript" src="libs/angular/angular-route.min.js"></script>
     <script type="text/javascript" src="libs/ui-bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
@@ -69,10 +72,11 @@
                                         ser: station.exit.station.line.name == 'Серпуховско-Тимирязевская',
                                         lub: station.exit.station.line.name == 'Люблинско-Дмитровская',
                                         kah: station.exit.station.line.name == 'Каховская',
-                                        but: station.exit.station.line.name == 'Бутовская'
+                                        but: station.exit.station.line.name == 'Бутовская',
+                                        hidden: !openedAccArr[i] && isPrint
                                         }"
                                      ng-repeat="(i, station) in stations"
-                                     is-open="openedAccArr[i]" ng-click="clickOnAccHeader(i);">
+                                     is-open="openedAccArr[i]" ng-click="clickOnAccHeader(i);" >
                     <!--<accordion-group ng-class="getLineClass(station.exit.station.line.name);" ng-repeat="(i, station) in stations" ng-init="isOpen = (i==0)" is-open="isOpen" ng-click="notify(station.exit.id)" heading='{{station.exit.station.name}}'>-->
                         <accordion-heading>
                             <div class="num{{i}}">
@@ -87,15 +91,7 @@
                         <b>Выход в город</b>
                         <div class="indor">
                                <ul>
-                                   <li class="li-path" ng-class="{
-                                   straight:instruction.toLowerCase().search('прямо')!=-1 || instruction.toLowerCase().search('вверх')!=-1,
-                                   left:instruction.toLowerCase().search('лево')!=-1,
-                                   right:instruction.toLowerCase().search('право')!=-1,
-                                   turnik:instruction.toLowerCase().search('турнике')!=-1,
-                                    escalat:instruction.toLowerCase().search('эскалат')!=-1,
-                                    exit:instruction.toLowerCase().search('выход в город')!=-1,
-                                    lest:instruction.toLowerCase().search('лест')!=-1
-                                   }" ng-repeat="instruction in station.indoor.instructions track by $index">{{instruction}}</li>
+                                   <li class="li-path" ng-class="getRouteIcon(instruction)" ng-repeat="instruction in station.indoor.instructions track by $index">{{instruction}}</li>
                                </ul>
                         </div>
 
@@ -106,14 +102,7 @@
                         <b>В городе</b>
                         <div class="outdor">
                                <ul>
-                                   <li class="li-path" ng-class="{
-                                   straight:instruction.toLowerCase().search('прямо')!=-1 || instruction.toLowerCase().search('вверх')!=-1,
-                                   left:instruction.toLowerCase().search('лево')!=-1,
-                                   right:instruction.toLowerCase().search('право')!=-1,
-                                   turnik:instruction.toLowerCase().search('турнике')!=-1,
-                                   escalat:instruction.toLowerCase().search('эскалат')!=-1,
-                                   lest:instruction.toLowerCase().search('лест')!=-1
-                                   }" ng-repeat="instruction in station.instructions.descriptions track by $index">{{instruction}}</li>
+                                   <li class="li-path" ng-class="getRouteIcon(instruction)" ng-repeat="instruction in station.instructions.descriptions track by $index">{{instruction}}</li>
                                </ul>
                         </div>
                     </accordion-group>
@@ -122,7 +111,7 @@
 
         </div>
 
-        <div class="sharings">
+        <div class="sharings noprint">
             <img ng-click="show_sharing = !show_sharing; code_show = false" class="share-btn shadow" src="images/share-png.png">
             <div ng-show="show_sharing" class="share-buttons shadow">
                 <img ng-click="fbshare()" src="images/facebook-icon.png">
@@ -158,11 +147,11 @@
 
     <div class="header">
         <a href="#">
-            <h2>ВАШ ВЫХОД</h2>
+            <h2>MyWay</h2>
         </a>
         <div class="subheader">Поиск удобного выхода из метро Москвы</div>
         <img src="images/nextgis.png">
-        <div class="likes">
+        <div class="likes noprint">
             <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmyway.io&amp;width&amp;layout=button&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=80&amp;appId=123243167734681" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
 
             <!--<div id="vk_like"></div>-->
@@ -171,6 +160,11 @@
             <!--</script>-->
         </div>
 
+    </div>
+
+    <div class="print-input" ng-show="isPrint">
+        Комментарий: <br>
+        <textarea rows="10" cols="45" name="text"></textarea>
     </div>
     <!--
     <div class="container">
@@ -260,9 +254,9 @@
 
         // Set colors
         UserVoice.push(['set', {
-            accent_color: '#448dd6',
+            accent_color: '#44add8',
             trigger_color: 'white',
-            trigger_background_color: '#448dd6'
+            trigger_background_color: '#44add8'
         }]);
 
         // Identify the user and pass traits
@@ -292,6 +286,7 @@
         // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
         UserVoice.push(['autoprompt', {}]);
     </script>
+</div>
 
 </body>
 </html>
