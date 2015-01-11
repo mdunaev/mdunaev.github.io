@@ -37,12 +37,14 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
         $scope.getRouteIcon = function(instruction){
             instruction = instruction;
             return {
+                right:instruction.toLowerCase().search('направо')!=-1,
+                left:instruction.toLowerCase().search('налево')!=-1,
+                continue:instruction.search('Продолжайте')!=-1,
+                straight:instruction.search('Прямо')!=-1,
                 escalator:instruction.search('Вверх по эскалатору')!=-1,
                 escalator_down:instruction.search('Вниз по эскалатору')!=-1,
                 stairs_up:instruction.search('Вверх по лестнице')!=-1,
                 stairs_down:instruction.search('Вниз по лестнице')!=-1,
-                right:instruction.search('Направо')!=-1,
-                left:instruction.search('Налево')!=-1,
                 doors_left:instruction.search('Из дверей налево')!=-1,
                 doors_right:instruction.search('Из дверей направо')!=-1,
                 right2:instruction.search('Второй поворот направо')!=-1,

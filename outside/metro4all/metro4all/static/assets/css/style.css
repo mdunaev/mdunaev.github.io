@@ -215,14 +215,15 @@ ul{
 
     background-repeat: no-repeat !important;
     padding-left: 30px;
-    line-height: 15px;
+    line-height: 14px;
     margin-top: 5px;
-    padding-top: 9px;
-    background-image: url("../../images/dot.png") !important;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    /*background-image: url("../../images/dot.png") !important;*/
 }
 
 .indor{
-    background-image: url("../../images/list-bg.png") !important;
+    /*background-image: url("../../images/list-bg.png") !important;*/
     background-repeat: repeat-y !important;
     background-position: 15px 0px !important;
     border-left: 5px solid;
@@ -231,7 +232,7 @@ ul{
 }
 
 .outdor{
-    background-image: url("../../images/list-bg.png");
+    /*background-image: url("../../images/list-bg.png");*/
     background-repeat: repeat-y !important;
 }
 
@@ -254,7 +255,7 @@ ul{
 .turnik{
     background-image: url("../../images/turnikets.png") !important;
 }
-.escalat{
+.escalator{
     background-image: url("../../images/escalator.png") !important;
 }
 .lest{
@@ -265,6 +266,9 @@ ul{
 
 
 
+.continue{
+    background-image: url("../../images/continue.png") !important;
+}
 .escalator_down{
     background-image: url("../../images/escalator-down.png") !important;
 }
