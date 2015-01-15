@@ -244,8 +244,38 @@ ul{
     background-image: url("../../images/left.png") !important;
 }
 
+.outdor .left{
+    background-image: url("../../images/leftl.png") !important;
+}
+
+.left_fast{
+    background-image: url("../../images/left-fast.png") !important;
+}
+
+.outdor .left_fast{
+    background-image: url("../../images/left-fast-l.png") !important;
+}
+
+.left_slow{
+    background-image: url("../../images/left-slow.png") !important;
+}
+.outdor .left_slow{
+    background-image: url("../../images/left-slowl.png") !important;
+}
+
 .right{
     background-image: url("../../images/right.png") !important;
+}
+.outdor .right{
+    background-image: url("../../images/rightl.png") !important;
+}
+
+.outdor .right_fast{
+    background-image: url("../../images/right-fastl.png") !important;
+}
+
+.outdor .right_slow{
+    background-image: url("../../images/right-slowl.png") !important;
 }
 
 .exit{
@@ -255,22 +285,22 @@ ul{
 .turnik{
     background-image: url("../../images/turnikets.png") !important;
 }
+
 .escalator{
     background-image: url("../../images/escalator.png") !important;
 }
-.lest{
-    background-image: url("../../images/stairs.png") !important;
+.outdor .escalator{
+    background-image: url("../../images/escalatorl.png") !important;
 }
-
-
-
-
 
 .continue{
     background-image: url("../../images/continue.png") !important;
 }
 .escalator_down{
     background-image: url("../../images/escalator-down.png") !important;
+}
+.outdor .escalator_down{
+    background-image: url("../../images/escalator-downl.png") !important;
 }
 .stairs_up{
     background-image: url("../../images/stairs-up.png") !important;
@@ -281,20 +311,38 @@ ul{
 .doors_left{
     background-image: url("../../images/doors-left.png") !important;
 }
+.outdor .doors_left{
+    background-image: url("../../images/doors-leftl.png") !important;
+}
 .doors_right{
     background-image: url("../../images/doors-right.png") !important;
+}
+.outdor .doors_right{
+    background-image: url("../../images/doors-rightl.png") !important;
 }
 .right2{
     background-image: url("../../images/right2.png") !important;
 }
+.outdor .right2{
+    background-image: url("../../images/right2l.png") !important;
+}
 .left2{
     background-image: url("../../images/left2.png") !important;
+}
+.outdor .left2{
+    background-image: url("../../images/left2l.png") !important;
 }
 .right3{
     background-image: url("../../images/right3.png") !important;
 }
+.outdor .right3{
+    background-image: url("../../images/right3l.png") !important;
+}
 .left3{
     background-image: url("../../images/left3.png") !important;
+}
+.outdor .left3{
+    background-image: url("../../images/left3l.png") !important;
 }
 
 
