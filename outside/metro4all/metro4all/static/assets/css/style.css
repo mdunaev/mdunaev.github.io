@@ -496,3 +496,10 @@ ul{
 textarea{
     width: 940px;
 }
+
+
+.likes{
+    position: fixed;
+    top: 23px;
+    right: 116px;
+}
