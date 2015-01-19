@@ -212,16 +212,15 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             $scope.indoorSides = [route.indoor.side, route.indoor.side2, route.indoor.comments];
             _.each(route.indoor.instructions, function(item) { $scope.indoorInstructions.push(item); });
         }
-        _.each(route.instructions.descriptions, function(item, idx) {
+        _.each(route.instructions, function(item, idx) {
             $scope.outdoorInstructions.push({
-                text: item,
-                distance: route.instructions.distances[idx]
+                text: item.text,
+                distance: item.distance
             });
         });
 
         // Update map
-
-        var tmpArray = $scope.decodePath(route.coordinates);
+        var tmpArray = $scope.decodePath(route.points);
 
         // Update bounds
         $scope.bounds = {
@@ -236,20 +235,17 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
         };
 
         // marker drag
-        var latlngs = _.map(tmpArray, function(p){ return {lat: p[1], lng: p[0]}; });
-        latlngs.unshift( {lat: route.from[1], lng: route.from[0]} );
-        latlngs.push( {lat: route.to[1], lng: route.to[0]} );
-        $scope.markers.start.lat = route.from[1];
-        $scope.markers.start.lng = route.from[0];
-        $scope.markers.end.lat = route.to[1];
-        $scope.markers.end.lng = route.to[0];
-        $scope.paths.path.latlngs = latlngs;
+        $scope.paths.path.latlngs = _.map(tmpArray, function(p){ return {lat: p[1], lng: p[0]}; });
+        $scope.markers.start.lat = $scope.paths.path.latlngs[0].lat;
+        $scope.markers.start.lng = $scope.paths.path.latlngs[0].lng;
+        $scope.markers.end.lat = $scope.paths.path.latlngs[tmpArray.length - 1].lat;
+        $scope.markers.end.lng = $scope.paths.path.latlngs[tmpArray.length - 1].lng;
 
         // sharing
         $scope.exit_id = id;
-        $scope.lat = route.to[1];
-        $scope.lon = route.to[0];
-            
+        $scope.lat = $scope.markers.end.lat;
+        $scope.lon = $scope.markers.end.lng;
+
     };
 
     $scope.searchRoute = function(/** String */ query, lon, lat) {
@@ -264,9 +260,8 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
                 $scope.outdoorInstructions = [];
                 if (response.data !== "null") {
                     $scope.stations = response.data.result;
-                    $scope.notify($scope.stations[$scope.openedAcc].exit.id);
+                    $scope.notify($scope.stations[0].exit.id);
                 }
-
             }
         );
     };
