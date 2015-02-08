@@ -11,11 +11,12 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             $scope.isPrint = false;
             $scope.openedAcc = 0;
             $scope.openedAccArr = [];
+            $scope.dragged = false;
 
 
             $scope.$on('$routeChangeSuccess', function(){
                     if($route.current) {
-                        if ($routeParams.print) $scope.isPrint = true;
+                        $scope.isPrint = $routeParams.print;
                         $scope.searchData = $route.current.params.searchData;
                         $scope.destination = $scope.searchData;
                         $scope.searchRoute($scope.searchData);
@@ -26,12 +27,16 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
                             $scope.openedAccArr.push(false);
                         }
                         $scope.openedAccArr[$scope.openedAcc] = true;
-
                     }
             });
 
             $scope.clickOnAccHeader = function(i, id){
-                $location.path('/'+$scope.destination+'/'+i);
+                if(!$scope.dragged) {
+                    $location.path('/' + $scope.destination + '/' + i);
+                } else {
+                   // $scope.searchRoute($scope.searchData);
+                    $scope.notify($scope.stations[i].exit.id);
+                }
             };
 
         $scope.getRouteIcon = function(instruction){
@@ -159,6 +164,7 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
         var lat = $scope.markers[args.markerName].lat,
             lon = $scope.markers[args.markerName].lng;
         //$scope.markers = [];
+        $scope.dragged = true;
         $scope.searchRoute(null, lon, lat);
     });
 
@@ -194,6 +200,8 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             lng += deltaLon;
             array.push([lng * 1e-5, lat * 1e-5]);
         }
+
+
         return array;
     };
 
@@ -225,12 +233,12 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
         // Update bounds
         $scope.bounds = {
             northEast: {
-                lat: route.bbox[1],
-                lng: route.bbox[0]
+                lat: route.bbox[1]*0.99999,
+                lng: route.bbox[0]*0.99995
             },
             southWest: {
-                lat: route.bbox[3],
-                lng: route.bbox[2]
+                lat: route.bbox[3]*1.00001,
+                lng: route.bbox[2]*1.0001
             }
         };
 
@@ -254,13 +262,14 @@ var app = angular.module("myApp.controllers", ['leaflet-directive', 'ngRoute'])
             lon: lon,
             lat: lat
         }).then(function(response){
+
                 $scope.stations = [];
                 $scope.indoorSides = [];
                 $scope.indoorInstructions = [];
                 $scope.outdoorInstructions = [];
                 if (response.data !== "null") {
                     $scope.stations = response.data.result;
-                    $scope.notify($scope.stations[0].exit.id);
+                    $scope.notify($scope.stations[$scope.openedAcc].exit.id);
                 }
             }
         );

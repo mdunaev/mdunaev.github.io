@@ -1,15 +1,18 @@
-<html  ng-app="myApp" ng-controller="metroCtrl">
-<head lang="en">
+<html  xmlns:og="http://ogp.me/ns#" ng-app="myApp" ng-controller="metroCtrl">
+<head>
 
-    <meta property="og:url" content="http://mdunaev.github.io/outside/metro4all/metro4all/static/" />
-    <meta property="og:title" content="MyWay" />
-    <meta property="og:description" content="Узнайте, как добраться до своего пункта назначения от ближайших станций метро, включая маршрут под землей." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://mdunaev.github.io/outside/metro4all/metro4all/static/images/fbimg.jpg" />
-    <meta name="twitter:image:src" content="http://mdunaev.github.io/outside/metro4all/metro4all/static/fbimg.jpg" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+
+    <meta property="og:url" content="http://myway.io" />
+    <meta property="og:title" content="MyWay" />
+    <meta property="og:description" content="Узнайте, как добраться до своего пункта назначения от ближайших станций метро, включая маршрут под землей." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/fbimg.jpg" />
+    <link rel="image_src" href="images/fbimg.jpg"/>
+    <meta name="twitter:image:src" content="images/fbimg.jpg" />
+
     <title>MyWay</title>
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
@@ -23,14 +26,7 @@
 
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
 
-    <script type="text/javascript">
-        VK.init({apiId: 4699434, onlyWidgets: true});
-    </script>
 
-</head>
-<body ng-class="{print:isPrint}">
-
-<div class="container">
     <script type="text/javascript" src="libs/angular/angular.min.js"></script>
     <script type="text/javascript" src="libs/angular/angular-route.min.js"></script>
     <script type="text/javascript" src="libs/ui-bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
@@ -45,6 +41,15 @@
     <script type="text/javascript" src="app/services.js"></script>
     <script type="text/javascript" src="app/filters.js"></script>
     <script type="text/javascript" src="app/directives.js"></script>
+
+    <script type="text/javascript">
+        VK.init({apiId: 4699434, onlyWidgets: true});
+    </script>
+
+</head>
+<body ng-class="{print:isPrint}" lang="ru">
+
+<div class="container">
 
     <img src="fbimg.jpg" style="display: none;">
     <div class="mapScreen">
@@ -102,7 +107,7 @@
                         <b>В городе</b>
                         <div class="outdor">
                                <ul>
-                                   <li class="li-path" ng-class="getRouteIcon(instruction)" ng-repeat="instruction in station.instructions.descriptions track by $index">{{instruction}}</li>
+                                   <li class="li-path" ng-class="getRouteIcon(instruction.text)" ng-repeat="instruction in outdoorInstructions track by $index">{{instruction.text}}</li>
                                </ul>
                         </div>
                     </accordion-group>
@@ -136,7 +141,7 @@
                        typeahead="address for address in getLocation($viewValue) | filter:$viewValue"
                        ng-model="destination" autofocus/>
 
-                    <input type="submit" class="send_btn" value=""
+                    <input type="submit" class="send_btn" value="" ng-click="dragged=false"
                        style="background-image: url(images/search.png); border: solid 0px #000000; width: 50px; height: 40px;" />
             </form>
             <div class="search-desc">Узнайте, как добраться до своего пункта назначения от ближайших станций метро, включая маршрут под землей</div>
@@ -146,20 +151,24 @@
     </div>
 
     <div class="header">
-        <a href="#">
-            <h2>MyWay</h2>
-        </a>
+
+            <h2>
+                <a href="#">MyWay</a>
+            </h2>
+
         <div class="subheader">Поиск удобного выхода из метро Москвы</div>
-        <img src="images/nextgis.png">
-        <div class="likes">
+        <a href="http://nextgis.ru/"> <img src="images/nextgis.png"> </a>
+        <div class="likes noprint">
             <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki" data-yashareTheme="counter"></div>
         </div>
 
     </div>
 
     <div class="print-input" ng-show="isPrint">
+
         Комментарий: <br>
-        <textarea rows="10" cols="45" name="text"></textarea>
+        <textarea rows="10" cols="45" name="text"></textarea><br>
+        <button onclick="window.print()">Печать</button>
     </div>
     <!--
     <div class="container">

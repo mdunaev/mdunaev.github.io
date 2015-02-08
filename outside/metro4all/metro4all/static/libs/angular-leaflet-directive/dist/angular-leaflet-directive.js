@@ -841,6 +841,7 @@
                 }, true);
             };
             leafletScope.$watch('paths', function (newPaths) {
+
               // Create the new paths
               for (var newName in newPaths) {
                 if (newName.search('-') !== -1) {
@@ -864,6 +865,8 @@
                     map.addLayer(newPath);
                     watchPathFn(newPath, newName);
                   }
+
+                  //setTimeout(function(){$scope.center.zoom--;}, 100);
                   bindPathEvents(newPath, newName, pathData, leafletScope);
                 }
               }

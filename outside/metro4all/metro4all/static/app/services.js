@@ -2,12 +2,12 @@ angular.module('myApp.services', [])
     .factory('routingService', function($http) {
         return {
             get: function(params){
-                //var url = "http://176.9.38.120/myway/";
-                //return $http.get(url, {
-                //    params: params
-                //});
+                var url = "http://176.9.38.120/myway/";
+                return $http.get(url, {
+                    params: params
+                });
                 //alert(params.q);
-                return $http.get('test-data.json', {});
+                //return $http.get('test-data.json', {});
             }
         }
     })
