@@ -3,7 +3,7 @@ var data = [
         header: "Танки первой мировой",
         tech: "CoffeeScript / d3.js",
         desc: "Четыре интерактивных инфографики о танках первой мировой.",
-        link: "http://www.gazeta.ru/science/2014/09/15_a_62130",
+        link: "http://www.gazeta.ru/science/2014/09/15_a_6213013.shtml",
         image: "t1.png"
     },
     {
