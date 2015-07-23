@@ -49,11 +49,11 @@ var data = [
         image: "conf.png"
     },
     {
-        header: "Отечественная война 1812 года",
-        tech: "Flash",
-        desc: "Инфографика для ria.ru",
-        link: "http://ria.ru/1812_chosen/20120605/662481921.html",
-        image: "ww1.png"
+        header: "100 лет московского метро",
+        tech: "JavaScript/HTML",
+        desc: "Лонгрид для Lenta.ru",
+        link: "http://metro.lenta.ru",
+        image: "metro.png"
     },
     {
         header: "Изменение численности жителей Земли",
@@ -63,11 +63,11 @@ var data = [
         image: "hum.png"
     },
     {
-        header: "Итоги выступления сборной РФ",
-        tech: "Flash",
-        desc: "Инфографика для ria.ru",
-        link: "http://ria.ru/sport/20120122/546324068.html",
-        image: "cir.png"
+        header: "Как устроен Детский мир",
+        tech: "JavaScript/HTML",
+        desc: "Лонгрид для Moslenta.ru",
+        link: "http://detmag.moslenta.ru",
+        image: "cdm.png"
     },
     {
         header: "Сайт Архитектурной Мастерской 'Форма'",
@@ -84,4 +84,3 @@ var data = [
         image: "hock.png"
     }
 ];
-
