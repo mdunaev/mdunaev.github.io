@@ -70,11 +70,11 @@ var data = [
         image: "cdm.png"
     },
     {
-        header: "Сайт Архитектурной Мастерской 'Форма'",
-        tech: "Flex",
-        desc: "Сайт Архитектурной Мастерской",
-        link: "http://forma-am.ru",
-        image: "forma.png"
+        header: "Итоги выступления сборной РФ",
+        tech: "Flash",
+        desc: "Инфографика для ria.ru",
+        link: "http://ria.ru/sport/20120122/546324068.html",
+        image: "cir.png"
     },
     {
         header: "Аэрохоккей",
