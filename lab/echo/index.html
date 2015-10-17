@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="content">
+
+      <audio controls src="RadioJS.mp3" id='a0'></audio>
+      <audio controls src="RadioJS.mp3" id='a1'></audio>
+      <audio controls src="RadioJS.mp3" id='a2'></audio>
+      <audio controls src="RadioJS.mp3" id='a3'></audio>
+      <audio controls src="RadioJS.mp3" id='a4'></audio>
+      <audio controls src="RadioJS.mp3" id='a5'></audio>
+    </div>
+
+  <script type="text/javascript">
+    var audioElm = document.getElementById("a1");
+    audioElm.play();
+
+    for (var i = 0; i < 6; i++) {
+      setTimeout(function(i){
+        var audioElm = document.getElementById("a"+i);
+        audioElm.play();
+        audioElm.volume = i/6;
+        if(i==0) audioElm.volume = 0.05;
+        if(i==5) audioElm.volume = 1;
+      }.bind(this, i), i*250);
+    }
+
+
+  </script>
+
+  </body>
+</html>
