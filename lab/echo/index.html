@@ -29,7 +29,7 @@
             setTimeout(function(i){
               var audioElm = document.getElementById("a"+i);
               audioElm.play();
-              audioElm.volume = i/8;
+              audioElm.volume = (i+1)/5;
             }.bind(this, i), i*250);
           }
         }
