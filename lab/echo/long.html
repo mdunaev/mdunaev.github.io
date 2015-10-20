@@ -30,8 +30,6 @@
               var audioElm = document.getElementById("a"+i);
               audioElm.play();
               audioElm.volume = i/8;
-              if(i==0) audioElm.volume = 0.03;
-              if(i==5) audioElm.volume = 1;
             }.bind(this, i), i*550);
           }
         }
