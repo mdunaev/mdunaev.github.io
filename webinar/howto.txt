@@ -1,0 +1,49 @@
+# webinars-identity
+Identity for Webinars
+
+Проект содержит три страницы для демонстрации работы алгоритма:
+
+http://mdunaev.github.io/webinars-identity/ - создание обложки
+
+http://mdunaev.github.io/webinars-identity/logo2.html - создание логотипа с параметрами
+
+Алгортим жестко зависит от библиотеки d3.js - https://github.com/mbostock/d3
+
+Весь алгоритм находится в файле scripts/metaballs.js
+При подключении файла объявляется глобальный объект metaball, который имеет три метода renderMetaballs, renderLogo и renderLogoParams.
+
+Первый метод:
+``` javascript
+metaballs.renderMetaballs(props);
+```
+Для апдета обложки, нужно при создании новой, передать старую.
+Пример:
+var render = metaballs.renderMetaballs(params, oldRender);
+
+Принимает в качестве параметра объект содержащий поля:
+
+props.width - (int) ширина  
+props.height - (int) высота  
+props.uid  - (int) uid-пользователя  
+props.webinar_name  - (String) название вебинара  
+props.category - (String) категории через запятую  
+props.duration  - (int) длительность вебинара  
+props.time_before  - (int) - время до начала вебинара  
+props.author_webinars - (String) - имя автора  
+props.total_watchers - (int) - всего смотрящих  
+props.isPaid - (Boolean) - платный или бесплатный  
+props.type - (String) - тип вебинара  
+props.tags - (String) - теги через запятую  
+
+Второй метод
+``` javascript
+metaballs.renderLogoParams(props)
+```
+принимает на вход объект с параметрами:
+props.width = 300; //ширина логотипа
+props.webinar_name = 'название'; //название вебинара
+props.isPaid = false; //платный/бесплатный
+props.isDrawInside = true; //рисовать внуть/наружу 
+props.numOutlines = 2; //колличество обводок
+props.numFills = 3; //колличество заливок
+props.maxSize = 35; //максимальный размер метабола
