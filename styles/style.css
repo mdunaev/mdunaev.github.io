@@ -1,7 +1,7 @@
 *{
-    font-family: 'PT Serif', serif;
+    font-family: sans-serif, 'PT Serif', serif;
     color: #3d464d;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.1px;
 }
@@ -29,8 +29,7 @@ body{
     border-bottom: solid #ccc 1px;
     z-index: 10;
     margin: 50px auto;
-    font-size: 18px;
-    font-family: 'PT Serif', serif;
+    font-size: 17px;
     min-width: 530px;
 }
 
@@ -98,10 +97,7 @@ body{
     margin-top: 20px;
 }
 
-.menu{
-    font-size: 20px;
-    text-align: center;
-}
+
 
 .menu div{
     display: inline;
@@ -135,8 +131,8 @@ body{
 
 h2{
     margin-top: 40px;
-    font-size: 22px;
-    letter-spacing: -1px;
+    font-size: 17px;
+    font-weight: normal;
 }
 
 .portfolio{
