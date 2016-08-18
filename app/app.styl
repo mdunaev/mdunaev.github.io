@@ -1,0 +1,221 @@
+link-blue = #001be3
+iphone = 645px
+
+*
+	padding 0px
+	margin 0px
+
+body
+	background-color #FCFCFC
+	color #22313F
+	font-size 16px
+	font-family: 'Anonymous Pro', monospace;
+	
+a
+	color link-blue
+	text-decoration-style dashed
+	
+.videofix
+	width 548px
+	height 696px
+	background-color: #555355
+	margin 16px 0px	0px
+	&>video
+		margin-left 45px	
+	
+.intro
+	padding 200px 100px 0px 100px
+	max-width 700px
+	& p
+		padding 16px 0px 16px
+		line-height 32px	
+	@media (max-width: iphone)
+		padding 10px	
+
+.experience
+	padding 0px 100px 100px 100px
+	max-width 700px
+	line-height 27px
+	& b
+		font-size 18px
+	& p
+		padding 10px 0px 16px
+		line-height 35px	
+	@media (max-width: iphone)
+		padding 10px	
+		
+.contacts
+	padding 0px 100px 100px 100px
+	max-width 700px
+	& b
+		font-size 18px
+	& p
+		padding 10px 0px 16px
+		line-height 35px	
+	@media (max-width: iphone)
+		padding 10px
+	& .fa
+		color #22313F 
+		transition all 0.2s linear
+		&:hover
+			color link-blue		
+
+.middle--header
+	font-size 20px
+.logo
+	position: absolute
+	top 0px
+	left 0px
+	@media (max-width: iphone)
+		display none
+
+.app
+	min-width 560px	
+	position: relative	
+
+.cv-photo
+	position relative	
+	cursor: pointer
+	&:after
+		content ' '
+		width 0px
+		height 0px
+		background-image url('/images/i.png')
+		background-size cover
+		position absolute
+		top 20px
+		left 20px
+		background-color #f00
+		transition all 0.2s linear
+		pointer-events none
+	&:hover:after	
+		width 200px
+		height 200px
+
+.talk-video
+	display block
+	width 300px
+	height 160px
+	font-size 17px
+	position relative
+	overflow: hidden
+	background-color link-blue
+	color white
+	&>img
+		position absolute
+		top 0px
+		left 0px
+		z-index 1
+		transition all 0.1s ease-out
+	&--text
+		position: absolute
+		top  20px
+		left 20px	
+		text-decoration: underline
+	&:hover>img
+		top 60px	
+		
+.border
+	border 1px solid #eee	
+	
+.big-link
+	font-size 18px !important
+	
+.iinstall
+	top -15px !important		
+
+.works
+	padding 100px
+	max-width 660px
+	&--item
+		padding 30px 0px 30px
+		position relative
+		height 60px
+		&--name
+			padding 50px 0px
+			color link-blue
+			font-size 25px
+			text-decoration underline
+			font-weight bold
+			position: absolute
+			top -10px
+			left 15px
+			z-index 3
+			cursor: pointer
+		&--cover
+			position absolute
+			z-index 5
+			cursor: pointer	
+			overflow: hidden
+			width: 560px
+			height: 60px
+			&>img
+				position: absolute
+				left 0px
+				transition all 0.2s ease-out
+		&:hover>&--cover>img
+			left -560px	
+		&--content
+			line-height 32px
+			position absolute
+			top 10px
+			left 10px
+			z-index 10
+			background-color #FFF
+			max-width 660px
+			padding-bottom 300px
+			&--name
+				padding 27px 5px 50px
+				color link-blue
+				font-size 25px
+				text-decoration underline
+				font-weight bold
+			&--close
+				position: absolute
+				color link-blue
+				top 25px
+				right 10px
+				font-size 25px
+				cursor: pointer	
+			& a
+				display inline-block
+			& a img
+				transition all 0.2s ease-in
+				border solid 2px #FCFCFC
+			& a img:hover
+				border solid 2px link-blue
+				
+			&__blue
+				color link-blue
+				font-size 18px
+			&>video
+				margin 16px 0px	
+	@media (max-width: iphone)
+		padding 10px	
+		
+.longform a
+	width 300px
+	height 153px	
+	
+.hidden
+	opacity 0
+	display none
+	
+.fader
+	position absolute
+	top 0px
+	left 0px
+	right 0px
+	bottom 0px
+	background-color #FCFCFC
+	z-index 9	
+	opacity 1	
+	transition all 0.2s ease-in	
+	
+
+
+
+
+
+
+			

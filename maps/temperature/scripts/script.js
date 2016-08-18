@@ -7,7 +7,9 @@ var map = new google.maps.Map(document.getElementById('map_canvas'), {
 
 var markers = [];
 
-google.maps.event.addListener(map, "idle", function() {
+var refresh = function() {
+
+	google.maps.event.clearListeners(map, "tilesloaded");
    // send the new bounds back to your server
    var bounds =  map.getBounds();
    var lat_sw = bounds.R.R;
@@ -16,9 +18,11 @@ google.maps.event.addListener(map, "idle", function() {
    var lon_ne = bounds.j.R;
    var acces_token = '56d166a449c75f9b824e2dc6%7C5ffb9d1834e39a5b0643fb2c65f4cd1e';
 
-   var url = 'https://api.netatmo.com/api/getpublicdata?access_token='
-             + acces_token + '&lat_ne=' + lat_ne + '&lon_ne=' + lon_ne + '&lat_sw=' + lat_sw + '&lon_sw=' + lon_sw;
+   var coord = lat_ne + ',' + lon_ne + ',' + lat_sw + ',' + lon_sw;
 
+	var url = 'http://api.openweathermap.org/data/2.5/box/station?cluster=no&cnt=200&format=json&bbox='+coord+'&appid=44db6a862fba0b067b1930da0d769e98';
+
+	console.log(url);
    d3.json(url, function(e, d){
 
      for (var i = 0; i < markers.length; i++) {
@@ -67,4 +71,8 @@ google.maps.event.addListener(map, "idle", function() {
        }
      }
    });
-});
+};
+
+google.maps.event.addListener(map, "dragend", refresh);
+google.maps.event.addListener(map, "tilesloaded", refresh);
+google.maps.event.addListener(map, "zoom_changed", refresh);

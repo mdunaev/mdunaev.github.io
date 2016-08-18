@@ -1,0 +1,259 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: #fcfcfc;
+  color: #22313f;
+  font-size: 16px;
+  font-family: 'Anonymous Pro', monospace;
+}
+a {
+  color: #001be3;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+}
+.videofix {
+  width: 548px;
+  height: 696px;
+  background-color: #555355;
+  margin: 16px 0px 0px;
+}
+.videofix>video {
+  margin-left: 45px;
+}
+.intro {
+  padding: 200px 100px 0px 100px;
+  max-width: 700px;
+}
+.intro p {
+  padding: 16px 0px 16px;
+  line-height: 32px;
+}
+@media (max-width: 645px) {
+  .intro {
+    padding: 10px;
+  }
+}
+.experience {
+  padding: 0px 100px 100px 100px;
+  max-width: 700px;
+  line-height: 27px;
+}
+.experience b {
+  font-size: 18px;
+}
+.experience p {
+  padding: 10px 0px 16px;
+  line-height: 35px;
+}
+@media (max-width: 645px) {
+  .experience {
+    padding: 10px;
+  }
+}
+.contacts {
+  padding: 0px 100px 100px 100px;
+  max-width: 700px;
+}
+.contacts b {
+  font-size: 18px;
+}
+.contacts p {
+  padding: 10px 0px 16px;
+  line-height: 35px;
+}
+@media (max-width: 645px) {
+  .contacts {
+    padding: 10px;
+  }
+}
+.contacts .fa {
+  color: #22313f;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.contacts .fa:hover {
+  color: #001be3;
+}
+.middle--header {
+  font-size: 20px;
+}
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+@media (max-width: 645px) {
+  .logo {
+    display: none;
+  }
+}
+.app {
+  min-width: 560px;
+  position: relative;
+}
+.cv-photo {
+  position: relative;
+  cursor: pointer;
+}
+.cv-photo:after {
+  content: ' ';
+  width: 0px;
+  height: 0px;
+  background-image: url("/images/i.png");
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #f00;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  pointer-events: none;
+}
+.cv-photo:hover:after {
+  width: 200px;
+  height: 200px;
+}
+.talk-video {
+  display: block;
+  width: 300px;
+  height: 160px;
+  font-size: 17px;
+  position: relative;
+  overflow: hidden;
+  background-color: #001be3;
+  color: #fff;
+}
+.talk-video>img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+.talk-video--text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: underline;
+}
+.talk-video:hover>img {
+  top: 60px;
+}
+.border {
+  border: 1px solid #eee;
+}
+.big-link {
+  font-size: 18px !important;
+}
+.iinstall {
+  top: -15px !important;
+}
+.works {
+  padding: 100px;
+  max-width: 660px;
+}
+.works--item {
+  padding: 30px 0px 30px;
+  position: relative;
+  height: 60px;
+}
+.works--item--name {
+  padding: 50px 0px;
+  color: #001be3;
+  font-size: 25px;
+  text-decoration: underline;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  z-index: 3;
+  cursor: pointer;
+}
+.works--item--cover {
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+  overflow: hidden;
+  width: 560px;
+  height: 60px;
+}
+.works--item--cover>img {
+  position: absolute;
+  left: 0px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.works--item:hover>.works--item--cover>img {
+  left: -560px;
+}
+.works--item--content {
+  line-height: 32px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  background-color: #fff;
+  max-width: 660px;
+  padding-bottom: 300px;
+}
+.works--item--content--name {
+  padding: 27px 5px 50px;
+  color: #001be3;
+  font-size: 25px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.works--item--content--close {
+  position: absolute;
+  color: #001be3;
+  top: 25px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.works--item--content a {
+  display: inline-block;
+}
+.works--item--content a img {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border: solid 2px #fcfcfc;
+}
+.works--item--content a img:hover {
+  border: solid 2px #001be3;
+}
+.works--item--content__blue {
+  color: #001be3;
+  font-size: 18px;
+}
+.works--item--content>video {
+  margin: 16px 0px;
+}
+@media (max-width: 645px) {
+  .works {
+    padding: 10px;
+  }
+}
+.longform a {
+  width: 300px;
+  height: 153px;
+}
+.hidden {
+  opacity: 0;
+  display: none;
+}
+.fader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #fcfcfc;
+  z-index: 9;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
