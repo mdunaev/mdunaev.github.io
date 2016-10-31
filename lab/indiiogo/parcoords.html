@@ -1,0 +1,62 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Hypersolid Parallel Coordinates Example</title>
+<script src="lib/d3.v3.js"></script>
+<script type="text/javascript" src="lib/hypersolid.js"></script>
+<script type="text/javascript" src="lib/hypersolid.shapebank.js"></script>
+<style>
+  body {
+    background-color: #165274;
+  }
+
+  .indilogo{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+  }
+
+  .logo{
+    position: absolute;
+    top: 120px;
+    left: 275px;
+  }
+</style>
+<body>
+  <img src="logo.png" class="logo">
+  <svg width="100" height="100" class="indilogo"> </svg>
+</body>
+<script>
+
+var cube = Hypersolid.Hypercube();
+var view = Hypersolid.Viewport(cube, '.indilogo', {
+  checkboxes: { 
+    perspective: { checked: true },
+    indices: { checked: false },
+    edges: { checked: true } },
+    width: 70,
+    height: 70
+});
+
+var speed = 0.5;
+
+cube.rotate("xz", 0.537 * speed);
+cube.rotate("yz", 0.358 * speed);
+cube.rotate("xw", 0.126 * speed);
+cube.rotate("yw", 0.632 * speed);
+cube.rotate("xy", 0.315 * speed);
+cube.rotate("zw", 0.532 * speed);
+view.draw();
+
+var rotate = function(){
+  cube.rotate("xz", 0.037 * speed);
+  cube.rotate("yz", 0.018 * speed);
+  cube.rotate("xw", 0.026 * speed);
+  cube.rotate("yw", -0.032 * speed);
+  cube.rotate("xy", 0.05  * speed);
+  cube.rotate("zw", 0.032 * speed);
+  view.draw();
+}
+
+setInterval(rotate, 50);
+
+</script>
