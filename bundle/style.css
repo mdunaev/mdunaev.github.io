@@ -70,7 +70,6 @@ a {
 }
 .contacts .fa {
   color: #22313f;
-  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 .contacts .fa:hover {
@@ -107,7 +106,6 @@ a {
   top: 20px;
   left: 20px;
   background-color: #f00;
-  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   pointer-events: none;
 }
@@ -130,7 +128,6 @@ a {
   top: 0px;
   left: 0px;
   z-index: 1;
-  -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
 .talk-video--text {
@@ -183,7 +180,6 @@ a {
 .works--item--cover>img {
   position: absolute;
   left: 0px;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 .works--item:hover>.works--item--cover>img {
@@ -218,7 +214,6 @@ a {
   display: inline-block;
 }
 .works--item--content a img {
-  -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   border: solid 2px #fcfcfc;
 }
@@ -254,6 +249,5 @@ a {
   background-color: #fcfcfc;
   z-index: 9;
   opacity: 1;
-  -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
