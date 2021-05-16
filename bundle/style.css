@@ -96,12 +96,22 @@ li {
   position: absolute;
   top: 0px;
   left: 0px;
+  z-index: 100000;
 }
+
+.logo a {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  font-size: 12px;
+}
+
 @media (max-width: 645px) {
   .logo {
     display: none;
   }
 }
+
 .app {
   min-width: 560px;
   position: relative;
@@ -275,4 +285,8 @@ li {
   z-index: 9;
   opacity: 1;
   transition: all 0.2s ease-in;
+}
+
+.cv {
+  font-size: 14px;
 }
