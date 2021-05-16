@@ -4,7 +4,8 @@
   "description": "mdunaev.github.io =================",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --inline"
+    "dev": "webpack-dev-server --hot --inline",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",

@@ -6,20 +6,29 @@ body {
   background-color: #fcfcfc;
   color: #22313f;
   font-size: 16px;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Anonymous Pro", monospace;
 }
 a {
   color: #001be3;
-  -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed;
+  text-decoration-style: dashed;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  margin-bottom: 20px;
+  line-height: 32px;
+}
+
 .videofix {
   width: 548px;
   height: 696px;
   background-color: #555355;
   margin: 16px 0px 0px;
 }
-.videofix>video {
+.videofix > video {
   margin-left: 45px;
 }
 .intro {
@@ -27,7 +36,7 @@ a {
   max-width: 700px;
 }
 .intro p {
-  padding: 16px 0px 16px;
+  padding: 16px 0px 0px;
   line-height: 32px;
 }
 @media (max-width: 645px) {
@@ -76,8 +85,13 @@ a {
   color: #001be3;
 }
 .middle--header {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color: #001be3;
 }
+
 .logo {
   position: absolute;
   top: 0px;
@@ -97,7 +111,7 @@ a {
   cursor: pointer;
 }
 .cv-photo:after {
-  content: ' ';
+  content: " ";
   width: 0px;
   height: 0px;
   background-image: url("/images/i.png");
@@ -110,8 +124,8 @@ a {
   pointer-events: none;
 }
 .cv-photo:hover:after {
-  width: 200px;
-  height: 200px;
+  width: 210px;
+  height: 250px;
 }
 .talk-video {
   display: block;
@@ -123,7 +137,7 @@ a {
   background-color: #001be3;
   color: #fff;
 }
-.talk-video>img {
+.talk-video > img {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -136,7 +150,7 @@ a {
   left: 20px;
   text-decoration: underline;
 }
-.talk-video:hover>img {
+.talk-video:hover > img {
   top: 60px;
 }
 .border {
@@ -148,6 +162,18 @@ a {
 .iinstall {
   top: -15px !important;
 }
+
+.examples {
+  background-color: white;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  display: none;
+}
+
 .works {
   padding: 100px;
   max-width: 660px;
@@ -177,12 +203,12 @@ a {
   width: 560px;
   height: 60px;
 }
-.works--item--cover>img {
+.works--item--cover > img {
   position: absolute;
   left: 0px;
   transition: all 0.2s ease-out;
 }
-.works--item:hover>.works--item--cover>img {
+.works--item:hover > .works--item--cover > img {
   left: -560px;
 }
 .works--item--content {
@@ -223,7 +249,7 @@ a {
   color: #001be3;
   font-size: 18px;
 }
-.works--item--content>video {
+.works--item--content > video {
   margin: 16px 0px;
 }
 @media (max-width: 645px) {
