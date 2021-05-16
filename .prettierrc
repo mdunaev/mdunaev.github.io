@@ -1,0 +1,7 @@
+{
+  "tabWidth": 4,
+  "useTabs": false,
+  "html.format.wrapAttributes": "force",
+  "html.format.wrapLineLength": 40,
+  "prettier.htmlWhitespaceSensitivity": "ignore"
+}
